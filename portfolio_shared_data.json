@@ -1,0 +1,73 @@
+{
+    "basic_info": {
+      "name": "Jeffrey Liang",
+      "titles": [ "Finance Enthuiast", "Software Engineer" ],
+      "social": [
+        {
+          "name": "email",
+          "url": "mailto:jeffreymingliang@gmail.com",
+          "class": "fas fa-envelope"
+        },
+        {
+          "name": "github",
+          "url": "https://github.com/JeffreyLiang321",
+          "class": "fab fa-github"
+        },
+        {
+          "name": "linkedin",
+          "url": "https://www.linkedin.com/in/jeffrey-liang-a04760291/",
+          "class": "fab fa-linkedin"
+        }
+      ],
+      "image": "myProfile.jpg"
+    },
+    "skills": {
+      "icons": [
+        {
+          "name": "Python",
+          "class": "devicon-python-plain",
+          "level": "95"
+        },
+        {
+          "name": "Javascript",
+          "class": "devicon-javascript-plain",
+          "level": "95"
+        },
+        {
+          "name": "Typescript",
+          "class": "devicon-typescript-plain",
+          "level": "80"
+        },
+        {
+          "name": "HTML",
+          "class": "devicon-html5-plain",
+          "level": "90"
+        },
+        {
+          "name": "CSS",
+          "class": "devicon-css3-plain",
+          "level": "70"
+        },
+        {
+          "name": "AWS",
+          "class": "devicon-amazonwebservices-plain",
+          "level": "75"
+        },
+        {
+          "name": "MySQL",
+          "class": "devicon-mysql-original",
+          "level": "85"
+        },
+        {
+          "name": "Swift",
+          "class": "devicon-swift-plain",
+          "level": "65"
+        },
+        {
+          "name": "C",
+          "class": "devicon-c-plain",
+          "level": "60"
+        }
+      ]
+    }
+  }
