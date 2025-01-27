@@ -1,17 +1,22 @@
 {
     "basic_info": {
-      "name": "Davina Griss",
-      "titles": [ "Front-end Developer", "Senior Data Engineer", "Dev Team lead", "Mobile App Developer" ],
+      "name": "Jeffrey Liang",
+      "titles": [ "Finance Enthuiast", "Software Engineer" ],
       "social": [
         {
+          "name": "email",
+          "url": "mailto:jeffreymingliang@gmail.com",
+          "class": "fas fa-envelope"
+        },
+        {
           "name": "github",
-          "url": "https://github.com",
+          "url": "https://github.com/JeffreyLiang321",
           "class": "fab fa-github"
         },
         {
-          "name": "instagram",
-          "url": "https://www.instagram.com",
-          "class": "fab fa-instagram"
+          "name": "linkedin",
+          "url": "https://www.linkedin.com/in/jeffrey-liang-a04760291/",
+          "class": "fab fa-linkedin"
         }
       ],
       "image": "myProfile.jpg"
@@ -19,48 +24,48 @@
     "skills": {
       "icons": [
         {
-          "name": "HTML 5",
-          "class": "devicon-html5-plain",
+          "name": "Python",
+          "class": "devicon-python-plain",
           "level": "95"
         },
         {
-          "name": "CSS 3",
-          "class": "devicon-css3-plain",
+          "name": "Javascript",
+          "class": "devicon-javascript-plain",
           "level": "95"
         },
         {
-          "name": "Angular",
-          "class": "devicon-angularjs-plain",
+          "name": "Typescript",
+          "class": "devicon-typescript-plain",
           "level": "80"
         },
         {
-          "name": "TypeScript",
-          "class": "devicon-typescript-plain",
+          "name": "HTML",
+          "class": "devicon-html5-plain",
           "level": "90"
         },
         {
-          "name": "JavaScript",
-          "class": "devicon-javascript-plain",
+          "name": "CSS",
+          "class": "devicon-css3-plain",
           "level": "70"
         },
         {
-          "name": "Sass",
-          "class": "devicon-sass-original",
+          "name": "AWS",
+          "class": "devicon-amazonwebservices-plain",
           "level": "75"
         },
         {
-          "name": "Bootstrap",
-          "class": "devicon-bootstrap-plain",
+          "name": "MySQL",
+          "class": "devicon-mysql-original",
           "level": "85"
         },
         {
-          "name": "C#",
-          "class": "devicon-csharp-plain",
+          "name": "Swift",
+          "class": "devicon-swift-plain",
           "level": "65"
         },
         {
-          "name": "MySql",
-          "class": "devicon-mysql-plain",
+          "name": "C",
+          "class": "devicon-c-plain",
           "level": "60"
         }
       ]

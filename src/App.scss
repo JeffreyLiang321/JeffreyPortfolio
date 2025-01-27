@@ -38,7 +38,7 @@ header {
 	-webkit-background-size: cover;
 	text-align: center;
 	overflow: hidden;
-	background-color: #e9d5a1;
+	background-color: #F2B28C;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -172,7 +172,9 @@ header h1 {
 
 .polaroid img {
 	display: block;
-	max-width: 200px;
+	width: 300px;
+  	padding: 0px; 
+	border-radius: 10px;
 }
 
 .polaroid span {
@@ -219,7 +221,7 @@ header h1 {
 }
 
 #resume {
-	background: #efe1bd;
+	background: #F2B28C;
 }
 
 .experience-icon {
@@ -233,7 +235,7 @@ header h1 {
 	text-align: left !important;
 	padding: 5px 8px 5px 8px !important;
 	vertical-align: baseline;
-	background-color: #AE944F !important;
+	background-color: #937010 !important;
 	color: white;
 	font-weight: lighter !important;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -244,7 +246,7 @@ header h1 {
 	text-align: left !important;
 	padding: 5px 8px 5px 8px !important;
 	vertical-align: baseline;
-	background-color: #f9f5e9 !important;
+	background-color: #F2B28C !important;
 	color: black;
 	font-weight: lighter !important;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -254,6 +256,22 @@ header h1 {
 	padding: 0 !important;
 	margin: 0 !important;
 }
+
+.vertical-timeline-element-content {
+	word-wrap: break-word; /* Ensures long words break onto the next line */
+	overflow-wrap: break-word; /* Handles text overflow for long words */
+	white-space: normal; /* Allows wrapping to occur */
+	overflow: hidden; /* Ensures no text overflows the box */
+	width: 100%; /* Ensures the content takes full width */
+	max-width: 100%; /* Prevents horizontal overflow */
+	padding: 20px; /* Adds padding for better readability */
+	box-sizing: border-box; /* Includes padding in total width */
+}
+  
+.vertical-timeline-element {
+	overflow: visible; /* Ensures that child elements are visible */
+}
+
 
 @media only screen and (max-width: 1170px) {
 	.experience-icon {
@@ -341,14 +359,26 @@ header h1 {
 }
 
 #portfolio {
-	background: #efe1bd;
-	padding-bottom: 5%;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #F2B28C;
+	
+}
+
+.container {
+    text-align: center;
 }
 
 .portfolio-item {
-	max-width: 100%;
+	max-width: 100px;
 	margin-bottom: 15px;
 	text-align: center;
+	align-items: center;
+	border-color: "black";
+	border-width: "0.5px";
+	border-style: "solid";
 }
 
 .portfolio .portfolio-item .portfolio-item-caption {
@@ -374,6 +404,17 @@ header h1 {
 	.portfolio .portfolio-item {
 		margin-bottom: 30px;
 	}
+}
+
+.link-href {
+	color: #007bff;
+	text-decoration: none;
+	font-size: 16px;
+}
+  
+.link-href:hover {
+	text-decoration: underline;
+	color: #0056b3;
 }
 
 #skills {
@@ -426,3 +467,32 @@ footer a:focus {
 	margin-top: 50px;
 	font-size: 22px;
 }
+
+nav {
+	overflow: auto;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+nav button {
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+nav button:hover {
+    color: #F2B28C;
+}
+
+
+
+
+

@@ -23,7 +23,14 @@ class Experience extends Component {
         });
         var tech = technologies.map((technology, i) => {
           return (
-            <Badge pill className="experience-badge mr-2 mb-2" key={i}>
+            <Badge pill className="experience-badge mr-2 mb-2" style={{
+              display: "inline-block",
+              wordWrap: "break-word",
+              overflowWrap: "break-word",
+              whiteSpace: "normal",
+              maxWidth: "400px", // Adjust as needed
+              textAlign: "left",
+            }} key={i}>
               {technology}
             </Badge>
           );
@@ -40,9 +47,21 @@ class Experience extends Component {
             icon={<i className="fab fa-angular experience-icon"></i>}
             key={i}
           >
-            <div style={{ textAlign: "left", marginBottom: "4px" }}>
-              {mainTech}
-            </div>
+            <div style={{ display: "flex", alignItems: "center", marginBottom: "8px" }}>
+      <div>{mainTech}</div>
+      <p
+        style={{
+          marginLeft: "10px",
+          marginTop: "-4px",
+          fontStyle: "italic",
+          color: "#6c757d",
+          fontSize: "0.9rem",
+          whiteSpace: "nowrap",
+        }}
+      >
+        {work.years}
+      </p>
+    </div>
 
             <h3
               className="vertical-timeline-element-title"
