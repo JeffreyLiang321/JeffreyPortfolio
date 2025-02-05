@@ -1,35 +1,51 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7092ceaebf27f5b08aafc6c255e32e42",
+    "revision": "0e5f5e667d22abfd37ce93a9ff3e3340",
     "url": "/JeffreyPortfolio/index.html"
   },
   {
-    "revision": "3b59dd33ce5fcf0374c9",
+    "revision": "cb1a7db33581c632c79c",
     "url": "/JeffreyPortfolio/static/css/2.e7a855a7.chunk.css"
   },
   {
-    "revision": "3ec12b15e1c8915896eb",
+    "revision": "de3fbfe3ec5f472263e2",
     "url": "/JeffreyPortfolio/static/css/main.5da3ac66.chunk.css"
   },
   {
-    "revision": "3b59dd33ce5fcf0374c9",
-    "url": "/JeffreyPortfolio/static/js/2.2377ba88.chunk.js"
+    "revision": "cb1a7db33581c632c79c",
+    "url": "/JeffreyPortfolio/static/js/2.20ca3f32.chunk.js"
   },
   {
     "revision": "407a6c0a28e6925cce5f91fc49c4155a",
-    "url": "/JeffreyPortfolio/static/js/2.2377ba88.chunk.js.LICENSE.txt"
+    "url": "/JeffreyPortfolio/static/js/2.20ca3f32.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3ec12b15e1c8915896eb",
-    "url": "/JeffreyPortfolio/static/js/main.65df20fa.chunk.js"
+    "revision": "de3fbfe3ec5f472263e2",
+    "url": "/JeffreyPortfolio/static/js/main.925036e9.chunk.js"
   },
   {
     "revision": "f6f94d2ea156bcc93538",
     "url": "/JeffreyPortfolio/static/js/runtime-main.5a1a4eb2.js"
   },
   {
+    "revision": "7cf04b3425bdfebd7873cad7a220ae43",
+    "url": "/JeffreyPortfolio/static/media/Accessible.7cf04b34.png"
+  },
+  {
+    "revision": "ab9a362341bbbf240db38edf380a6c9b",
+    "url": "/JeffreyPortfolio/static/media/BTCG.ab9a3623.png"
+  },
+  {
+    "revision": "e2a7ed553e726078c04a7b7440ebdb3f",
+    "url": "/JeffreyPortfolio/static/media/Blue_Harbor.e2a7ed55.png"
+  },
+  {
     "revision": "58d76e681ee5b29b2ac2bbc0c04c1150",
     "url": "/JeffreyPortfolio/static/media/CarTest-2.58d76e68.gif"
+  },
+  {
+    "revision": "1985c9ce654fca31a8bd9ad8a4f70105",
+    "url": "/JeffreyPortfolio/static/media/Dayguard.1985c9ce.jpg"
   },
   {
     "revision": "6654814530f0d4a760fe4afb54becb83",
@@ -58,6 +74,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "99fb848e9681ed0de1ecb46f95fd4735",
     "url": "/JeffreyPortfolio/static/media/Jeffrey_headshot.99fb848e.jpeg"
+  },
+  {
+    "revision": "2963d218d4b3e1fdedf5ebcd805f83a7",
+    "url": "/JeffreyPortfolio/static/media/Kognitiv-Edge.2963d218.png"
   },
   {
     "revision": "59f530829aad692c18b8717d8c5323cb",
