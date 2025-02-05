@@ -37,16 +37,27 @@ class Experience extends Component {
         });
         return (
           <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date={work.years}
-            iconStyle={{
-              background: "#AE944F",
-              color: "#fff",
-              textAlign: "center",
-            }}
-            icon={<i className="fab fa-angular experience-icon"></i>}
-            key={i}
-          >
+  className="vertical-timeline-element--work"
+  date={work.years}
+  iconStyle={{
+    background: "#AE944F",
+    color: "#fff",
+    textAlign: "center",
+  }}
+  icon={
+    <img
+      src={require(`../images/${work.image}`)} // Ensure the path is correct
+      alt={work.title}
+      style={{
+        width: "100%", // Ensures it fills the circle
+        height: "100%",
+        borderRadius: "50%", // Keeps it circular
+        objectFit: "cover",
+      }}
+    />
+  }
+  key={i}
+>
             <div style={{ display: "flex", alignItems: "center", marginBottom: "8px" }}>
       <div>{mainTech}</div>
       <p

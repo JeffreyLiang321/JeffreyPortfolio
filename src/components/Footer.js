@@ -22,7 +22,7 @@ class Footer extends Component {
           <div className="copyright py-4 text-center">
             <div className="container">
               <small>
-                Thank you for viewing my website! 
+                Thank you for viewing my website! I would love to connect through one of the methods above!
               </small>
             </div>
           </div>

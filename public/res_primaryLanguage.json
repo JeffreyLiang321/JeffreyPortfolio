@@ -151,11 +151,25 @@
     ],
     "experience": [
       {
-        "company": "Beya: Small Business Assistance App",
-        "title": "Technical Development Lead",
-        "years": " Sep. 2024 – Present",
+        "company": "Accessible Career Aid",
+        "title": "Financial Research Intern",
+        "image": "Accessible.png",
+        "years": " Feb. 2025 – Present",
         "mainTech": [
-          "Extracirricular"
+          "Internship"
+        ],
+        "technologies": [
+          "● Researched financial markets and trends while building financial models, including DCFs and LBOs",
+          "● Analyzed and summarized investment outlooks into clear, concise reports for educational use"
+        ]
+      },
+      {
+        "company": "Beya: Small Business Assistance App",
+        "image": "beya.png",
+        "title": "Technical Development Lead",
+        "years": "Sep. 2024 – Present",
+        "mainTech": [
+          "Startup"
         ],
         "technologies": [
           "● Lead technical development for Beya, a B2B app supporting small mobile businesses",
@@ -167,6 +181,7 @@
       {
         "company": "Brown Technology and Consulting Group",
         "title": "Project Lead",
+        "image": "BTCG.png",
         "years": "Jan. 2024 - Current",
         "mainTech": [
           "Student Society/Club"
@@ -183,6 +198,7 @@
       {
         "company": "Xiaomi Technology",
         "title": "Algorithm Engineer Intern",
+        "image": "Xiaomi.png",
         "years": "Jun. 2024 - Aug. 2024",
         "mainTech": [
           "Internship"
@@ -197,6 +213,7 @@
       {
         "company": "Kognitiv Edge",
         "title": "Backend Developer Intern",
+        "image": "Kognitiv-Edge.png",
         "years": "Feb. 2024 - Aug. 2024",
         "mainTech": [
           "Internship"
@@ -211,6 +228,7 @@
       {
         "company": "Innovation Dojo Program",
         "title": "3rd Place Pitcher",
+        "image": "Dojo_enhanced.png",
         "years": "Feb. 2024 - May. 2024",
         "mainTech": [
           "Student Society/Club"
@@ -224,6 +242,7 @@
       {
         "company": "Blue Harbor",
         "title": "Cofounder",
+        "image": "Blue_Harbor.png",
         "years": "Aug. 2022 - Curent",
         "mainTech": [
           "Founded Organization"
