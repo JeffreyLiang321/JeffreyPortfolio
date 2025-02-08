@@ -164,6 +164,20 @@
         ]
       },
       {
+        "company": "Brown Derivatives and Investment Group",
+        "title": "Analyst",
+        "image": "BDIG.png",
+        "years": " Feb. 2025 – Present",
+        "mainTech": [
+          "Student Society/Club"
+        ],
+        "technologies": [
+          "● Manages $1M in simulated funds for hands-on investing and trading experience",
+          "● Mission to demystify derivatives through education, collaboration, and strategic trading",
+          "● Analyze risk and return profiles for various trading strategies, present insights and recommendations to the club for portfolio decisions"
+        ]
+      },
+      {
         "company": "Beya: Small Business Assistance App",
         "image": "beya.png",
         "title": "Technical Development Lead",

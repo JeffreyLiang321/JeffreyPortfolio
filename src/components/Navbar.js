@@ -40,7 +40,7 @@ const NavigationBar = () => {
 
     return (
         <nav className="sticky top-0 z-50 bg-white shadow-md">
-            <div className="relative flex items-center justify-end py-4 px-8 w-full max-w-screen-xl mx-auto">
+            <div className="relative flex items-center justify-between py-4 px-8 w-full max-w-screen-xl mx-auto">
             <div className="flex justify-end space-x-6 w-full">
                     <button
                         onClick={() => handleClick("about")}
@@ -75,6 +75,16 @@ const NavigationBar = () => {
                     >
                         Experiences
                     </button>
+                    
+                    <button
+                        onClick={() => handleClick("footer")} // Scrolls to the footer
+                        className={`text-sm font-medium ${
+                            active === "footer" ? "text-purple-500" : "text-gray-800"
+                        } transition-colors duration-200`}
+                    >
+                        Contact Me
+                    </button>
+                
                 </div>
             </div>
         </nav>
