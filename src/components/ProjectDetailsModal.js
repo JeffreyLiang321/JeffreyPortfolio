@@ -31,23 +31,24 @@ class ProjectDetailsModal extends Component {
         if (this.props.data.images) {
           var img = images.map((elem, i) => {
             return (
-              <div key={i} data-src={elem} style={{ textAlign: "center" }}>
+              <div key={i} data-src={elem} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                 <img
                   src={elem}
                   alt={`Project image ${i}`}
                   style={{
-                    maxWidth: "100%",     // Ensures it doesn’t exceed the container
-                    maxHeight: "500px",   // Limits the height while keeping aspect ratio
-                    height: "auto",       // Allows natural aspect ratio preservation
-                    objectFit: "contain", // Ensures the whole image is visible without cropping
-                    display: "block",     // Removes extra spacing issues
-                    margin: "auto"        // Centers image inside the slider div
+                    width: "auto",         // Don't stretch width
+                    height: "auto",        // Maintain aspect ratio
+                    maxWidth: "100%",      // Ensures it doesn't overflow the container
+                    maxHeight: "80vh",     // Ensures it doesn't exceed the viewport
+                    objectFit: "contain",  // Keeps the entire image visible
+                    display: "block",      // Avoids extra spacing
+                    margin: "auto"         // Centers the image
                   }}
                 />
               </div>
             );
           });
-        }        
+        }             
       }
     }
     return (
