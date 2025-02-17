@@ -49,27 +49,40 @@ class ProjectDetailsModal extends Component {
             </li>
           );
         }); 
+        // if (this.props.data.images) {
+        //   var img = images.map((elem, i) => {
+        //     return (
+        //       <div key={i} data-src={elem} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+        //         <img
+        //           src={elem}
+        //           alt={`Project image ${i}`}
+        //           style={{
+        //             width: "auto",         // Don't stretch width
+        //             height: "auto",        // Maintain aspect ratio
+        //             maxWidth: "100%",      // Ensures it doesn't overflow the container
+        //             maxHeight: "80vh",     // Ensures it doesn't exceed the viewport
+        //             objectFit: "contain",  // Keeps the entire image visible
+        //             display: "block",      // Avoids extra spacing
+        //             margin: "auto"         // Centers the image
+        //           }}
+        //         />
+        //       </div>
+        //     );
+        //   });
+        // }             
         if (this.props.data.images) {
-          var img = images.map((elem, i) => {
-            return (
-              <div key={i} data-src={elem} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                <img
-                  src={elem}
-                  alt={`Project image ${i}`}
-                  style={{
-                    width: "auto",         // Don't stretch width
-                    height: "auto",        // Maintain aspect ratio
-                    maxWidth: "100%",      // Ensures it doesn't overflow the container
-                    maxHeight: "80vh",     // Ensures it doesn't exceed the viewport
-                    objectFit: "contain",  // Keeps the entire image visible
-                    display: "block",      // Avoids extra spacing
-                    margin: "auto"         // Centers the image
-                  }}
-                />
-              </div>
-            );
-          });
-        }             
+          var img = this.props.data.images.map((elem, i) => (
+            <div 
+              key={i} 
+              data-src={elem} 
+              style={{ 
+                display: "flex", 
+                justifyContent: "center", 
+                alignItems: "center"
+              }} 
+            />
+          ));
+        }
       }
     }
     return (
@@ -106,12 +119,18 @@ class ProjectDetailsModal extends Component {
               ></span>
             </div>
             <AwesomeSlider
-              cssModule={[AwesomeSliderStyles, AwesomeSliderStyles2]}
-              animation="scaleOutAnimation"
-              className="slider-image"
-            >
-              {img}
-            </AwesomeSlider>
+          cssModule={[AwesomeSliderStyles, AwesomeSliderStyles2]}
+          animation="scaleOutAnimation"
+          className="slider-image"
+          style={{
+            width: "100%", 
+            height: "auto", 
+            maxHeight: "80vh", 
+            objectFit: "contain"
+          }}
+        >
+          {img}
+        </AwesomeSlider>
           </div>
           <div className="col-md-10 mx-auto">
             <h3 style={{ padding: "5px 5px 0 5px" }}>
