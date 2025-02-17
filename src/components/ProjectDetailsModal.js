@@ -110,7 +110,7 @@ class ProjectDetailsModal extends Component {
               animation="scaleOutAnimation"
               className="slider-image"
             >
-              {img}
+              {/* {img} */}
             </AwesomeSlider>
           </div>
           <div className="col-md-10 mx-auto">
