@@ -104,7 +104,7 @@
       "startDate": "Aug. 2021 - June. 2023",
       "description": "For this project, I collaborated with an STJU applied mathematics professor to address inefficiencies in delivery drones, particularly their frequent need for recharging and limited cargo capacity. Our goal was to reduce the weight of large drone wings using an elastic transportation network optimized for energy efficiency, enabling drones to carry more products over longer periods. By calculating the total elastic potential energy and gravity potential energy of the wings, we minimized the total energy to determine the optimal geometric parameters, such as the radius of internal pipelines. Using MATLAB simulations, we iteratively refined the design, aiming for a structure similar to dragonfly wings, known for their lightweight and efficient design. This work, titled Numerical Algorithm for Transportation Network, was published in the Journal of Applied Mathematics, highlighting our approach to designing significantly lighter and more efficient drone wings.",
       "images": [
-        "images/DroneInitialGraph.png",
+        "images/DroneIntialGraph.png",
         "images/DroneEndGraph.png"
       ],
       "url": "https://wap.hillpublisher.com/UpFile/202307/20230731173237.pdf",
