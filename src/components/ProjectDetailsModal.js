@@ -51,23 +51,7 @@ class ProjectDetailsModal extends Component {
         }); 
         if (this.props.data.images) {
           var img = images.map((elem, i) => {
-            return (
-              <div key={i} data-src={elem}>
-                <img
-                  src={elem}
-                  alt={`Project image ${i}`}
-                  style={{
-                    width: "auto",
-                    height: "auto",
-                    maxWidth: "100%",  // Ensures it doesn't overflow the container
-                    maxHeight: "80vh", // Keeps it within the viewport
-                    objectFit: "contain",  // Ensures full visibility without cropping
-                    display: "block",
-                    margin: "auto"
-                  }}
-                />
-              </div>
-            );
+            return <div key={i} data-src={elem} />;
           });
         }             
       }
