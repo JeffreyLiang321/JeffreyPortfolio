@@ -6,6 +6,7 @@ import AwesomeSliderStyles2 from "../scss/dark-slider.scss";
 import "react-awesome-slider/dist/custom-animations/scale-out-animation.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStripe } from "@fortawesome/free-brands-svg-icons";
+
 class ProjectDetailsModal extends Component {
   render() {
     if (this.props.data) {
@@ -53,18 +54,19 @@ class ProjectDetailsModal extends Component {
             return (
               <div key={i} data-src={elem} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                 <img
-                  src={elem}
-                  alt={`Project image ${i}`}
-                  style={{
-                    width: "auto",         // Don't stretch width
-                    height: "auto",        // Maintain aspect ratio
-                    maxWidth: "100%",      // Ensures it doesn't overflow the container
-                    maxHeight: "80vh",     // Ensures it doesn't exceed the viewport
-                    objectFit: "contain",  // Keeps the entire image visible
-                    display: "block",      // Avoids extra spacing
-                    margin: "auto"         // Centers the image
-                  }}
-                />
+  src={elem}
+  alt={`Project image ${i}`}
+  style={{
+    width: "auto",         // Ensures the image doesn't stretch horizontally
+    height: "auto",        // Maintains the aspect ratio
+    maxWidth: "100%",      // Prevents it from exceeding the container width
+    maxHeight: "80vh",     // Ensures it doesn't exceed the viewport height
+    objectFit: "contain",  // Ensures the entire image is visible without cropping
+    display: "block",      // Avoids extra spacing issues
+    margin: "auto"         // Centers the image inside the container
+  }}
+/>
+
               </div>
             );
           });
