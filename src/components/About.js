@@ -7,7 +7,7 @@ import vueIcon from "@iconify/icons-logos/vue";
 class About extends Component {
   render() {
     if (this.props.sharedBasicInfo) {
-      var profilepic = "images/" + this.props.sharedBasicInfo.image;
+      var profilepic = "/images/myProfile.jpg";
     }
     if (this.props.resumeBasicInfo) {
       var sectionName = this.props.resumeBasicInfo.section_name.about;
@@ -26,11 +26,15 @@ class About extends Component {
               <div className="polaroid">
                 <span style={{ cursor: "auto" }}>
                   <img
-                    height="250px"
-                    src={profilepic}
+                    style={{
+                      width: "100%", // Adjust percentage as needed
+                      height: "auto", // Maintain aspect ratio
+                      borderRadius: "10px", // Optional styling
+                    }}
+                    src={require("../images/me_relax.jpg")}
                     alt="Avatar placeholder"
                   />
-                  <Icon
+                  {/* <Icon
                     icon={angularIcon}
                     style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
@@ -41,7 +45,7 @@ class About extends Component {
                   <Icon
                     icon={vueIcon}
                     style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
-                  />
+                  /> */}
                 </span>
               </div>
             </div>
@@ -49,24 +53,19 @@ class About extends Component {
             <div className="col-md-8 center">
               <div className="col-md-10">
                 <div className="card">
-                  <div className="card-header">
+                <div
+    className="card-header"
+    style={{
+      backgroundColor: "black", // Changes the bar color to black
+      height: "30px", // Adjust the height if needed
+    }}
+  >
                     <span
                       className="iconify"
                       data-icon="emojione:red-circle"
                       data-inline="false"
                     ></span>{" "}
                     &nbsp;{" "}
-                    <span
-                      className="iconify"
-                      data-icon="twemoji:yellow-circle"
-                      data-inline="false"
-                    ></span>{" "}
-                    &nbsp;{" "}
-                    <span
-                      className="iconify"
-                      data-icon="twemoji:green-circle"
-                      data-inline="false"
-                    ></span>
                   </div>
                   <div
                     className="card-body font-trebuchet text-justify ml-3 mr-3"
@@ -77,7 +76,7 @@ class About extends Component {
                     }}
                   >
                     <br />
-                    <span className="wave">{hello} :) </span>
+                    <span className="wave">{hello} </span>
                     <br />
                     <br />
                     {about}
@@ -93,3 +92,4 @@ class About extends Component {
 }
 
 export default About;
+

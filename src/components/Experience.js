@@ -23,26 +23,58 @@ class Experience extends Component {
         });
         var tech = technologies.map((technology, i) => {
           return (
-            <Badge pill className="experience-badge mr-2 mb-2" key={i}>
+            <Badge pill className="experience-badge mr-2 mb-2" style={{
+              display: "inline-block",
+              wordWrap: "break-word",
+              overflowWrap: "break-word",
+              whiteSpace: "normal",
+              maxWidth: "85%", // Adjust as needed
+              textAlign: "left",
+            }} key={i}>
               {technology}
             </Badge>
           );
         });
         return (
           <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date={work.years}
-            iconStyle={{
-              background: "#AE944F",
-              color: "#fff",
-              textAlign: "center",
-            }}
-            icon={<i className="fab fa-angular experience-icon"></i>}
-            key={i}
-          >
-            <div style={{ textAlign: "left", marginBottom: "4px" }}>
-              {mainTech}
-            </div>
+  className="vertical-timeline-element--work"
+  iconStyle={{
+    background: "#AE944F",
+    color: "#fff",
+    textAlign: "center",
+  }}
+  icon={
+    <img
+      src={require(`../images/${work.image}`)} // Ensure the path is correct
+      alt={work.title}
+      style={{
+        width: "100%", // Ensures it fills the circle
+        height: "100%",
+        borderRadius: "50%", // Keeps it circular
+        objectFit: "cover",
+      }}
+    />
+  }
+  key={i}
+>
+            <div style={{ display: "flex", alignItems: "center", marginBottom: "8px" }}>
+      <div>{mainTech}</div>
+      <p
+  style={{
+    marginLeft: "10px",
+    marginTop: "-4px",
+    fontStyle: "italic",
+    color: "#6c757d",
+    fontSize: "0.9rem",
+    whiteSpace: "normal", // Allows wrapping
+    wordWrap: "break-word",
+    overflowWrap: "break-word",
+    maxWidth: "100%", // Ensures it stays within container
+  }}
+>
+        {work.years}
+      </p>
+    </div>
 
             <h3
               className="vertical-timeline-element-title"

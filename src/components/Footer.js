@@ -7,7 +7,7 @@ class Footer extends Component {
         return (
           <span key={network.name} className="m-4">
             <a href={network.url} target="_blank" rel="noopener noreferrer">
-              <i className={network.class}></i>
+            <i className={`${network.class} fa-2x`}></i>
             </a>
           </span>
         );
@@ -15,17 +15,14 @@ class Footer extends Component {
     }
 
     return (
-      <footer>
+      <footer id="footer">
         <div className="col-md-12">
           <div className="social-links">{networks}</div>
 
           <div className="copyright py-4 text-center">
             <div className="container">
               <small>
-                Copyright &copy;{" "}
-                {this.props.sharedBasicInfo
-                  ? this.props.sharedBasicInfo.name
-                  : "???"}
+                Thank you for viewing my website! I would love to connect through one of the methods above!
               </small>
             </div>
           </div>
@@ -36,3 +33,4 @@ class Footer extends Component {
 }
 
 export default Footer;
+

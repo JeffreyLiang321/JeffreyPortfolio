@@ -17,11 +17,11 @@ class Header extends Component {
   }
 
   setTheme() {
-    var dataThemeAttribute = "data-theme";
-    var body = document.body;
-    var newTheme =
-      body.getAttribute(dataThemeAttribute) === "dark" ? "light" : "dark";
-    body.setAttribute(dataThemeAttribute, newTheme);
+    // var dataThemeAttribute = "data-theme";
+    // var body = document.body;
+    // var newTheme =
+    //   body.getAttribute(dataThemeAttribute) === "dark" ? "light" : "dark";
+    // body.setAttribute(dataThemeAttribute, newTheme);
   }
 
   render() {
@@ -39,7 +39,22 @@ class Header extends Component {
         <div className="row aligner" style={{height: '100%'}}>
           <div className="col-md-12">
             <div>
-              <span className="iconify header-icon" data-icon="la:laptop-code" data-inline="false"></span>
+            <img
+  style={{
+    width: '40%', // Increase for mobile
+    maxWidth: '150px', // Prevent it from getting too large
+    height: 'auto', // Auto to maintain aspect ratio
+    borderRadius: '50%',
+    objectFit: 'cover', 
+    marginBottom: "-2%",
+    objectPosition: 'top center',
+    transform: 'translateY(-50%)' // Less extreme shift
+  }}
+  src={require('../images/Jeffrey_headshot.jpeg')} 
+  alt="Avatar"
+/>
+              
+              {/* <span className="iconify header-icon" data-icon="la:laptop-code" data-inline="false"></span> */}
               <br/>
               <h1 className="mb-0">
                 <Typical steps={[name]} wrapper="p" />
@@ -47,46 +62,24 @@ class Header extends Component {
               <div className="title-container">
                 <HeaderTitleTypeAnimation />
               </div>
-              <Switch
-                checked={this.state.checked}
-                onChange={this.onThemeSwitchChange}
-                offColor="#baaa80"
-                onColor="#353535"
-                className="react-switch mx-auto"
-                width={90}
-                height={40}
-                uncheckedIcon={
-                  <span
-                    className="iconify"
-                    data-icon="twemoji:owl"
-                    data-inline="false"
-                    style={{
-                      display: "block",
-                      height: "100%",
-                      fontSize: 25,
-                      textAlign: "end",
-                      marginLeft: "20px",
-                      color: "#353239",
-                    }}
-                  ></span>
-                }
-                checkedIcon={
-                  <span
-                    className="iconify"
-                    data-icon="noto-v1:sun-with-face"
-                    data-inline="false"
-                    style={{
-                      display: "block",
-                      height: "100%",
-                      fontSize: 25,
-                      textAlign: "end",
-                      marginLeft: "10px",
-                      color: "#353239",
-                    }}
-                  ></span>
-                }
-                id="icon-switch"
-              />
+              <div style={{ marginTop: '0px' }}>
+              <a
+    href={require('../images/Jeffrey_Liang_Resume.pdf')} // Ensure correct file path
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      padding: '12px 24px',
+      backgroundColor: '#E94B3C',
+      color: '#fff',
+      textDecoration: 'none',
+      borderRadius: '6px',
+      fontWeight: 'bold',
+      fontSize: '16px',
+    }}
+  >
+    View Resume
+  </a>
+          </div>
             </div>
           </div>
         </div>

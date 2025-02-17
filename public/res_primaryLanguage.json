@@ -1,118 +1,272 @@
 {
-    "basic_info": {
-      "description_header": "Hi",
-      "description": "👋 I'm Davina Griss. Fictional person for preview purposes :) I'm working with newest front-end frameworks like Angular, React and Vue. What you are seeing now is portfolio template from Dorota1997. If you like this portfolio template, make sure to ⭐ the repository to make it more recognizable for other users. Thank you 💜",
-      "section_name": {
-        "about": "About me",
-        "projects": "Projects",
-        "skills": "Skills",
-        "experience": "Experience"
-      }
+  "basic_info": {
+    "description_header": "Hi exeryone!",
+    "description": "My name is Jeffrey Liang. I was born in San Jose and grew up in Shanghai attending Shanghai American School. I'm a current sophmore studying Computer Science and Economics at Brown University. I'm very interested in pursuring a career in finance, specifically in investment banking, private equity, and venture capital. I'm also very involved in many computer science projects out of personal interest. I'm interested in UI/UX interface of website and mobile applications, fullstack, and machine learning specifically for prediction models. Thanks for viewing my portfolio website!",
+    "section_name": {
+      "about": "About me",
+      "projects": "Projects",
+      "skills": "Skills",
+      "experience": "Experience"
+    }
+  },
+  "projects": [
+    {
+      "title": "Beya",
+      "startDate": "Sep. 2024 - Current",
+      "description": "I am a founding member and technical project lead of Beya, a B2B app designed to empower small and medium-sized businesses with streamlined in-person selling. Beya offers features like inventory management, proximity-based vendor discovery, low-fee tap-to-pay transactions, and sales analytics. To date, we’ve supported over 20 local vendors, processed 1,000+ transactions, and hosted eight successful events at Brown University. Built with React Native and powered by Expo, Firebase, AWS, and Stripe API, Beya combines robust infrastructure with user-friendly functionality. Currently, we are in the Apple Review stage, finalizing our Tap-to-Pay Distribution Certificate. For more on Beya’s development and impact, visit our website below.",
+      "images": [
+        "images/beya.png",
+        "images/beya1.png",
+        "images/beya2.png"
+      ],
+      "url": "https://usebeya.com/",
+      "technologies": [
+        {
+          "class": "expo.png",
+          "name": "React Expo"
+        },
+        {
+          "class": "devicon-tailwindcss-original",
+          "name": "Tailwind CSS"
+        },
+        {
+          "class": "devicon-firebase-plain",
+          "name": "Firebase"
+        },
+        {
+          "class": "devicon-amazonwebservices-plain",
+          "name": "AWS"
+        },
+        {
+          "class": "fa-brands fa-stripe", 
+          "name": "Stripe"
+        }
+      ]
     },
-    "projects": [
-      {
-        "title": "Animal Shelter",
-        "startDate": "2020",
-        "description": "The most expanded application I had opportunity to work with. I've learned many technologies and my code was reviewed by awesome curator. Application handles all adoption processess and allows to store all evidence on adopting animals from animal shelter.",
-        "images": [
-          "images/portfolio/animal-shelter/p1.jpg",
-          "images/portfolio/animal-shelter/p2.jpg"
-        ],
-        "url": "",
-        "technologies": [
-          {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
-          }
-        ]
-      },
-      {
-        "title": "Photography",
-        "startDate": "2018",
-        "description": "Personal project for study subject. I was responsible for testing photography application that optimizes images with popular algorithms used by graphic editors like Pixlr or Adobe Photoshop. I've earned A grade :)",
-        "images": [
-          "images/portfolio/photography/p1.jpg",
-          "images/portfolio/photography/p2.jpg"
-        ],
-        "url": "https://github.com",
-        "technologies": [
-          {
-            "class": "devicon-react-original",
-            "name": "React"
-          },
-          {
-            "class": "devicon-javascript-plain",
-            "name": "JavaScript"
-          }
-        ]
-      },
-      {
-        "title": "3D Object Viewer",
-        "startDate": "2015",
-        "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
-        "images": [
-          "images/portfolio/adventure/p1.jpg",
-          "images/portfolio/adventure/p2.jpg"
-        ],
-        "url": "https://github.com",
-        "technologies": [
-          {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
-          }
-        ]
-      }
-    ],
-    "experience": [
-      {
-        "company": "DefOpenSource",
-        "title": "Front-End Developer",
-        "years": "10.2019 - present",
-        "mainTech": [
-          "Angular 8/9/10"
-        ],
-        "technologies": [
-          "REST API",
-          "RxJS",
-          "JavaScript",
-          "Bootstrap",
-          "MDBootstrap",
-          "EF Core",
-          ".NET Core",
-          "SignalR",
-          "Angular Material"
-        ]
-      },
-      {
-        "company": "Serros Solutions",
-        "title": "Intern",
-        "years": "01.2018 - 09.2019",
-        "mainTech": [
-          "Angular 7/8"
-        ],
-        "technologies": [
-          "RxJS",
-          "Django",
-          "PHP",
-          "JavaScript",
-          "DHTMLX Gantt"
-        ]
-      }
-    ]
-  }
+    {
+      "title": "DayGuard",
+      "startDate": "Sep. 2024 - Current",
+      "description": "As a Project Lead Intern for DayGuard, a CPG company specializing in alcohol aid and liver protection jelly sticks, I oversee 3 critical business streams: retail expansion, campus ambassador programs, and digital growth. My role involves directly reaching out to 20+ retail stores and supporting partnership negotiations while developing comprehensive ambassador recruitment and training initiatives. I lead our social media marketing efforts to enhance brand visibility and drive sales across all channels, achieving a 20% increase in overall sales while maintaining connections with 17 college campus ambassadors and 10+ UGC/micro-influencer partnerships. A key aspect of my position is maintaining effective team communication and workflow management, which includes setting weekly priorities, coordinating schedules, and adjusting project timelines as needed. I'm also spearheading our strategic expansion to other prestigious Northeast colleges like Dartmouth and MIT, which includes creating scalable onboarding processes for new markets. This position requires a blend of strategic planning, team leadership, and hands-on execution across multiple business functions.",
+      "images": [
+        "images/dayguard.png",
+        "images/dayguard1.png",
+        "images/dayguard2.png",
+        "images/dayguard3.png"
+      ],
+      "url": "https://dayguard.store/",
+      "technologies": [
+      ]
+    },
+    {
+      "title": "Innovation Dojo",
+      "startDate": "Feb. 2024 - May. 2024",
+      "description": "During my freshman spring, I participated in Brown’s Innovation Dojo startup accelerator program, where my team and I developed Docferral, a startup concept designed to streamline electronic patient referrals between primary care and private practice doctors. To validate the idea, we conducted extensive interviews with physicians, securing support from leading doctors at HO’OLA, a prominent Hawaiian network of independent physicians. With guidance from mentors and case studies, we crafted a strong business value proposition, performed competitor analysis in the telehealth space, and created a minimum viable product (MVP). Additionally, we developed a revenue model and expansion strategy, culminating in a final pitch where I presented our vision to stakeholders.",
+      "images": [
+        "images/Dojo_enhanced.png",
+        "images/Docferral.png"
+      ],
+      "url": "https://www.youtube.com/watch?si=7vtjb4MtF1iFqOvF&v=ywj8ohK4qTY&feature=youtu.be",
+      "technologies": [
+      ]
+    },
+    {
+      "title": "IOS App Simulation",
+      "startDate": "Feb. 2023 - Sep. 2024",
+      "description": "Smooth Tennis is a simulated app I designed to help tennis players receive real-time, personalized feedback from coaches. Unlike traditional teaching platforms, the app concept allows players to upload their videos and get tailored critiques on their techniques, eliminating the need for pre-made videos or static comparisons. I built the app's structure using Firebase for user authentication, data tracking, and media storage, ensuring seamless interactions and efficient video uploads. Using Swift and Xcode, I developed the app with an MVC structure, featuring pages for tennis posts, technique-specific views, creating posts, and tracking coach-player engagement. While the app wasn’t released, you can explore its code on my GitHub or visit my blog for detailed updates on its design and features..",
+      "images": [
+        "images/smooth_tennis.png",
+        "images/tennis1.png",
+        "images/tennis2.png",
+        "images/tennis3.png",
+        "images/tennis4.png",
+        "images/tennis5.png",
+        "images/tennis6.png"
+      ],
+      "url": "https://jeffrey01pd2023.wixsite.com/my-site-1",
+      "github": "https://github.com/JeffreyLiang321/Smooth-Tennis",
+      "technologies": [
+        {
+          "class": "devicon-swift-plain",
+          "name": "Swift"
+        },
+        {
+          "class": "devicon-firebase-plain",
+          "name": "Firebase"
+        },
+        {
+          "class": "devicon-tailwindcss-original",
+          "name": "Tailwind CSS"
+        }
+      ]
+    },
+    {
+      "title": "Drone Energy Optimization",
+      "startDate": "Aug. 2021 - June. 2023",
+      "description": "For this project, I collaborated with an STJU applied mathematics professor to address inefficiencies in delivery drones, particularly their frequent need for recharging and limited cargo capacity. Our goal was to reduce the weight of large drone wings using an elastic transportation network optimized for energy efficiency, enabling drones to carry more products over longer periods. By calculating the total elastic potential energy and gravity potential energy of the wings, we minimized the total energy to determine the optimal geometric parameters, such as the radius of internal pipelines. Using MATLAB simulations, we iteratively refined the design, aiming for a structure similar to dragonfly wings, known for their lightweight and efficient design. This work, titled Numerical Algorithm for Transportation Network, was published in the Journal of Applied Mathematics, highlighting our approach to designing significantly lighter and more efficient drone wings.",
+      "images": [
+        "images/graph.png",
+        "images/DroneIntialGraph.png",
+        "images/DroneIntialGraph.png"
+      ],
+      "url": "https://wap.hillpublisher.com/UpFile/202307/20230731173237.pdf",
+      "technologies": [
+        {
+          "class": "devicon-python-plain",
+          "name": "Python"
+        },
+        {
+          "class": "devicon-matlab-plain",
+          "name": "Matlab"
+        }
+      ]
+    },
+    {
+      "title": "SSD Vision Assisted Robocar",
+      "startDate": "Feb. 2022 - Aug. 2022",
+      "description": "For this project, I developed a low-cost, computationally efficient assisted driving system for navigating narrow roads with obstacles. Using a Raspberry Pi, Intel Neural Compute Stick, infrared sensors, an ultrasound sensor, and an SSD (Single Shot Detector) detection camera, I built and programmed a Raspbot Car to classify and avoid people, bikes, and vehicles. The system used OpenVINO to process video streams and adjust controls based on real-time object detection results. Testing trials confirmed the car could safely maneuver around objects or stop when necessary, achieving an average of 7.5 FPS. SSD detection proved more efficient than RCNN, Faster RCNN, or YOLO 3.0 for this setup. This project showcases the potential of cost-effective, efficient solutions for assisted driving, and I hope to continue developing custom detection models to enhance its capabilities.",
+      "images": [
+        "images/Robocar.png",
+        "images/Framework1.png",
+        "images/CarTest-2.gif",
+        "images/ModelTest-1.gif",
+        "images/TrialTest-1.gif",
+        "images/TrialTest-2.gif"
+      ],
+      "url": "",
+      "technologies": [
+        {
+          "class": "devicon-python-plain",
+          "name": "Python"
+        },
+        {
+          "class": "openvino.png",
+          "name": "Openvino"
+        },
+        {
+          "class": "devicon-tensorflow-original",
+          "name": "Tensorflow"
+        }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Accessible Career Aid",
+      "title": "Financial Research Intern",
+      "image": "Accessible.png",
+      "years": " Feb. 2025 – Present",
+      "mainTech": [
+        "Internship"
+      ],
+      "technologies": [
+        "● Researched financial markets and trends while building financial models, including DCFs and LBOs",
+        "● Analyzed and summarized investment outlooks into clear, concise reports for educational use"
+      ]
+    },
+    {
+      "company": "Brown Derivatives & Investment Group",
+      "title": "Analyst",
+      "image": "BDIG.png",
+      "years": " Feb. 2025 – Present",
+      "mainTech": [
+        "Student Society/Club"
+      ],
+      "technologies": [
+        "● Manages $1M in simulated funds for hands-on investing and trading experience",
+        "● Mission to demystify derivatives through education, collaboration, and strategic trading",
+        "● Analyze risk and return profiles for various trading strategies, present insights and recommendations to the club for portfolio decisions"
+      ]
+    },
+    {
+      "company": "Beya: Small Business Assistance App",
+      "image": "beya.png",
+      "title": "Technical Development Lead",
+      "years": "Sep. 2024 – Present",
+      "mainTech": [
+        "Startup"
+      ],
+      "technologies": [
+        "● Lead technical development for Beya, a B2B app supporting small mobile businesses",
+        "● Constructed proximity-based features, minimum-fee transactions, inventory management serving 20+ local vendors",
+        "● Built AWS, Expo, and Firebase app infrastructure, currently supporting 12 monthly users in Beya’s beta version",
+        "● Processed 1000+ sales transactions, using direct customer feedback from 8 events to implement 20+ features/fixes"
+      ]
+    },
+    {
+      "company": "Brown Technology & Consulting Group",
+      "title": "Project Lead",
+      "image": "BTCG.png",
+      "years": "Jan. 2024 - Current",
+      "mainTech": [
+        "Student Society/Club"
+      ],
+      "technologies": [
+        "● Helped increase sales by 20% for company DayGuard, serving an alcohol-aid and liver protection jelly stick product",
+        "● Managed a team of 7 across 3 workstreams of digital expansion, campus ambassadorship and in-person retail",
+        "● Secured 4 retail opportunities in Rhode Island by conducting in-person outreach to 20+ eligible retail stores",
+        "● Presented work stream findings to DayGuard CEO and scoped 3 additional tasks weekly to fulfill project outline",
+        "● Maintained DayGuard connections with 17+ campus ambassadors and 10+ UGCs partnerships"
+
+      ]
+    },
+    {
+      "company": "Xiaomi Technology",
+      "title": "Algorithm Engineer Intern",
+      "image": "Xiaomi.png",
+      "years": "Jun. 2024 - Aug. 2024",
+      "mainTech": [
+        "Internship"
+      ],
+      "technologies": [
+        "● Worked within Xiaomi’s smart device R&D, testing and reporting on current leading generative AI models",
+        "● Formed 4 technical reports on the fundamental strengths within models, methods for inference improvement",
+        "● Assisted in pitching technical findings with compatibility to Xiaomi’s hardware products to department executives",
+        "● Established an approved company project ”On Device AI Accelerator” targeting AI specific hardware techniques"
+      ]
+    },
+    {
+      "company": "Kognitiv Edge",
+      "title": "Backend Developer Intern",
+      "image": "Kognitiv-Edge.png",
+      "years": "Feb. 2024 - Aug. 2024",
+      "mainTech": [
+        "Internship"
+      ],
+      "technologies": [
+        "● Developed and managed efficient testing, validation, and deployment of Azure-based applications",
+        "● Assisted in the Export, Redact, and Commit PowerApps Solution workflow, increasing efficiency by a relative 20%",
+        "● Increased efficiency by 20% in 3 separate backend workflows by developing and integrating new tests and features",
+        "● Automated environment setup using IaC, reducing overall Deploy All Resources workflow by 25%"
+      ]
+    },
+    {
+      "company": "Innovation Dojo Program",
+      "title": "3rd Place Pitcher",
+      "image": "Dojo_enhanced.png",
+      "years": "Feb. 2024 - May. 2024",
+      "mainTech": [
+        "Student Society/Club"
+      ],
+      "technologies": [
+        "● Selected to participate in Brown’s only student-run startup accelerator to create and present a startup idea",
+        "● Interviewed 10 primary care and specialist doctors to validate “Docferral,” a e-referral platform for private practices",
+        "● Analyzed 4 health components across 5 telemedicine and e-referral companies, highlighting Docferral’s advantages"
+      ]
+    },
+    {
+      "company": "Blue Harbor",
+      "title": "Cofounder",
+      "image": "Blue_Harbor.png",
+      "years": "Aug. 2022 - Present",
+      "mainTech": [
+        "Founded Organization"
+      ],
+      "technologies": [
+        "● Co-founded Blue Harbor, an organization dedicated to combating the lack of autism-support services across China",
+        "● Defined a framework for creating autism-friendly videos, gaining presence in 7 highschools with 200+ members",
+        "● Collaborated with 10 autism service centers to consult experts, host charity events, and autism employment events",
+        "● Distributed over 100+ created videos since Blue Harbor’s creation and raised $6000 in 2024"
+      ]
+    }
+  ]
+}
