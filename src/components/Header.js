@@ -50,7 +50,7 @@ class Header extends Component {
     objectPosition: 'top center',
     transform: 'translateY(-50%)' // Less extreme shift
   }}
-  src={require('../images/Jeffrey_headshot.jpeg')} 
+  src={require('../images/beya1.png')} 
   alt="Avatar"
 />
               

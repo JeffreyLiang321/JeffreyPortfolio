@@ -21,67 +21,20 @@ class ProjectDetailsModal extends Component {
             <li className="list-inline-item mx-3" key={i}>
               <span>
                 <div className="text-center">
-                {
-  icons.name === "Stripe" ? (
-    <FontAwesomeIcon icon={faStripe} size="3x" />
-  ) : icons.name === "React Expo" ? (
-    <img
-      src={require("../images/expo.png")} // Adjust the path to your image
-      
-      alt="React Expo"
-      style={{ width: "3.0rem", height: "3.0rem" }}
-    />
-    ) : icons.name === "Openvino" ? (
-      <img
-        src={require("../images/openvino.png")} // Adjust the path to your image
-        alt="OpenVINO"
-        style={{ width: "3.5rem", height: "3.0rem" }}
-      />
-    ) : (
-    <i className={icons.class} style={{ fontSize: "300%" }}></i>
-  )
-}
-<p className="text-center" style={{ fontSize: "30%" }}>
-  {icons.name}
-</p>
+                  <i className={icons.class} style={{ fontSize: "300%" }}>
+                    <p className="text-center" style={{ fontSize: "30%" }}>
+                      {icons.name}
+                    </p>
+                  </i>
                 </div>
               </span>
             </li>
           );
-        }); 
-        // if (this.props.data.images) {
-        //   var img = images.map((elem, i) => {
-        //     return (
-        //       <div key={i} data-src={elem} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-        //         <img
-        //           src={elem}
-        //           alt={`Project image ${i}`}
-        //           style={{
-        //             width: "auto",         // Don't stretch width
-        //             height: "auto",        // Maintain aspect ratio
-        //             maxWidth: "100%",      // Ensures it doesn't overflow the container
-        //             maxHeight: "80vh",     // Ensures it doesn't exceed the viewport
-        //             objectFit: "contain",  // Keeps the entire image visible
-        //             display: "block",      // Avoids extra spacing
-        //             margin: "auto"         // Centers the image
-        //           }}
-        //         />
-        //       </div>
-        //     );
-        //   });
-        // }             
+        });
         if (this.props.data.images) {
-          var img = this.props.data.images.map((elem, i) => (
-            <div 
-              key={i} 
-              data-src={elem} 
-              style={{ 
-                display: "flex", 
-                justifyContent: "center", 
-                alignItems: "center"
-              }} 
-            />
-          ));
+          var img = images.map((elem, i) => {
+            return <div key={i} data-src={elem} />;
+          });
         }
       }
     }
@@ -161,3 +114,4 @@ class ProjectDetailsModal extends Component {
 }
 
 export default ProjectDetailsModal;
+
