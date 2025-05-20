@@ -13,6 +13,7 @@ class Footer extends Component {
         );
       });
     }
+    //
 
     return (
       <footer id="footer">
