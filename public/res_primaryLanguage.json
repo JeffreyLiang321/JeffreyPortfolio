@@ -1,7 +1,7 @@
 {
   "basic_info": {
-    "description_header": "Hi exeryone!",
-    "description": "My name is Jeffrey Liang. I was born in San Jose and grew up in Shanghai attending Shanghai American School. I'm a current sophmore studying Computer Science and Economics at Brown University. I'm very interested in pursuring a career in finance, specifically in investment banking, private equity, and venture capital. I'm also very involved in many computer science projects out of personal interest. I'm interested in UI/UX interface of website and mobile applications, fullstack, and machine learning specifically for prediction models. Thanks for viewing my portfolio website!",
+    "description_header": "Hi everyone!",
+    "description": "My name is Jeffrey Liang. I was born in San Jose and grew up in Shanghai attending Shanghai American School. I'm a rising junior studying Computer Science and Economics at Brown University. I'm very interested in pursuring a career in finance, specifically in investment banking, private equity, and venture capital. I'm also very involved in many computer science projects out of personal interest. I'm interested in UI/UX interface of website and mobile applications, fullstack, and machine learning specifically for prediction models. Thanks for viewing my portfolio website!",
     "section_name": {
       "about": "About me",
       "projects": "Projects",
@@ -150,16 +150,20 @@
   ],
   "experience": [
     {
-      "company": "Accessible Career Aid",
-      "title": "Financial Research Intern",
-      "image": "Accessible.png",
-      "years": " Feb. 2025 – Present",
+      "company": "Brown Technology & Consulting Group",
+      "title": "Vice President",
+      "image": "BTCG.png",
+      "years": "Jan. 2024 - Current",
       "mainTech": [
-        "Internship"
+        "Student Society/Club"
       ],
       "technologies": [
-        "● Researched financial markets and trends while building financial models, including DCFs and LBOs",
-        "● Analyzed and summarized investment outlooks into clear, concise reports for educational use"
+        "● Drove 20% sales growth and $10K+ in monthly revenue for DayGuard, a liver-protection jelly stick startup",
+        "● Managed a team of 7 across 3 workstreams of digital expansion, campus ambassadorship and in-person retail",
+        "● Secured 4 retail opportunities in Rhode Island by conducting in-person outreach to 20+ eligible retail stores",
+        "● Presented work stream findings to DayGuard CEO and scoped 3 additional tasks weekly to fulfill project outline",
+        "● Maintained DayGuard connections with 17+ campus ambassadors and 10+ UGCs partnerships"
+
       ]
     },
     {
@@ -177,10 +181,23 @@
       ]
     },
     {
+      "company": "Accessible Career Aid",
+      "title": "Financial Research Intern",
+      "image": "Accessible.png",
+      "years": " Feb. 2025 – Mar. 2025",
+      "mainTech": [
+        "Internship"
+      ],
+      "technologies": [
+        "● Researched financial markets and trends while building financial models, including DCFs and LBOs",
+        "● Analyzed and summarized investment outlooks into clear, concise reports for educational use"
+      ]
+    },
+    {
       "company": "Beya: Small Business Assistance App",
       "image": "beya.png",
       "title": "Technical Development Lead",
-      "years": "Sep. 2024 – Present",
+      "years": "Sep. 2024 – Apr. 2025",
       "mainTech": [
         "Startup"
       ],
@@ -189,23 +206,6 @@
         "● Constructed proximity-based features, minimum-fee transactions, inventory management serving 20+ local vendors",
         "● Built AWS, Expo, and Firebase app infrastructure, currently supporting 12 monthly users in Beya’s beta version",
         "● Processed 1000+ sales transactions, using direct customer feedback from 8 events to implement 20+ features/fixes"
-      ]
-    },
-    {
-      "company": "Brown Technology & Consulting Group",
-      "title": "Project Lead",
-      "image": "BTCG.png",
-      "years": "Jan. 2024 - Current",
-      "mainTech": [
-        "Student Society/Club"
-      ],
-      "technologies": [
-        "● Helped increase sales by 20% for company DayGuard, serving an alcohol-aid and liver protection jelly stick product",
-        "● Managed a team of 7 across 3 workstreams of digital expansion, campus ambassadorship and in-person retail",
-        "● Secured 4 retail opportunities in Rhode Island by conducting in-person outreach to 20+ eligible retail stores",
-        "● Presented work stream findings to DayGuard CEO and scoped 3 additional tasks weekly to fulfill project outline",
-        "● Maintained DayGuard connections with 17+ campus ambassadors and 10+ UGCs partnerships"
-
       ]
     },
     {
@@ -256,7 +256,7 @@
       "company": "Blue Harbor",
       "title": "Cofounder",
       "image": "Blue_Harbor.png",
-      "years": "Aug. 2022 - Present",
+      "years": "Aug. 2022 - Apr. 2025",
       "mainTech": [
         "Founded Organization"
       ],
