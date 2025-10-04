@@ -71,7 +71,9 @@ class ProjectDetailsModal extends Component {
         //   });
         // }             
         if (this.props.data.images) {
-          var img = this.props.data.images.map((elem, i) => (
+          // Skip the first image (cover image) and only show the rest in the modal
+          var modalImages = this.props.data.images.slice(1);
+          var img = modalImages.map((elem, i) => (
             <div 
               key={i} 
               data-src={elem} 

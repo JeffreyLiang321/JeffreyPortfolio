@@ -160,6 +160,16 @@ header h1 {
 	border-radius: 8px;
 }
 
+/* Make specific project images horizontally tighter */
+.foto img[src*="DroneIntialGraph"],
+.foto img[src*="DroneEndGraph"],
+.foto img[src*="Robocar"],
+.foto img[src*="Framework1"] {
+	max-width: 80%;
+	width: auto;
+	margin: 0 auto;
+}
+
 .foto div {
 	background: #ffffff;
 	display: inline-block;
