@@ -12,8 +12,8 @@
   "projects": [
     {
       "title": "Beya",
-      "startDate": "Sep. 2024 - Current",
-      "description": "I am a founding member and technical project lead of Beya, a B2B app designed to empower small and medium-sized businesses with streamlined in-person selling. Beya offers features like inventory management, proximity-based vendor discovery, low-fee tap-to-pay transactions, and sales analytics. To date, we’ve supported over 20 local vendors, processed 1,000+ transactions, and hosted eight successful events at Brown University. Built with React Native and powered by Expo, Firebase, AWS, and Stripe API, Beya combines robust infrastructure with user-friendly functionality. Currently, we are in the Apple Review stage, finalizing our Tap-to-Pay Distribution Certificate. For more on Beya’s development and impact, visit our website below.",
+      "startDate": "Sep. 2024 - Apr. 2025",
+      "description": "I was a founding member and technical project lead of Beya, a B2B app designed to empower small and medium-sized businesses with streamlined in-person selling. Beya offers features like inventory management, proximity-based vendor discovery, low-fee tap-to-pay transactions, and sales analytics. During my tenure, we supported over 20 local vendors, processed 1,000+ transactions, and hosted eight successful events at Brown University. Built with React Native and powered by Expo, Firebase, AWS, and Stripe API, Beya combines robust infrastructure with user-friendly functionality. I played a crucial role in getting the app validated and successfully published on the Apple App Store as 'Beya', including securing the Tap-to-Pay Distribution Certificate and navigating the App Store review process. For more on Beya's development and impact, visit our website below.",
       "images": [
         "images/beya.png",
         "images/beya1.png",
@@ -45,8 +45,8 @@
     },
     {
       "title": "DayGuard",
-      "startDate": "Sep. 2024 - Current",
-      "description": "As a Project Lead Intern for DayGuard, a CPG company specializing in alcohol aid and liver protection jelly sticks, I oversee 3 critical business streams: retail expansion, campus ambassador programs, and digital growth. My role involves directly reaching out to 20+ retail stores and supporting partnership negotiations while developing comprehensive ambassador recruitment and training initiatives. I lead our social media marketing efforts to enhance brand visibility and drive sales across all channels, achieving a 20% increase in overall sales while maintaining connections with 17 college campus ambassadors and 10+ UGC/micro-influencer partnerships. A key aspect of my position is maintaining effective team communication and workflow management, which includes setting weekly priorities, coordinating schedules, and adjusting project timelines as needed. I'm also spearheading our strategic expansion to other prestigious Northeast colleges like Dartmouth and MIT, which includes creating scalable onboarding processes for new markets. This position requires a blend of strategic planning, team leadership, and hands-on execution across multiple business functions.",
+      "startDate": "Sep. 2024 - Jun. 2025",
+      "description": "As a Project Lead Intern for DayGuard, a CPG company specializing in alcohol aid and liver protection jelly sticks, I oversaw 3 critical business streams: retail expansion, campus ambassador programs, and digital growth. My role involved directly reaching out to 20+ retail stores and supporting partnership negotiations while developing comprehensive ambassador recruitment and training initiatives. I led our social media marketing efforts to enhance brand visibility and drive sales across all channels, achieving a 20% increase in overall sales while maintaining connections with 17 college campus ambassadors and 10+ UGC/micro-influencer partnerships. Most notably, I helped DayGuard reach their first 5-figure month, a significant milestone that demonstrated the effectiveness of our multi-channel growth strategy. A key aspect of my position was maintaining effective team communication and workflow management, which included setting weekly priorities, coordinating schedules, and adjusting project timelines as needed. I also spearheaded our strategic expansion to other prestigious Northeast colleges like Dartmouth and MIT, which included creating scalable onboarding processes for new markets. This position required a blend of strategic planning, team leadership, and hands-on execution across multiple business functions.",
       "images": [
         "images/dayguard.png",
         "images/dayguard1.png",
@@ -70,24 +70,23 @@
       ]
     },
     {
-      "title": "IOS App Simulation",
-      "startDate": "Feb. 2023 - Sep. 2024",
-      "description": "Smooth Tennis is a simulated app I designed to help tennis players receive real-time, personalized feedback from coaches. Unlike traditional teaching platforms, the app concept allows players to upload their videos and get tailored critiques on their techniques, eliminating the need for pre-made videos or static comparisons. I built the app's structure using Firebase for user authentication, data tracking, and media storage, ensuring seamless interactions and efficient video uploads. Using Swift and Xcode, I developed the app with an MVC structure, featuring pages for tennis posts, technique-specific views, creating posts, and tracking coach-player engagement. While the app wasn’t released, you can explore its code on my GitHub or visit my blog for detailed updates on its design and features..",
+      "title": "Third",
+      "startDate": "Jan. 2025 - Present",
+      "description": "Third is a marketplace for temporary third spaces that transforms underutilized places like cafés after hours, rooftops, and empty studios into bookable spots on demand. No coworking passes or minimum spends required - just affordable space to work, create, or connect starting at a few dollars per hour. For users, we provide wide space selections with reliability and comfort at accessible price points. For hosts, Third generates additional revenue past usual hours by repurposing existing spaces. The platform emphasizes transparency in financial metrics, booking status, and amenities while incorporating social features like group bookings and activity feeds. We've launched our MVP website and are preparing the mobile app launch within 2-3 weeks. Our first host space is live with several more in onboarding, and we're actively building demand through Columbia and NYU student communities.",
       "images": [
-        "images/smooth_tennis.png",
-        "images/tennis1.png",
-        "images/tennis2.png",
-        "images/tennis3.png",
-        "images/tennis4.png",
-        "images/tennis5.png",
-        "images/tennis6.png"
+        "images/third.png",
+        "images/third_1.png",
+        "images/third_2.png"
       ],
-      "url": "https://jeffrey01pd2023.wixsite.com/my-site-1",
-      "github": "https://github.com/JeffreyLiang321/Smooth-Tennis",
+      "url": "https://usethird.com",
       "technologies": [
         {
-          "class": "devicon-swift-plain",
-          "name": "Swift"
+          "class": "devicon-react-original",
+          "name": "React"
+        },
+        {
+          "class": "devicon-typescript-plain",
+          "name": "TypeScript"
         },
         {
           "class": "devicon-firebase-plain",
@@ -96,6 +95,10 @@
         {
           "class": "devicon-tailwindcss-original",
           "name": "Tailwind CSS"
+        },
+        {
+          "class": "fa-brands fa-stripe", 
+          "name": "Stripe"
         }
       ]
     },
@@ -150,47 +153,47 @@
   ],
   "experience": [
     {
+      "company": "JPMorgan Chase",
+      "title": "Incoming Equity Capital Markets Summer Analyst",
+      "image": "jpmorgan.png",
+      "years": "Jun. 2026 - Aug. 2026",
+      "mainTech": [
+        "Investment Banking"
+      ],
+      "technologies": [
+        "● Incoming San Francisco IBD Summer Analyst, selected for 9-week training and deal execution program",
+        "● Supporting live deals, financial modeling, and pitchbook creation across banking teams",
+        "● Expected to collaborate cross-functionally on equity offerings, valuation work, and strategic client deliverables"
+      ]
+    },
+    {
+      "company": "Voyager Capital",
+      "title": "Venture Capital Summer Analyst",
+      "image": "voyagerCapital.png",
+      "years": "Jun. 2025 – Present",
+      "mainTech": [
+        "Venture Capital"
+      ],
+      "technologies": [
+        "● Created pitch decks on portfolio financials, product stacks, and revenue models for investor updates",
+        "● Built agentic AI tools for legal and rental clients; launched 2 pilots with 30% efficiency gains",
+        "● Briefed founding partner daily on pricing, GTM, and outreach across 3 portfolio firms"
+      ]
+    },
+    {
       "company": "Brown Technology & Consulting Group",
       "title": "Vice President",
       "image": "BTCG.png",
-      "years": "Jan. 2024 - Current",
+      "years": "Jan. 2024 - Jun. 2025",
       "mainTech": [
         "Student Society/Club"
       ],
       "technologies": [
-        "● Drove 20% sales growth and $10K+ in monthly revenue for DayGuard, a liver-protection jelly stick startup",
+        "● Drove 20% sales growth and helped DayGuard reach their first 5-figure month, a significant milestone",
         "● Managed a team of 7 across 3 workstreams of digital expansion, campus ambassadorship and in-person retail",
-        "● Secured 4 retail opportunities in Rhode Island by conducting in-person outreach to 20+ eligible retail stores",
+        "● Secured 10 retail partnerships in Rhode Island by conducting in-person outreach to 20+ eligible retail stores",
         "● Presented work stream findings to DayGuard CEO and scoped 3 additional tasks weekly to fulfill project outline",
         "● Maintained DayGuard connections with 17+ campus ambassadors and 10+ UGCs partnerships"
-
-      ]
-    },
-    {
-      "company": "Brown Derivatives & Investment Group",
-      "title": "Analyst",
-      "image": "BDIG.png",
-      "years": " Feb. 2025 – Present",
-      "mainTech": [
-        "Student Society/Club"
-      ],
-      "technologies": [
-        "● Manages $1M in simulated funds for hands-on investing and trading experience",
-        "● Mission to demystify derivatives through education, collaboration, and strategic trading",
-        "● Analyze risk and return profiles for various trading strategies, present insights and recommendations to the club for portfolio decisions"
-      ]
-    },
-    {
-      "company": "Accessible Career Aid",
-      "title": "Financial Research Intern",
-      "image": "Accessible.png",
-      "years": " Feb. 2025 – Mar. 2025",
-      "mainTech": [
-        "Internship"
-      ],
-      "technologies": [
-        "● Researched financial markets and trends while building financial models, including DCFs and LBOs",
-        "● Analyzed and summarized investment outlooks into clear, concise reports for educational use"
       ]
     },
     {
@@ -202,10 +205,12 @@
         "Startup"
       ],
       "technologies": [
-        "● Lead technical development for Beya, a B2B app supporting small mobile businesses",
-        "● Constructed proximity-based features, minimum-fee transactions, inventory management serving 20+ local vendors",
-        "● Built AWS, Expo, and Firebase app infrastructure, currently supporting 12 monthly users in Beya’s beta version",
-        "● Processed 1000+ sales transactions, using direct customer feedback from 8 events to implement 20+ features/fixes"
+        "● Led technical development for Beya, a B2B app enhancing small mobile business operations",
+        "● Constructed proximity-based features, minimum-fee transactions, inventory management – served 20+ local vendors",
+        "● Built AWS, Expo, and Firebase app infrastructure, supporting 10+ monthly active users in beta version",
+        "● Processed 1000+ sales transactions, using direct customer feedback from 8 events to implement 20+ features/fixes",
+        "● Secured Apple's official Tap-to-Pay Certificate and successfully published 'Beya' on the App Store",
+        "● Navigated App Store review process and validation requirements for official launch"
       ]
     },
     {
@@ -217,25 +222,10 @@
         "Internship"
       ],
       "technologies": [
-        "● Worked within Xiaomi’s smart device R&D, testing and reporting on current leading generative AI models",
+        "● Worked within Xiaomi's smart device R&D, testing and reporting on current leading generative AI models",
         "● Formed 4 technical reports on the fundamental strengths within models, methods for inference improvement",
-        "● Assisted in pitching technical findings with compatibility to Xiaomi’s hardware products to department executives",
-        "● Established an approved company project ”On Device AI Accelerator” targeting AI specific hardware techniques"
-      ]
-    },
-    {
-      "company": "Kognitiv Edge",
-      "title": "Backend Developer Intern",
-      "image": "Kognitiv-Edge.png",
-      "years": "Feb. 2024 - Aug. 2024",
-      "mainTech": [
-        "Internship"
-      ],
-      "technologies": [
-        "● Developed and managed efficient testing, validation, and deployment of Azure-based applications",
-        "● Assisted in the Export, Redact, and Commit PowerApps Solution workflow, increasing efficiency by a relative 20%",
-        "● Increased efficiency by 20% in 3 separate backend workflows by developing and integrating new tests and features",
-        "● Automated environment setup using IaC, reducing overall Deploy All Resources workflow by 25%"
+        "● Assisted in pitching technical findings with compatibility to Xiaomi's hardware products to department executives",
+        "● Established an approved company project \"On Device AI Accelerator\" targeting AI specific hardware techniques"
       ]
     },
     {
@@ -247,24 +237,9 @@
         "Student Society/Club"
       ],
       "technologies": [
-        "● Selected to participate in Brown’s only student-run startup accelerator to create and present a startup idea",
-        "● Interviewed 10 primary care and specialist doctors to validate “Docferral,” a e-referral platform for private practices",
-        "● Analyzed 4 health components across 5 telemedicine and e-referral companies, highlighting Docferral’s advantages"
-      ]
-    },
-    {
-      "company": "Blue Harbor",
-      "title": "Cofounder",
-      "image": "Blue_Harbor.png",
-      "years": "Aug. 2022 - Apr. 2025",
-      "mainTech": [
-        "Founded Organization"
-      ],
-      "technologies": [
-        "● Co-founded Blue Harbor, an organization dedicated to combating the lack of autism-support services across China",
-        "● Defined a framework for creating autism-friendly videos, gaining presence in 7 highschools with 200+ members",
-        "● Collaborated with 10 autism service centers to consult experts, host charity events, and autism employment events",
-        "● Distributed over 100+ created videos since Blue Harbor’s creation and raised $6000 in 2024"
+        "● Selected to participate in Brown's only student-run startup accelerator to create and present a startup idea",
+        "● Interviewed 10 primary care and specialist doctors validating \"Docferral,\" an e-referral platform for private practices",
+        "● Analyzed 4 health components across 5 telemedicine companies, conducted value proposition and TAM analysis"
       ]
     }
   ]

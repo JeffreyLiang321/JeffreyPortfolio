@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2d85ddf12a66758c4232410aa2903edc",
+    "revision": "ea7860e8f6cdf03a0d1e815891f2d3f1",
     "url": "/JeffreyPortfolio/index.html"
   },
   {
-    "revision": "4f1f8c4f975bb72690f8",
-    "url": "/JeffreyPortfolio/static/css/2.d64471e2.chunk.css"
+    "revision": "eec298a750412f323c54",
+    "url": "/JeffreyPortfolio/static/css/2.71fe5322.chunk.css"
   },
   {
-    "revision": "87fe81648e71ebeccfa1",
-    "url": "/JeffreyPortfolio/static/css/main.a1f840d1.chunk.css"
+    "revision": "f54c9653249f155aab9a",
+    "url": "/JeffreyPortfolio/static/css/main.f52d0ca6.chunk.css"
   },
   {
-    "revision": "4f1f8c4f975bb72690f8",
-    "url": "/JeffreyPortfolio/static/js/2.b4088c48.chunk.js"
+    "revision": "eec298a750412f323c54",
+    "url": "/JeffreyPortfolio/static/js/2.84f5db12.chunk.js"
   },
   {
-    "revision": "407a6c0a28e6925cce5f91fc49c4155a",
-    "url": "/JeffreyPortfolio/static/js/2.b4088c48.chunk.js.LICENSE.txt"
+    "revision": "0701fdd16466620d77a5e40b9c28b5b1",
+    "url": "/JeffreyPortfolio/static/js/2.84f5db12.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "87fe81648e71ebeccfa1",
-    "url": "/JeffreyPortfolio/static/js/main.7ee2b4d4.chunk.js"
+    "revision": "f54c9653249f155aab9a",
+    "url": "/JeffreyPortfolio/static/js/main.d5558d61.chunk.js"
   },
   {
     "revision": "f6f94d2ea156bcc93538",
@@ -72,8 +72,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/JeffreyPortfolio/static/media/Framework1.ac26e82d.png"
   },
   {
-    "revision": "ba2b1ee1b94fab7161626d1e02b25510",
-    "url": "/JeffreyPortfolio/static/media/Jeffrey_Liang_Resume.ba2b1ee1.pdf"
+    "revision": "c3f9bb62776f15a6749ce4051fc21402",
+    "url": "/JeffreyPortfolio/static/media/Jeffrey_Liang_Resume.c3f9bb62.pdf"
   },
   {
     "revision": "99fb848e9681ed0de1ecb46f95fd4735",
@@ -178,5 +178,21 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "19d10da8a16a30604c4d8633f52d3551",
     "url": "/JeffreyPortfolio/static/media/tennis6.19d10da8.png"
+  },
+  {
+    "revision": "cfe94b0501cea9532493d6d74f6e950e",
+    "url": "/JeffreyPortfolio/static/media/third.cfe94b05.png"
+  },
+  {
+    "revision": "841131d4b3b100304a09e9ea9b786763",
+    "url": "/JeffreyPortfolio/static/media/third_1.841131d4.png"
+  },
+  {
+    "revision": "dcf0647a040433a0a1b8aae3a1c0c0b6",
+    "url": "/JeffreyPortfolio/static/media/third_2.dcf0647a.png"
+  },
+  {
+    "revision": "d81ae559a634b39ea6844c0bcdc30ab5",
+    "url": "/JeffreyPortfolio/static/media/voyagerCapital.d81ae559.png"
   }
 ]);
