@@ -12,14 +12,13 @@
       "projects": [
         {
           "title": "Third",
-          "startDate": "Jan. 2025 - Present",
+          "startDate": "July. 2025 - Present",
           "description": "Third is a marketplace for temporary third spaces that transforms underutilized places like cafés after hours, rooftops, and empty studios into bookable spots on demand. No coworking passes or minimum spends required - just affordable space to work, create, or connect starting at a few dollars per hour. For users, we provide wide space selections with reliability and comfort at accessible price points. For hosts, Third generates additional revenue past usual hours by repurposing existing spaces. The platform emphasizes transparency in financial metrics, booking status, and amenities while incorporating social features like group bookings and activity feeds. We've launched our MVP website and are preparing the mobile app launch within 2-3 weeks. Our first host space is live with several more in onboarding, and we're actively building demand through Columbia and NYU student communities.",
           "images": [
-            "images/third.png",
             "images/third_1.png",
             "images/third_2.png"
           ],
-          "url": "https://usethird.com",
+          "url": "https://use-third.com",
           "technologies": [
             {
               "class": "devicon-react-original",
