@@ -39,48 +39,44 @@ const NavigationBar = () => {
     };
 
     return (
-        <nav className="sticky top-0 z-50 bg-white shadow-md">
-            <div className="relative flex items-center justify-center md:justify-between py-4 px-8 w-full max-w-screen-xl mx-auto">
-                <div className="flex flex-wrap justify-center md:justify-end w-full gap-4">
+        <nav className="modern-navbar-2024">
+            <div className="navbar-wrapper">
+                {/* Brand Name */}
+                <div className="navbar-brand-section">
+                    <span className="brand-name">Jeffrey Liang</span>
+                </div>
+                
+                {/* Navigation Links */}
+                <div className="navbar-navigation">
                     <button
                         onClick={() => handleClick("about")}
-                        className={`min-w-[120px] text-center text-sm font-medium ${
-                            active === "about" ? "text-purple-500" : "text-gray-800"
-                        } transition-colors duration-200`}
+                        className={`nav-item ${active === "about" ? "active" : ""}`}
                     >
-                        About Me
+                        About
                     </button>
                     <button
                         onClick={() => handleClick("portfolio")}
-                        className={`min-w-[120px] text-center text-sm font-medium ${
-                            active === "portfolio" ? "text-purple-500" : "text-gray-800"
-                        } transition-colors duration-200`}
+                        className={`nav-item ${active === "portfolio" ? "active" : ""}`}
                     >
-                        Projects
+                        Works
                     </button>
                     <button
                         onClick={() => handleClick("skills")}
-                        className={`min-w-[120px] text-center text-sm font-medium ${
-                            active === "skills" ? "text-purple-500" : "text-gray-800"
-                        } transition-colors duration-200`}
+                        className={`nav-item ${active === "skills" ? "active" : ""}`}
                     >
                         Skills
                     </button>
                     <button
                         onClick={() => handleClick("resume")}
-                        className={`min-w-[120px] text-center text-sm font-medium ${
-                            active === "resume" ? "text-purple-500" : "text-gray-800"
-                        } transition-colors duration-200`}
+                        className={`nav-item ${active === "resume" ? "active" : ""}`}
                     >
-                        Experiences
+                        Experience
                     </button>
                     <button
-                        onClick={() => handleClick("footer")} // Scrolls to the footer
-                        className={`min-w-[120px] text-center text-sm font-medium ${
-                            active === "footer" ? "text-purple-500" : "text-gray-800"
-                        } transition-colors duration-200`}
+                        onClick={() => handleClick("footer")}
+                        className={`nav-item ${active === "footer" ? "active" : ""}`}
                     >
-                        Contact Me
+                        Contact
                     </button>
                 </div>
             </div>
@@ -89,5 +85,3 @@ const NavigationBar = () => {
 };
 
 export default NavigationBar;
-
-

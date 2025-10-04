@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import $ from "jquery";
+import "./tailwind.css";
 import "./App.scss";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
