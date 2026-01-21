@@ -13,6 +13,7 @@
         {
           "title": "Third",
           "startDate": "July. 2025 - Present",
+          "category": "Startup/Entrepreneurship",
           "description": "Third is a marketplace for temporary third spaces that transforms underutilized places like cafés after hours, rooftops, and empty studios into bookable spots on demand. No coworking passes or minimum spends required - just affordable space to work, create, or connect starting at a few dollars per hour. For users, we provide wide space selections with reliability and comfort at accessible price points. For hosts, Third generates additional revenue past usual hours by repurposing existing spaces. The platform emphasizes transparency in financial metrics, booking status, and amenities while incorporating social features like group bookings and activity feeds. We've launched our MVP website and are preparing the mobile app launch within 2-3 weeks. Our first host space is live with several more in onboarding, and we're actively building demand through Columbia and NYU student communities.",
           "images": [
             "images/third.png",
@@ -46,6 +47,7 @@
         {
           "title": "DayGuard",
           "startDate": "Sep. 2024 - Jun. 2025",
+          "category": "Startup/Entrepreneurship",
           "description": "As a Project Lead Intern for DayGuard, a CPG company specializing in alcohol aid and liver protection jelly sticks, I oversaw 3 critical business streams: retail expansion, campus ambassador programs, and digital growth. My role involved directly reaching out to 20+ retail stores and supporting partnership negotiations while developing comprehensive ambassador recruitment and training initiatives. I led our social media marketing efforts to enhance brand visibility and drive sales across all channels, achieving a 20% increase in overall sales while maintaining connections with 17 college campus ambassadors and 10+ UGC/micro-influencer partnerships. Most notably, I helped DayGuard reach their first 5-figure month, a significant milestone that demonstrated the effectiveness of our multi-channel growth strategy. A key aspect of my position was maintaining effective team communication and workflow management, which included setting weekly priorities, coordinating schedules, and adjusting project timelines as needed. I also spearheaded our strategic expansion to other prestigious Northeast colleges like Dartmouth and MIT, which included creating scalable onboarding processes for new markets. This position required a blend of strategic planning, team leadership, and hands-on execution across multiple business functions.",
           "images": [
             "images/dayguard.png",
@@ -60,6 +62,7 @@
         {
           "title": "Beya",
           "startDate": "Sep. 2024 - Apr. 2025",
+          "category": "Startup/Entrepreneurship",
           "description": "I was a founding member and technical project lead of Beya, a B2B app designed to empower small and medium-sized businesses with streamlined in-person selling. Beya offers features like inventory management, proximity-based vendor discovery, low-fee tap-to-pay transactions, and sales analytics. During my tenure, we supported over 20 local vendors, processed 1,000+ transactions, and hosted eight successful events at Brown University. Built with React Native and powered by Expo, Firebase, AWS, and Stripe API, Beya combines robust infrastructure with user-friendly functionality. I played a crucial role in getting the app validated and successfully published on the Apple App Store as 'Beya', including securing the Tap-to-Pay Distribution Certificate and navigating the App Store review process. For more on Beya's development and impact, visit our website below.",
           "images": [
             "images/beya.png",
@@ -93,6 +96,7 @@
         {
           "title": "Innovation Dojo",
           "startDate": "Feb. 2024 - May. 2024",
+          "category": "Startup/Entrepreneurship",
           "description": "During my freshman spring, I participated in Brown's Innovation Dojo startup accelerator program, where my team and I developed Docferral, a startup concept designed to streamline electronic patient referrals between primary care and private practice doctors. To validate the idea, we conducted extensive interviews with physicians, securing support from leading doctors at HO'OLA, a prominent Hawaiian network of independent physicians. With guidance from mentors and case studies, we crafted a strong business value proposition, performed competitor analysis in the telehealth space, and created a minimum viable product (MVP). Additionally, we developed a revenue model and expansion strategy, culminating in a final pitch where I presented our vision to stakeholders.",
           "images": [
             "images/Dojo_enhanced.png",
@@ -105,6 +109,7 @@
     {
       "title": "Drone Energy Optimization",
       "startDate": "Aug. 2021 - June. 2023",
+      "category": "CS Research",
       "description": "For this project, I collaborated with an STJU applied mathematics professor to address inefficiencies in delivery drones, particularly their frequent need for recharging and limited cargo capacity. Our goal was to reduce the weight of large drone wings using an elastic transportation network optimized for energy efficiency, enabling drones to carry more products over longer periods. By calculating the total elastic potential energy and gravity potential energy of the wings, we minimized the total energy to determine the optimal geometric parameters, such as the radius of internal pipelines. Using MATLAB simulations, we iteratively refined the design, aiming for a structure similar to dragonfly wings, known for their lightweight and efficient design. This work, titled Numerical Algorithm for Transportation Network, was published in the Journal of Applied Mathematics, highlighting our approach to designing significantly lighter and more efficient drone wings.",
       "images": [
         "images/DroneIntialGraph.png",
@@ -125,6 +130,7 @@
     {
       "title": "SSD Vision Assisted Robocar",
       "startDate": "Feb. 2022 - Aug. 2022",
+      "category": "CS Research",
       "description": "For this project, I developed a low-cost, computationally efficient assisted driving system for navigating narrow roads with obstacles. Using a Raspberry Pi, Intel Neural Compute Stick, infrared sensors, an ultrasound sensor, and an SSD (Single Shot Detector) detection camera, I built and programmed a Raspbot Car to classify and avoid people, bikes, and vehicles. The system used OpenVINO to process video streams and adjust controls based on real-time object detection results. Testing trials confirmed the car could safely maneuver around objects or stop when necessary, achieving an average of 7.5 FPS. SSD detection proved more efficient than RCNN, Faster RCNN, or YOLO 3.0 for this setup. This project showcases the potential of cost-effective, efficient solutions for assisted driving, and I hope to continue developing custom detection models to enhance its capabilities.",
       "images": [
         "images/Robocar.png",
