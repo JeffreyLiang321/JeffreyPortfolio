@@ -784,13 +784,14 @@ footer a:focus {
 .navbar-navigation {
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 3.5rem;
+    flex-wrap: nowrap;
 }
 
 .nav-item {
     position: relative;
-    font-size: 1.1rem;
-    font-weight: 600;
+    font-size: 1.25rem;
+    font-weight: 700;
     color: #64748b;
     background: none;
     border: none;
@@ -854,6 +855,31 @@ footer a:focus {
     }
 }
 
+// Large Desktop Screens - Bigger Navbar Text
+@media (min-width: 1200px) {
+    .nav-item {
+        font-size: 1.5rem;
+        font-weight: 700;
+        padding: 0.85rem 1.75rem;
+    }
+    
+    .navbar-navigation {
+        gap: 4rem;
+    }
+}
+
+@media (min-width: 1600px) {
+    .nav-item {
+        font-size: 1.75rem;
+        font-weight: 700;
+        padding: 1rem 2rem;
+    }
+    
+    .navbar-navigation {
+        gap: 4.5rem;
+    }
+}
+
 // Mobile Responsive
 @media (max-width: 768px) {
     .navbar-wrapper {
@@ -862,11 +888,12 @@ footer a:focus {
     }
     
     .navbar-navigation {
-        gap: 1.5rem;
+        gap: 2rem;
     }
     
     .nav-item {
-        font-size: 0.95rem;
+        font-size: 1.1rem;
+        font-weight: 700;
         padding: 0.6rem 1rem;
     }
     
@@ -881,11 +908,220 @@ footer a:focus {
     }
     
     .navbar-navigation {
-        gap: 1rem;
+        gap: 1.25rem;
     }
     
     .nav-item {
-        font-size: 0.9rem;
+        font-size: 1rem;
+        font-weight: 700;
         padding: 0.5rem 0.8rem;
+    }
+}
+
+// Hero Section - Responsive Layout
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: #F2B28C;
+    padding: 0 5%;
+    overflow: hidden;
+}
+
+.hero-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 3rem;
+    min-width: 0; // Prevents flex items from overflowing
+}
+
+.hero-text-column {
+    flex: 1 1 50%;
+    min-width: 0; // Allows text to wrap properly
+    display: flex;
+    align-items: center;
+}
+
+.hero-text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.hero-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+    color: #2c3e50;
+    margin: 0;
+    line-height: 1.1;
+    text-align: left;
+    width: 100%;
+}
+
+.hero-name-accent {
+    color: #E94B3C;
+}
+
+.hero-subtitle {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    font-weight: 600;
+    color: #E94B3C;
+    margin: 0;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+}
+
+.hero-button-container {
+    margin-top: 0;
+}
+
+.hero-resume-button {
+    padding: 15px 40px;
+    background: #E94B3C;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(233, 75, 60, 0.3);
+}
+
+.hero-image-column {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+}
+
+.hero-image-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-height: clamp(220px, 30vw, 500px);
+}
+
+.hero-headshot-container {
+    position: relative;
+    width: clamp(220px, 30vw, 400px);
+    height: clamp(220px, 30vw, 400px);
+    border-radius: 50%;
+    background: linear-gradient(135deg, #E94B3C 0%, #C73E1D 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 20px 40px rgba(233, 75, 60, 0.3);
+    transform: rotate(-5deg);
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.hero-headshot-container:hover {
+    transform: rotate(0deg) scale(1.05);
+}
+
+.hero-headshot-image {
+    width: 85%;
+    height: 85%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top center;
+    border: 4px solid #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+// Responsive breakpoints for hero section
+@media (max-width: 992px) {
+    .hero-content-wrapper {
+        gap: 2rem;
+    }
+    
+    .hero-headshot-container {
+        width: clamp(200px, 25vw, 350px);
+        height: clamp(200px, 25vw, 350px);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 2rem 5%;
+    }
+    
+    .hero-content-wrapper {
+        flex-direction: column;
+        gap: 2.5rem;
+        text-align: center;
+    }
+    
+    .hero-text-column {
+        order: 1;
+        width: 100%;
+    }
+    
+    .hero-text-content {
+        align-items: center;
+        padding-left: 0;
+    }
+    
+    .hero-title {
+        text-align: center;
+    }
+    
+    .hero-subtitle {
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .hero-image-column {
+        order: 2;
+        width: 100%;
+    }
+    
+    .hero-image-wrapper {
+        min-height: auto;
+    }
+    
+    .hero-headshot-container {
+        width: clamp(220px, 40vw, 300px);
+        height: clamp(220px, 40vw, 300px);
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        padding: 1.5rem 3%;
+    }
+    
+    .hero-content-wrapper {
+        gap: 2rem;
+    }
+    
+    .hero-headshot-container {
+        width: clamp(180px, 50vw, 250px);
+        height: clamp(180px, 50vw, 250px);
+    }
+    
+    .hero-title {
+        font-size: clamp(2rem, 8vw, 3rem);
+    }
+    
+    .hero-subtitle {
+        font-size: clamp(1.25rem, 5vw, 2rem);
+        min-height: 50px;
     }
 }
