@@ -67,6 +67,21 @@
         "name": "C",
         "class": "devicon-c-plain",
         "level": "60"
+      },
+      {
+        "name": "Supabase",
+        "class": "devicon-supabase-plain",
+        "level": "60"
+      },
+      {
+        "name": "Vercel",
+        "class": "devicon-vercel-original",
+        "level": "60"
+      },
+      {
+        "name": "Postgresql",
+        "class": "devicon-postgresql-plain",
+        "level": "60"
       }
     ]
   }
