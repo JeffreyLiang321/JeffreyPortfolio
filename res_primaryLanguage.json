@@ -188,7 +188,7 @@
       "category": "Mini-projects",
       "description": "For this project, I developed a low-cost, computationally efficient assisted driving system for navigating narrow roads with obstacles. Using a Raspberry Pi, Intel Neural Compute Stick, infrared sensors, an ultrasound sensor, and an SSD (Single Shot Detector) detection camera, I built and programmed a Raspbot Car to classify and avoid people, bikes, and vehicles. The system used OpenVINO to process video streams and adjust controls based on real-time object detection results. Testing trials confirmed the car could safely maneuver around objects or stop when necessary, achieving an average of 7.5 FPS. SSD detection proved more efficient than RCNN, Faster RCNN, or YOLO 3.0 for this setup. This project showcases the potential of cost-effective, efficient solutions for assisted driving, and I hope to continue developing custom detection models to enhance its capabilities.",
       "images": [
-        "images/Data Science Final Deliverable.pdf"
+        "images/nba_stats.png"
       ],
       "url": "https://drive.google.com/file/d/13z6y1KPxdv6Jf4qjiFl67bz6VVfCWtKl/view",
       "technologies": [
@@ -209,7 +209,7 @@
       "role": "Researcher",
       "description": "For this project I analyzed over 11,000 NBA player-season records from 2000–2024 to identify which performance metrics best predict NBA All-Star selection. We combined statistical hypothesis testing (one-tailed and paired t-tests, correlation analysis) with machine learning models to evaluate the relationship between offensive involvement, team impact, and All-Star status. Using features such as points per game, usage rate, player impact estimate, and net rating, we built regression and classification models, with K-Nearest Neighbors achieving near-perfect predictive accuracy. Visual analyses revealed a clear “All-Star zone,” where high-usage players on winning teams are disproportionately selected. The results highlight how a small set of advanced offensive metrics can strongly explain elite player recognition, while also acknowledging the role of non-statistical factors like media exposure and fan voting.",
       "images": [
-        "images/CSCI 1470 Final Project Poster.pdf"
+        "images/pitch_reg.png"
         ],
       "url": "https://drive.google.com/file/d/1v4vpcINE19tmXLDHQoq2nxMMFvEATZlN/view",
       "technologies": [
