@@ -55,6 +55,16 @@ header {
 	text-shadow: none;
 }
 
+.section-title {
+	padding-top: 5%;
+	padding-bottom: 5%;
+	font: 18px/24px 'opensans-bold', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: #fff;
+	text-align: center;
+}
+
 @media (max-width: 768px) {
 	header {
 		padding: 20px 0;
@@ -692,12 +702,12 @@ header h1 {
 	min-height: 200px;
 	width: 100%;
 	overflow: hidden;
-	padding-bottom: 10%;
+	padding-bottom: 5%;
 }
 
-.section-title {
+.skills-section-title {
 	padding-top: 5%;
-	padding-bottom: 5%;
+	padding-bottom: 3%;
 	font: 18px/24px 'opensans-bold', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 3px;
@@ -710,6 +720,136 @@ header h1 {
 	color: white;
 	text-align: center;
 	position: relative;
+}
+
+// Skills Horizontal Scrolling Animation
+.skills-scroll-container {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	mask-image: linear-gradient(
+		to right,
+		transparent 0%,
+		black 5%,
+		black 95%,
+		transparent 100%
+	);
+	-webkit-mask-image: linear-gradient(
+		to right,
+		transparent 0%,
+		black 5%,
+		black 95%,
+		transparent 100%
+	);
+}
+
+.skills-scroll-wrapper {
+	display: flex;
+	width: fit-content;
+	animation: scroll-skills 20s linear infinite;
+	will-change: transform;
+	gap: 1.5rem;
+}
+
+.skills-scroll-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	list-style: none;
+	margin: 0;
+	padding: 2rem 0;
+	align-items: center;
+	justify-content: center;
+	gap: 1.5rem;
+	min-width: max-content;
+}
+
+// Ensure no extra spacing between the two lists
+.skills-scroll-wrapper > .skills-scroll-list:first-of-type {
+	padding-right: 0;
+}
+
+.skills-scroll-wrapper > .skills-scroll-list:last-of-type {
+	padding-left: 0;
+}
+
+// Add gap between the two lists to match item spacing
+.skills-scroll-wrapper {
+	gap: 1.5rem;
+}
+
+.skills-scroll-list li {
+	flex-shrink: 0;
+	white-space: nowrap;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 !important;
+}
+
+// Ensure skills tiles maintain their styling
+.skills-scroll-list .skills-tile {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+// Make skills icons more visible and vibrant
+.skills-scroll-list i {
+	color: #ffffff !important;
+	opacity: 1 !important;
+	filter: brightness(1.2) !important;
+	transition: all 0.3s ease;
+	font-size: 300% !important;
+}
+
+.skills-scroll-list i:hover {
+	filter: brightness(1.5) !important;
+	transform: scale(1.1);
+}
+
+.skills-scroll-list .skills-tile p {
+	color: #ffffff !important;
+	opacity: 1 !important;
+	font-weight: 500;
+}
+
+@keyframes scroll-skills {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-50%);
+	}
+}
+
+// Pause animation on hover for better UX
+.skills-scroll-container:hover .skills-scroll-wrapper {
+	animation-play-state: paused;
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+	.skills-scroll-list {
+		gap: 1.25rem;
+		padding: 1.5rem 1.5rem;
+	}
+	
+	.skills-scroll-wrapper {
+		animation-duration: 20s;
+	}
+}
+
+@media (max-width: 480px) {
+	.skills-scroll-list {
+		gap: 1rem;
+		padding: 1rem 1rem;
+	}
+	
+	.skills-scroll-wrapper {
+		animation-duration: 10s;
+	}
 }
 
 footer {
