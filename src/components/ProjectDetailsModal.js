@@ -71,8 +71,11 @@ class ProjectDetailsModal extends Component {
         //   });
         // }             
         if (this.props.data.images) {
-          // Skip the first image (cover image) and only show the rest in the modal
-          var modalImages = this.props.data.images.slice(1);
+          // Skip the first image (cover image) if there are multiple images
+          // But show the single image if there's only one
+          var modalImages = this.props.data.images.length === 1 
+            ? this.props.data.images 
+            : this.props.data.images.slice(1);
           var img = modalImages.map((elem, i) => (
             <div 
               key={i} 
@@ -120,19 +123,44 @@ class ProjectDetailsModal extends Component {
                 data-inline="false"
               ></span>
             </div>
-            <AwesomeSlider
-          cssModule={[AwesomeSliderStyles, AwesomeSliderStyles2]}
-          animation="scaleOutAnimation"
-          className="slider-image"
-          style={{
-            width: "100%", 
-            height: "auto", 
-            maxHeight: "80vh", 
-            objectFit: "contain"
-          }}
-        >
-          {img}
-        </AwesomeSlider>
+            {this.props.data.images && this.props.data.images.length > 0 ? (
+              this.props.data.images.length === 1 ? (
+                // Single image - render without slider navigation
+                <div className="slider-image" style={{
+                  width: "100%", 
+                  height: "auto", 
+                  maxHeight: "80vh", 
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center"
+                }}>
+                  <img 
+                    src={this.props.data.images[0]} 
+                    alt={title}
+                    style={{
+                      maxWidth: "100%",
+                      maxHeight: "80vh",
+                      objectFit: "contain"
+                    }}
+                  />
+                </div>
+              ) : (
+                // Multiple images - use slider
+                <AwesomeSlider
+                  cssModule={[AwesomeSliderStyles, AwesomeSliderStyles2]}
+                  animation="scaleOutAnimation"
+                  className="slider-image"
+                  style={{
+                    width: "100%", 
+                    height: "auto", 
+                    maxHeight: "80vh", 
+                    objectFit: "contain"
+                  }}
+                >
+                  {img}
+                </AwesomeSlider>
+              )
+            ) : null}
           </div>
           <div className="col-md-10 mx-auto">
             <h3 style={{ padding: "5px 5px 0 5px" }}>
