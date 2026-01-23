@@ -166,7 +166,7 @@
         "images/closet_compare.png"
         ],
       "url": "https://clothing-compare.vercel.app/",
-      "github": "https://github.com/JeffreyLiang321/clothing-compare",
+      "github": "https://github.com/JeffreyLiang321/clothing_compare",
       "technologies": [
         {
           "class": "devicon-python-plain",

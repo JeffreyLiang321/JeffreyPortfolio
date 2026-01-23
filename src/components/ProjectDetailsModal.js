@@ -176,7 +176,7 @@ class ProjectDetailsModal extends Component {
                     style={{ color: "inherit", textDecoration: "none" }}
                     title="View on GitHub"
                   >
-                    <FontAwesomeIcon icon={faGithub} style={{ fontSize: "1.2rem" }} />
+                    <FontAwesomeIcon icon={faGithub} style={{ fontSize: "2rem" }} />
                   </a>
                 ) : null}
                 {url ? (
@@ -185,12 +185,12 @@ class ProjectDetailsModal extends Component {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="link-href"
-                    style={{ color: "inherit", textDecoration: "none" }}
+                    style={{ color: "#007bff", textDecoration: "none" }}
                     title="View project"
                   >
                     <i
                       className="fas fa-external-link-alt"
-                      style={{ fontSize: "1.2rem" }}
+                      style={{ fontSize: "2rem" }}
                     ></i>
                   </a>
                 ) : null}
