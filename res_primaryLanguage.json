@@ -161,7 +161,7 @@
       "startDate": "December. 2025 - Present",
       "category": "Mini-projects",
       "role": "Individual Contributor",
-      "description": "This project is a personal clothing wishlist and preference-tracking platform that allows users to save items via URLs, organize them into named lists, and share them with others using usernames. It focuses on lightweight, frictionless saving rather than full e-commerce, enabling users to track styles they like across brands in one place. The system is built with a Supabase backend featuring row-level security, username-based authentication, and secure sharing logic. Users can manage multiple lists, control visibility, and collaboratively view wishlists. The project explores how personal taste data can be structured, shared, and revisited over time.",
+      "description": "This project is a personal clothing wishlist and preference-tracking platform that allows users to save items via URLs, organize them into named lists, and share them with others using usernames. It focuses on lightweight, frictionless saving rather than full e-commerce, enabling users to track styles they like across brands in one place. The system is built with a Supabase backend featuring row-level security, username-based authentication, and secure sharing logic. Users can manage multiple lists, control visibility, and collaboratively view wishlists. The project explores how personal taste data can be structured, shared, and revisited over time.\n\nWant to use as Google Extension? Just go on a page and press the extension to add items faster! Check out the extension at: https://github.com/JeffreyLiang321/clothing_compare/tree/main/closet-compare-extension",
       "images": [
         "images/closet_compare.png"
         ],
