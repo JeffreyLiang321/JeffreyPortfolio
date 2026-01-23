@@ -183,28 +183,6 @@
       ]
     },
     {
-      "title": " The All-Star Equation: Decoding Basketball's Elite",
-      "startDate": "Feb. 2025 - May. 2025",
-      "role":"Researcher", 
-      "category": "Mini-projects",
-      "description": "For this project, I developed a low-cost, computationally efficient assisted driving system for navigating narrow roads with obstacles. Using a Raspberry Pi, Intel Neural Compute Stick, infrared sensors, an ultrasound sensor, and an SSD (Single Shot Detector) detection camera, I built and programmed a Raspbot Car to classify and avoid people, bikes, and vehicles. The system used OpenVINO to process video streams and adjust controls based on real-time object detection results. Testing trials confirmed the car could safely maneuver around objects or stop when necessary, achieving an average of 7.5 FPS. SSD detection proved more efficient than RCNN, Faster RCNN, or YOLO 3.0 for this setup. This project showcases the potential of cost-effective, efficient solutions for assisted driving, and I hope to continue developing custom detection models to enhance its capabilities.",
-      "images": [
-        "images/nba_stats.png"
-      ],
-      "url": "https://drive.google.com/file/d/13z6y1KPxdv6Jf4qjiFl67bz6VVfCWtKl/view",
-      "github": "https://github.com/JeffreyLiang321/data_science_final_project",
-      "technologies": [
-        {
-          "class": "devicon-python-plain",
-          "name": "Python"
-        },
-        {
-          "class": "devicon-tensorflow-original",
-          "name": "Tensorflow"
-        }
-      ]
-    },
-    {
       "title": "Pitch Recognition and Note Detection from Sheet Music",
       "startDate": "Feb. 2025 - May. 2025",
       "category": "Mini-projects",
@@ -223,6 +201,28 @@
         {
           "class": "devicon-matplotlib-plain",
           "name": "Matplotlib"
+        }
+      ]
+    },
+    {
+      "title": " The All-Star Equation: Decoding Basketball's Elite",
+      "startDate": "Feb. 2025 - May. 2025",
+      "role":"Researcher", 
+      "category": "Mini-projects",
+      "description": "For this project, I developed a low-cost, computationally efficient assisted driving system for navigating narrow roads with obstacles. Using a Raspberry Pi, Intel Neural Compute Stick, infrared sensors, an ultrasound sensor, and an SSD (Single Shot Detector) detection camera, I built and programmed a Raspbot Car to classify and avoid people, bikes, and vehicles. The system used OpenVINO to process video streams and adjust controls based on real-time object detection results. Testing trials confirmed the car could safely maneuver around objects or stop when necessary, achieving an average of 7.5 FPS. SSD detection proved more efficient than RCNN, Faster RCNN, or YOLO 3.0 for this setup. This project showcases the potential of cost-effective, efficient solutions for assisted driving, and I hope to continue developing custom detection models to enhance its capabilities.",
+      "images": [
+        "images/nba_stats.png"
+      ],
+      "url": "https://drive.google.com/file/d/13z6y1KPxdv6Jf4qjiFl67bz6VVfCWtKl/view",
+      "github": "https://github.com/JeffreyLiang321/data_science_final_project",
+      "technologies": [
+        {
+          "class": "devicon-python-plain",
+          "name": "Python"
+        },
+        {
+          "class": "devicon-tensorflow-original",
+          "name": "Tensorflow"
         }
       ]
     }
