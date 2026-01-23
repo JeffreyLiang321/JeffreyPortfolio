@@ -5,7 +5,7 @@ import AwesomeSliderStyles from "../scss/light-slider.scss";
 import AwesomeSliderStyles2 from "../scss/dark-slider.scss";
 import "react-awesome-slider/dist/custom-animations/scale-out-animation.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStripe } from "@fortawesome/free-brands-svg-icons";
+import { faStripe, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 class ProjectDetailsModal extends Component {
   render() {
@@ -15,6 +15,7 @@ class ProjectDetailsModal extends Component {
       var title = this.props.data.title;
       var description = this.props.data.description;
       var url = this.props.data.url;
+      var githubUrl = this.props.data.github;
       if (this.props.data.technologies) {
         var tech = technologies.map((icons, i) => {
           return (
@@ -163,21 +164,37 @@ class ProjectDetailsModal extends Component {
             ) : null}
           </div>
           <div className="col-md-10 mx-auto">
-            <h3 style={{ padding: "5px 5px 0 5px" }}>
-              {title}
-              {url ? (
-                <a
-                  href={url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="link-href"
-                >
-                  <i
-                    className="fas fa-external-link-alt"
-                    style={{ marginLeft: "10px" }}
-                  ></i>
-                </a>
-              ) : null}
+            <h3 style={{ padding: "5px 5px 0 5px", display: "flex", alignItems: "center", gap: "10px" }}>
+              <span>{title}</span>
+              <span style={{ display: "flex", gap: "8px" }}>
+                {githubUrl ? (
+                  <a
+                    href={githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link-href"
+                    style={{ color: "inherit", textDecoration: "none" }}
+                    title="View on GitHub"
+                  >
+                    <FontAwesomeIcon icon={faGithub} style={{ fontSize: "1.2rem" }} />
+                  </a>
+                ) : null}
+                {url ? (
+                  <a
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link-href"
+                    style={{ color: "inherit", textDecoration: "none" }}
+                    title="View project"
+                  >
+                    <i
+                      className="fas fa-external-link-alt"
+                      style={{ fontSize: "1.2rem" }}
+                    ></i>
+                  </a>
+                ) : null}
+              </span>
             </h3>
             <p className="modal-description">{description}</p>
             <div className="col-md-12 text-center">
