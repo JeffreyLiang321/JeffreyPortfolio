@@ -376,13 +376,13 @@ header h1 {
 }
 
 .projects-carousel-inner {
-	display: inline-flex;
+	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: stretch;
 	gap: 24px;
-	padding: 1rem 0;
+	padding: 1rem 2rem;
 	min-width: max-content;
 }
 
