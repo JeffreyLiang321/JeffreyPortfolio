@@ -196,7 +196,38 @@ class ProjectDetailsModal extends Component {
                 ) : null}
               </span>
             </h3>
-            <p className="modal-description">{description}</p>
+            <p className="modal-description">
+              {description ? (() => {
+                const lines = description.split('\n');
+                return lines.map((line, idx) => {
+                  // Check if line contains a URL
+                  const urlRegex = /(https?:\/\/[^\s]+)/g;
+                  const parts = line.split(urlRegex);
+                  
+                  return (
+                    <span key={idx}>
+                      {parts.map((part, partIdx) => {
+                        if (part.match(/^https?:\/\//)) {
+                          return (
+                            <a
+                              key={partIdx}
+                              href={part}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              style={{ color: '#007bff', textDecoration: 'underline' }}
+                            >
+                              {part}
+                            </a>
+                          );
+                        }
+                        return <span key={partIdx}>{part}</span>;
+                      })}
+                      {idx < lines.length - 1 && <br />}
+                    </span>
+                  );
+                });
+              })() : null}
+            </p>
             <div className="col-md-12 text-center">
               <ul className="list-inline mx-auto">{tech}</ul>
             </div>
