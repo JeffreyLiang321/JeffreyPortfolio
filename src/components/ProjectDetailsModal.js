@@ -16,6 +16,7 @@ class ProjectDetailsModal extends Component {
       var description = this.props.data.description;
       var url = this.props.data.url;
       var githubUrl = this.props.data.github;
+      var extensionUrl = this.props.data.extension;
       if (this.props.data.technologies) {
         var tech = technologies.map((icons, i) => {
           return (
@@ -177,6 +178,21 @@ class ProjectDetailsModal extends Component {
                     title="View on GitHub"
                   >
                     <FontAwesomeIcon icon={faGithub} style={{ fontSize: "2rem" }} />
+                  </a>
+                ) : null}
+                {extensionUrl ? (
+                  <a
+                    href={extensionUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link-href"
+                    style={{ color: "#4285F4", textDecoration: "none" }}
+                    title="View Chrome Extension"
+                  >
+                    <i
+                      className="fab fa-chrome"
+                      style={{ fontSize: "2rem" }}
+                    ></i>
                   </a>
                 ) : null}
                 {url ? (

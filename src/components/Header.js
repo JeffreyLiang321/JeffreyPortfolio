@@ -75,7 +75,7 @@ class Header extends Component {
                 <div className="hero-headshot-container">
                   <img
                     className="hero-headshot-image"
-                    src={require('../images/Jeffrey_headshot.jpeg')} 
+                    src={require('../images/casual_headshot.jpg')}
                     alt="Jeffrey Liang"
                   />
                 </div>
