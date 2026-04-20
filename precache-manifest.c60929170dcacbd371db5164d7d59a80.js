@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b7b6d5945a0ccb2e242b60f996509272",
+    "revision": "6ab73c95cd603a4e975e95db925ce1ee",
     "url": "/JeffreyPortfolio/index.html"
   },
   {
-    "revision": "a5bda86881e9df4c9ffa",
+    "revision": "609a35438be80fe950b2",
     "url": "/JeffreyPortfolio/static/css/2.71fe5322.chunk.css"
   },
   {
-    "revision": "ebe1c2125fbd0ee7399a",
-    "url": "/JeffreyPortfolio/static/css/main.e2bc38a5.chunk.css"
+    "revision": "d86eb0d878afd1e6c3c2",
+    "url": "/JeffreyPortfolio/static/css/main.a8928757.chunk.css"
   },
   {
-    "revision": "a5bda86881e9df4c9ffa",
-    "url": "/JeffreyPortfolio/static/js/2.2c8188a8.chunk.js"
+    "revision": "609a35438be80fe950b2",
+    "url": "/JeffreyPortfolio/static/js/2.efb1c28a.chunk.js"
   },
   {
     "revision": "0701fdd16466620d77a5e40b9c28b5b1",
-    "url": "/JeffreyPortfolio/static/js/2.2c8188a8.chunk.js.LICENSE.txt"
+    "url": "/JeffreyPortfolio/static/js/2.efb1c28a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ebe1c2125fbd0ee7399a",
-    "url": "/JeffreyPortfolio/static/js/main.b8213d92.chunk.js"
+    "revision": "d86eb0d878afd1e6c3c2",
+    "url": "/JeffreyPortfolio/static/js/main.167761ca.chunk.js"
   },
   {
     "revision": "f6f94d2ea156bcc93538",
@@ -80,8 +80,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/JeffreyPortfolio/static/media/Framework1.ac26e82d.png"
   },
   {
-    "revision": "6d00a43d97091c6812cf479d1c48ffae",
-    "url": "/JeffreyPortfolio/static/media/Jeffrey_Liang_Resume.6d00a43d.pdf"
+    "revision": "08a51069fa328bfed44895146a3e43e0",
+    "url": "/JeffreyPortfolio/static/media/Jeffrey_Liang_Resume.08a51069.pdf"
   },
   {
     "revision": "99fb848e9681ed0de1ecb46f95fd4735",
@@ -94,6 +94,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "59f530829aad692c18b8717d8c5323cb",
     "url": "/JeffreyPortfolio/static/media/ModelTest-1.59f53082.gif"
+  },
+  {
+    "revision": "3eb8bb37db9b789cf508f58911789197",
+    "url": "/JeffreyPortfolio/static/media/O825195_Liang.3eb8bb37.jpeg"
   },
   {
     "revision": "75fa1c36d53458d915ba021d7e7fb83d",
@@ -118,6 +122,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "663e3c0cc6ce756ada63b62b9641859d",
     "url": "/JeffreyPortfolio/static/media/beya2.663e3c0c.png"
+  },
+  {
+    "revision": "b4180fb5af55f8d4d5ba792b97141cfb",
+    "url": "/JeffreyPortfolio/static/media/casual_headshot.b4180fb5.jpg"
   },
   {
     "revision": "a7b4bebd571ad8e5ede319b687afbeb8",
@@ -150,6 +158,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "fccccd76236e61764a5bbdd19127c9cc",
     "url": "/JeffreyPortfolio/static/media/graph.fccccd76.png"
+  },
+  {
+    "revision": "4ec6f583551dee9fc8cf6f274595cf27",
+    "url": "/JeffreyPortfolio/static/media/headshot copy.jpeg.4ec6f583.zip"
   },
   {
     "revision": "3eb8bb37db9b789cf508f58911789197",
@@ -210,5 +222,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d81ae559a634b39ea6844c0bcdc30ab5",
     "url": "/JeffreyPortfolio/static/media/voyagerCapital.d81ae559.png"
+  },
+  {
+    "revision": "8228337cb61a57725eaf4b9dccfbc21d",
+    "url": "/JeffreyPortfolio/static/media/wlkthru.8228337c.png"
   }
 ]);

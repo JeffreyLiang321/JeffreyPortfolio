@@ -161,11 +161,12 @@
       "startDate": "December. 2025 - Present",
       "category": "Mini-projects",
       "role": "Individual Contributor",
-      "description": "Want to use as Google Extension? Just go on a page and press the extension to add items faster! Check out the extension at: https://github.com/JeffreyLiang321/clothing_compare/tree/main/closet-compare-extension. \n\nThis project is a personal clothing wishlist and preference-tracking platform that allows users to save items via URLs, organize them into named lists, and share them with others using usernames. It focuses on lightweight, frictionless saving rather than full e-commerce, enabling users to track styles they like across brands in one place. The system is built with a Supabase backend featuring row-level security, username-based authentication, and secure sharing logic. Users can manage multiple lists, control visibility, and collaboratively view wishlists. The project explores how personal taste data can be structured, shared, and revisited over time.",
+      "description": "Closet Compare is a web app and Chrome extension that lets users save clothing items from any website and organize them into shareable wishlists. The inspiration came from personal experiences and complaints I hear from everyone near me about how hard it is to keep track of clothing items they like. It automatically extracts product details like title, price, and images, making it easy to track styles across brands in one place. Built with a Supabase backend, the platform supports authentication, collaborative lists, and social features like sharing and reactions.",
       "images": [
         "images/closet_compare.png"
         ],
       "url": "https://clothing-compare.vercel.app/",
+      "extension": "https://chrome.google.com/webstore/detail/closet-compare/ljjpfhgbhfjhbdgkhdgfbhccfddpko",
       "github": "https://github.com/JeffreyLiang321/clothing_compare",
       "technologies": [
         {
@@ -237,9 +238,21 @@
         "Investment Banking"
       ],
       "technologies": [
-        "● Incoming San Francisco IBD Summer Analyst, selected for 9-week training and deal execution program",
-        "● Supporting live deals, financial modeling, and pitchbook creation across banking teams",
-        "● Expected to collaborate cross-functionally on equity offerings, valuation work, and strategic client deliverables"
+        "● Incoming San Francisco IBD Summer Analyst, selected for 9-week training and deal execution program"
+      ]
+    },
+    {
+      "company": "Wlkthru",
+      "title": "Fullstack Software Developer Intern",
+      "image": "wlkthru.png",
+      "years": "Jan. 2026 - Present",
+      "mainTech": [
+        "Internship"
+      ],
+      "technologies": [
+        "● Built server-side WebRTC infrastructure using Mediasoup SFU with integrated recording pipeline (PlainTransport → FFmpeg) deployed on VPS",
+        "● Developed AI-powered summarization system with structured extraction integrated into external CRM systems",
+        "● Implementing low-latency (<2s) live Spanish ↔ English audio translation pipeline for in-call communication"
       ]
     },
     {
@@ -281,12 +294,10 @@
         "Startup"
       ],
       "technologies": [
-        "● Led technical development for Beya, a B2B app enhancing small mobile business operations",
-        "● Constructed proximity-based features, minimum-fee transactions, inventory management – served 20+ local vendors",
-        "● Built AWS, Expo, and Firebase app infrastructure, supporting 10+ monthly active users in beta version",
-        "● Processed 1000+ sales transactions, using direct customer feedback from 8 events to implement 20+ features/fixes",
-        "● Secured Apple's official Tap-to-Pay Certificate and successfully published 'Beya' on the App Store",
-        "● Navigated App Store review process and validation requirements for official launch"
+        "● Led end-to-end development of a B2B mobile app for small businesses, generating $22K+ ARR",
+        "● Designed core platform features; proximity discovery, payments, and inventory management for 20+ vendors",
+        "● Built serverless payment backend with AWS Lambda to process Stripe webhooks and update transactions",
+        "● Integrated Apple Tap-to-Pay for in-app contactless payments and supported App Store launch for production release"
       ]
     },
     {
