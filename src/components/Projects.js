@@ -143,6 +143,9 @@ class Projects extends Component {
         );
       }
 
+      // Featured projects
+      const featuredProjects = this.props.resumeProjects.filter(p => p.featured);
+
       // Otherwise, show folder view
       const folders = categoryOrder.map((category) => {
         const projectCount = (groupedProjects[category] || []).length;
@@ -171,6 +174,49 @@ class Projects extends Component {
               <span>{sectionName}</span>
             </h1>
             <div className="col-md-12 mx-auto">
+              {featuredProjects.length > 0 && (
+                <div className="featured-section">
+                  <div className="featured-label">
+                    <span className="featured-label-dot" />
+                    Just Shipped
+                  </div>
+                  <div className="featured-cards-row">
+                    {featuredProjects.map((project) => (
+                      <div
+                        key={project.title}
+                        className="featured-card"
+                        onClick={() => detailsModalShow(project)}
+                      >
+                        <div className="featured-new-badge">NEW</div>
+                        <div className="featured-card-image-wrapper">
+                          <img
+                            src={project.images[0]}
+                            alt={project.title}
+                            className="featured-card-image"
+                            onError={(e) => {
+                              e.target.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="320" height="200"%3E%3Crect fill="%23ddd" width="320" height="200"/%3E%3Ctext fill="%23999" font-family="sans-serif" font-size="16" x="50%25" y="50%25" text-anchor="middle" dy=".3em"%3EPartsPilot%3C/text%3E%3C/svg%3E';
+                            }}
+                          />
+                        </div>
+                        <div className="featured-card-body">
+                          <h3 className="featured-card-title">{project.title}</h3>
+                          <p className="featured-card-date">{project.startDate}</p>
+                          <p className="featured-card-desc">
+                            {project.description.length > 160
+                              ? project.description.substring(0, 160) + "…"
+                              : project.description}
+                          </p>
+                          <div className="featured-card-tags">
+                            {project.technologies && project.technologies.map((t, i) => (
+                              <span key={i} className="featured-tag">{t.name}</span>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
               <div className="row mx-auto folders-row">
                 {folders}
               </div>
