@@ -157,6 +157,36 @@
       ]
     },
     {
+      "title": "PartsPilot",
+      "startDate": "Apr. 2025",
+      "category": "Mini-projects",
+      "featured": true,
+      "description": "I built PartsPilot after talking with engineers at Instalily, a company building AI agents for industrial distribution. They described how sales reps at electronics distributors spend hours every day just reading customer emails, cross-referencing catalogs, and writing quote responses by hand. I wanted to see if I could automate the whole thing.\n\nPartsPilot reads an incoming parts request, searches a real DigiKey catalog of about 1,800 components, checks stock, finds substitutes when something is out of stock, and writes a professional quote back. No human in the loop.\n\nI deliberately avoided agent frameworks like LangChain or LlamaIndex and wrote the agentic loop from scratch in about 100 lines of raw Anthropic SDK. Retrieval uses a hybrid of BM25 keyword search and pgvector semantic search, fused with Reciprocal Rank Fusion, which consistently outperforms either method alone across exact part number lookups, spec-based queries, and vague searches.\n\nI also built a full eval harness with 25 test cases covering in-stock, out-of-stock, multi-part, ambiguous, and adversarial prompt injection scenarios. Each case is scored on exact match criteria and by an LLM judge using Claude Haiku. The frontend is a Next.js 14 interface with a trajectory viewer that shows every tool call the agent made, so the reasoning is never a black box.",
+      "images": [
+        "https://raw.githubusercontent.com/JeffreyLiang321/PartsPilot/main/assets/frontend_demo.png"
+      ],
+      "url": "https://parts-pilot.vercel.app",
+      "github": "https://github.com/JeffreyLiang321/PartsPilot",
+      "technologies": [
+        {
+          "class": "devicon-python-plain",
+          "name": "Python"
+        },
+        {
+          "class": "devicon-postgresql-plain",
+          "name": "PostgreSQL"
+        },
+        {
+          "class": "devicon-nextjs-plain",
+          "name": "Next.js"
+        },
+        {
+          "class": "devicon-docker-plain",
+          "name": "Docker"
+        }
+      ]
+    },
+    {
       "title": "Clothing Wishlist and Preference Tracker",
       "startDate": "December. 2025 - Present",
       "category": "Mini-projects",
