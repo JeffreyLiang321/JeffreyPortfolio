@@ -159,10 +159,13 @@ header h1 {
 
 #about h1 {
 	padding-top: 5%;
-	font: 18px/24px 'opensans-bold', sans-serif;
+	padding-bottom: 3%;
+	font-family: 'Outfit', sans-serif;
+	font-size: 22px;
+	font-weight: 600;
 	text-transform: uppercase;
-	letter-spacing: 3px;
-	color: black;
+	letter-spacing: 0.5px;
+	color: #fff;
 	text-align: center;
 }
 
@@ -877,9 +880,11 @@ header h1 {
 .skills-section-title {
 	padding-top: 5%;
 	padding-bottom: 3%;
-	font: 18px/24px 'opensans-bold', sans-serif;
+	font-family: 'Outfit', sans-serif;
+	font-size: 22px;
+	font-weight: 600;
 	text-transform: uppercase;
-	letter-spacing: 3px;
+	letter-spacing: 0.5px;
 	color: #fff;
 	text-align: center;
 }
@@ -893,7 +898,8 @@ header h1 {
 
 // Skills Horizontal Scrolling Animation
 .skills-scroll-container {
-	width: 100%;
+	width: 80%;
+	margin: 0 auto;
 	overflow: hidden;
 	position: relative;
 	mask-image: linear-gradient(
