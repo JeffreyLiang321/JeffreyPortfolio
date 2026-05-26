@@ -1,7 +1,7 @@
 {
   "basic_info": {
     "description_header": "Hi everyone!",
-    "description": "My name is Jeffrey Liang. I was born in San Jose and grew up in Shanghai attending Shanghai American School. I'm a rising junior studying Computer Science and Economics at Brown University. I'm very interested in pursuring a career in finance, specifically in investment banking, private equity, and venture capital. I'm also very involved in many computer science projects out of personal interest. I'm interested in UI/UX interface of website and mobile applications, fullstack, and machine learning specifically for prediction models. Thanks for viewing my portfolio website!",
+    "description": "My name is Jeffrey Liang. I was born in San Jose and grew up in Shanghai attending Shanghai American School. I'm a current junior studying Computer Science and Economics at Brown University. I'm very interested in pursuring a career at the intersection of software and finance, and very involved in many computer science projects spanning machine learning and agent frameworks. Thanks for viewing my portfolio website!",
     "section_name": {
       "about": "About me",
       "projects": "Projects",
@@ -158,13 +158,14 @@
     },
     {
       "title": "PartSelect",
-      "startDate": "May 2026",
+      "startDate": "May. 2026",
       "category": "Mini-projects",
       "featured": true,
-      "description": "I built PartSelect Parts Assistant after recently chatting with engineers at Instalily, a company building AI agents for industrial distribution, and wanted to take a crack at the appliance parts space. It's a vertical AI agent scoped entirely to refrigerator and dishwasher parts on the PartSelect e-commerce platform. The agent never guesses compatibility, price, or stock without a live tool call, and hard refusal rules handle anything out of scope like order tracking or other appliances. The agent loop is hand-rolled with no LangChain, and tool descriptions are written as decision rules rather than API docs, which cuts down on ambiguous and redundant tool chains.\n\nUnder the hood, retrieval splits across two databases: SQLite for exact structured lookups (PS number, model number, compatibility checks) and ChromaDB for semantic retrieval like symptom diagnosis and repair guides, with hits enriched by full part records from SQLite. The UX was built for someone mid-repair: rich part cards with image, price, stock, and difficulty badge come back as a structured data channel alongside the prose reply, queries can be interrupted mid-retrieval, and video thumbnails from repair guides render inline. An eval harness covers 17 cases across 11 categories scored by exact match on tool routing and an LLM judge on response quality.",
+      "description": "I built PartSelect after talking with engineers at Instalily, a company building AI agents for industrial distribution. They described how sales reps at electronics distributors spend hours every day just reading customer emails, cross-referencing catalogs, and writing quote responses by hand. I wanted to see if I could automate a similar process.\n\nIt became a vertical AI customer support agent for the PartSelect e-commerce platform, scoped to refrigerator and dishwasher parts as a 48-hour case study. I skipped LangChain and LlamaIndex and wrote the agent loop from scratch. Two MCP servers handle the tool layer: one does exact lookups against a SQLite database of ~7,000 scraped parts, and the other does semantic retrieval against ChromaDB for symptom diagnosis, repair guides, and blogs.\n\nThe interesting decisions were mostly in scope enforcement and UX. The system prompt has explicit routing rules for every query type and hard refusal rules for anything out of scope. Tool descriptions are written as decision rules rather than API docs, which cuts down on wrong tool selection. On the UX side, part results come back as structured cards with image, price, and stock, and repair guide responses extract and render video links inline.\n\nI also built an eval harness with 17 test cases across 7 categories using dual scoring: exact match for tool routing and hallucination catches, and an LLM judge for response quality.",
       "images": [
-        "images/PartSelect_demo.png",
-        "images/PartSelect_system_architecture.png"
+        "image/PartSelect_demo.png",
+        "image/PartSelect_demo.png",
+        "image/PartSelect_system_architecture.png"
       ],
       "github": "https://github.com/JeffreyLiang321/PartSelect",
       "technologies": [
@@ -263,7 +264,7 @@
       "company": "JPMorgan Chase",
       "title": "Incoming Equity Capital Markets Summer Analyst",
       "image": "jpmorgan.png",
-      "years": "Jun. 2026 - Aug. 2026",
+      "years": "Start Jun. 2026",
       "mainTech": [
         "Investment Banking"
       ],
@@ -275,14 +276,14 @@
       "company": "Wlkthru",
       "title": "Fullstack Software Developer Intern",
       "image": "wlkthru.png",
-      "years": "Jan. 2026 - Present",
+      "years": "Jan. 2026 - Apr. 2026",
       "mainTech": [
         "Internship"
       ],
       "technologies": [
         "● Built server-side WebRTC infrastructure using Mediasoup SFU with integrated recording pipeline (PlainTransport → FFmpeg) deployed on VPS",
         "● Developed AI-powered summarization system with structured extraction integrated into external CRM systems",
-        "● Implementing low-latency (<2s) live Spanish ↔ English audio translation pipeline for in-call communication"
+        "● Implementing low-latency (<5s) live Spanish ↔ English audio translation pipeline for in-call communication"
       ]
     },
     {
@@ -295,8 +296,8 @@
       ],
       "technologies": [
         "● Created pitch decks on portfolio financials, product stacks, and revenue models for investor updates",
-        "● Built agentic AI tools for legal and rental clients; launched 2 pilots with 30% efficiency gains",
-        "● Briefed founding partner daily on pricing, GTM, and outreach across 3 portfolio firms"
+        "● Orchestrated automated workflows using n8n to chain extraction, summarization, and data structuring steps",
+        "● Built OCR and LLM-based pipelines for legal document processing to support investment diligence"
       ]
     },
     {
@@ -310,10 +311,7 @@
       "technologies": [
         "● Drove 20% sales growth and helped DayGuard reach their first 5-figure month, a significant milestone",
         "● Managed a team of 7 across 3 workstreams of digital expansion, campus ambassadorship and in-person retail",
-        "● Secured 10 retail partnerships in Rhode Island by conducting in-person outreach to 20+ eligible retail stores",
-        "● Presented work stream findings to DayGuard CEO and scoped 3 additional tasks weekly to fulfill project outline",
-        "● Maintained DayGuard connections with 17+ campus ambassadors and 10+ UGCs partnerships"
-      ]
+        "● Secured 10 retail partnerships in Rhode Island by conducting in-person outreach to 20+ eligible retail stores"      ]
     },
     {
       "company": "Beya: Small Business Assistance App",
