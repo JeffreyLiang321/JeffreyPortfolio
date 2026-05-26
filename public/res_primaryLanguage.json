@@ -1,7 +1,7 @@
 {
   "basic_info": {
     "description_header": "Hi everyone!",
-    "description": "My name is Jeffrey Liang. I was born in San Jose and grew up in Shanghai attending Shanghai American School. I'm a rising junior studying Computer Science and Economics at Brown University. I'm very interested in pursuring a career in finance, specifically in investment banking, private equity, and venture capital. I'm also very involved in many computer science projects out of personal interest. I'm interested in UI/UX interface of website and mobile applications, fullstack, and machine learning specifically for prediction models. Thanks for viewing my portfolio website!",
+    "description": "My name is Jeffrey Liang. I was born in San Jose and grew up in Shanghai attending Shanghai American School. I'm a current junior studying Computer Science and Economics at Brown University. I'm very interested in pursuring a career at the intersection of software and finance, and very involved in many computer science projects spanning machine learning and agent frameworks. Thanks for viewing my portfolio website!",
     "section_name": {
       "about": "About me",
       "projects": "Projects",
@@ -16,9 +16,9 @@
           "category": "Startup/Entrepreneurship",
           "description": "Third is a marketplace for temporary third spaces that transforms underutilized places like cafés after hours, rooftops, and empty studios into bookable spots on demand. No coworking passes or minimum spends required - just affordable space to work, create, or connect starting at a few dollars per hour. For users, we provide wide space selections with reliability and comfort at accessible price points. For hosts, Third generates additional revenue past usual hours by repurposing existing spaces. The platform emphasizes transparency in financial metrics, booking status, and amenities while incorporating social features like group bookings and activity feeds. We've launched our MVP website and are preparing the mobile app launch within 2-3 weeks. Our first host space is live with several more in onboarding, and we're actively building demand through Columbia and NYU student communities.",
           "images": [
-            "images/third.png",
-            "images/third_1.png",
-            "images/third_2.png"
+            "third.png",
+            "third_1.png",
+            "third_2.png"
           ],
           "url": "https://use-third.com",
           "technologies": [
@@ -50,10 +50,10 @@
           "category": "Startup/Entrepreneurship",
           "description": "As a Project Lead Intern for DayGuard, a CPG company specializing in alcohol aid and liver protection jelly sticks, I oversaw 3 critical business streams: retail expansion, campus ambassador programs, and digital growth. My role involved directly reaching out to 20+ retail stores and supporting partnership negotiations while developing comprehensive ambassador recruitment and training initiatives. I led our social media marketing efforts to enhance brand visibility and drive sales across all channels, achieving a 20% increase in overall sales while maintaining connections with 17 college campus ambassadors and 10+ UGC/micro-influencer partnerships. Most notably, I helped DayGuard reach their first 5-figure month, a significant milestone that demonstrated the effectiveness of our multi-channel growth strategy. A key aspect of my position was maintaining effective team communication and workflow management, which included setting weekly priorities, coordinating schedules, and adjusting project timelines as needed. I also spearheaded our strategic expansion to other prestigious Northeast colleges like Dartmouth and MIT, which included creating scalable onboarding processes for new markets. This position required a blend of strategic planning, team leadership, and hands-on execution across multiple business functions.",
           "images": [
-            "images/dayguard.png",
-            "images/dayguard1.png",
-            "images/dayguard2.png",
-            "images/dayguard3.png"
+            "dayguard.png",
+            "dayguard1.png",
+            "dayguard2.png",
+            "dayguard3.png"
           ],
           "url": "https://dayguard.store/",
           "technologies": [
@@ -65,9 +65,9 @@
           "category": "Startup/Entrepreneurship",
           "description": "I was a founding member and technical project lead of Beya, a B2B app designed to empower small and medium-sized businesses with streamlined in-person selling. Beya offers features like inventory management, proximity-based vendor discovery, low-fee tap-to-pay transactions, and sales analytics. During my tenure, we supported over 20 local vendors, processed 1,000+ transactions, and hosted eight successful events at Brown University. Built with React Native and powered by Expo, Firebase, AWS, and Stripe API, Beya combines robust infrastructure with user-friendly functionality. I played a crucial role in getting the app validated and successfully published on the Apple App Store as 'Beya', including securing the Tap-to-Pay Distribution Certificate and navigating the App Store review process. For more on Beya's development and impact, visit our website below.",
           "images": [
-            "images/beya.png",
-            "images/beya1.png",
-            "images/beya2.png"
+            "beya.png",
+            "beya1.png",
+            "beya2.png"
           ],
           "url": "https://usebeya.com/",
           "technologies": [
@@ -99,8 +99,8 @@
           "category": "Startup/Entrepreneurship",
           "description": "During my freshman spring, I participated in Brown's Innovation Dojo startup accelerator program, where my team and I developed Docferral, a startup concept designed to streamline electronic patient referrals between primary care and private practice doctors. To validate the idea, we conducted extensive interviews with physicians, securing support from leading doctors at HO'OLA, a prominent Hawaiian network of independent physicians. With guidance from mentors and case studies, we crafted a strong business value proposition, performed competitor analysis in the telehealth space, and created a minimum viable product (MVP). Additionally, we developed a revenue model and expansion strategy, culminating in a final pitch where I presented our vision to stakeholders.",
           "images": [
-            "images/Dojo_enhanced.png",
-            "images/Docferral.png"
+            "Dojo_enhanced.png",
+            "Docferral.png"
           ],
           "url": "https://www.youtube.com/watch?si=7vtjb4MtF1iFqOvF&v=ywj8ohK4qTY&feature=youtu.be",
           "technologies": [
@@ -112,8 +112,8 @@
       "category": "CS Research",
       "description": "For this project, I collaborated with an STJU applied mathematics professor to address inefficiencies in delivery drones, particularly their frequent need for recharging and limited cargo capacity. Our goal was to reduce the weight of large drone wings using an elastic transportation network optimized for energy efficiency, enabling drones to carry more products over longer periods. By calculating the total elastic potential energy and gravity potential energy of the wings, we minimized the total energy to determine the optimal geometric parameters, such as the radius of internal pipelines. Using MATLAB simulations, we iteratively refined the design, aiming for a structure similar to dragonfly wings, known for their lightweight and efficient design. This work, titled Numerical Algorithm for Transportation Network, was published in the Journal of Applied Mathematics, highlighting our approach to designing significantly lighter and more efficient drone wings.",
       "images": [
-        "images/DroneIntialGraph.png",
-        "images/DroneEndGraph.png"
+        "DroneIntialGraph.png",
+        "DroneEndGraph.png"
       ],
       "url": "https://wap.hillpublisher.com/UpFile/202307/20230731173237.pdf",
       "technologies": [
@@ -133,12 +133,12 @@
       "category": "CS Research",
       "description": "For this project, I developed a low-cost, computationally efficient assisted driving system for navigating narrow roads with obstacles. Using a Raspberry Pi, Intel Neural Compute Stick, infrared sensors, an ultrasound sensor, and an SSD (Single Shot Detector) detection camera, I built and programmed a Raspbot Car to classify and avoid people, bikes, and vehicles. The system used OpenVINO to process video streams and adjust controls based on real-time object detection results. Testing trials confirmed the car could safely maneuver around objects or stop when necessary, achieving an average of 7.5 FPS. SSD detection proved more efficient than RCNN, Faster RCNN, or YOLO 3.0 for this setup. This project showcases the potential of cost-effective, efficient solutions for assisted driving, and I hope to continue developing custom detection models to enhance its capabilities.",
       "images": [
-        "images/Robocar.png",
-        "images/Framework1.png",
-        "images/CarTest-2.gif",
-        "images/ModelTest-1.gif",
-        "images/TrialTest-1.gif",
-        "images/TrialTest-2.gif"
+        "Robocar.png",
+        "Framework1.png",
+        "CarTest-2.gif",
+        "ModelTest-1.gif",
+        "TrialTest-1.gif",
+        "TrialTest-2.gif"
       ],
       "url": "",
       "technologies": [
@@ -157,16 +157,17 @@
       ]
     },
     {
-      "title": "PartsPilot",
-      "startDate": "Apr. 2025",
+      "title": "PartSelect",
+      "startDate": "May. 2026",
       "category": "Mini-projects",
       "featured": true,
-      "description": "I built PartsPilot after talking with engineers at Instalily, a company building AI agents for industrial distribution. They described how sales reps at electronics distributors spend hours every day just reading customer emails, cross-referencing catalogs, and writing quote responses by hand. I wanted to see if I could automate the whole thing.\n\nPartsPilot reads an incoming parts request, searches a real DigiKey catalog of about 1,800 components, checks stock, finds substitutes when something is out of stock, and writes a professional quote back. No human in the loop.\n\nI deliberately avoided agent frameworks like LangChain or LlamaIndex and wrote the agentic loop from scratch in about 100 lines of raw Anthropic SDK. Retrieval uses a hybrid of BM25 keyword search and pgvector semantic search, fused with Reciprocal Rank Fusion, which consistently outperforms either method alone across exact part number lookups, spec-based queries, and vague searches.\n\nI also built a full eval harness with 25 test cases covering in-stock, out-of-stock, multi-part, ambiguous, and adversarial prompt injection scenarios. Each case is scored on exact match criteria and by an LLM judge using Claude Haiku. The frontend is a Next.js 14 interface with a trajectory viewer that shows every tool call the agent made, so the reasoning is never a black box.",
+      "description": "I built PartSelect after talking with engineers at Instalily, a company building AI agents for industrial distribution. They described how sales reps at electronics distributors spend hours every day just reading customer emails, cross-referencing catalogs, and writing quote responses by hand. I wanted to see if I could automate a similar process.\n\nIt became a vertical AI customer support agent for the PartSelect e-commerce platform, scoped to refrigerator and dishwasher parts as a 48-hour case study. I skipped LangChain and LlamaIndex and wrote the agent loop from scratch. Two MCP servers handle the tool layer: one does exact lookups against a SQLite database of ~7,000 scraped parts, and the other does semantic retrieval against ChromaDB for symptom diagnosis, repair guides, and blogs.\n\nThe interesting decisions were mostly in scope enforcement and UX. The system prompt has explicit routing rules for every query type and hard refusal rules for anything out of scope. Tool descriptions are written as decision rules rather than API docs, which cuts down on wrong tool selection. On the UX side, part results come back as structured cards with image, price, and stock, and repair guide responses extract and render video links inline.\n\nI also built an eval harness with 17 test cases across 7 categories using dual scoring: exact match for tool routing and hallucination catches, and an LLM judge for response quality.",
       "images": [
-        "https://raw.githubusercontent.com/JeffreyLiang321/PartsPilot/main/assets/frontend_demo.png"
+        "PartSelect_demo.png",
+        "PartSelect_demo.png",
+        "PartSelect_system_architecture.png"
       ],
-      "url": "https://parts-pilot.vercel.app",
-      "github": "https://github.com/JeffreyLiang321/PartsPilot",
+      "github": "https://github.com/JeffreyLiang321/PartSelect",
       "technologies": [
         {
           "class": "devicon-python-plain",
@@ -193,7 +194,7 @@
       "role": "Individual Contributor",
       "description": "Closet Compare is a web app and Chrome extension that lets users save clothing items from any website and organize them into shareable wishlists. The inspiration came from personal experiences and complaints I hear from everyone near me about how hard it is to keep track of clothing items they like. It automatically extracts product details like title, price, and images, making it easy to track styles across brands in one place. Built with a Supabase backend, the platform supports authentication, collaborative lists, and social features like sharing and reactions.",
       "images": [
-        "images/closet_compare.png"
+        "closet_compare.png"
         ],
       "url": "https://clothing-compare.vercel.app/",
       "extension": "https://chrome.google.com/webstore/detail/closet-compare/ljjpfhgbhfjhbdgkhdgfbhccfddpko",
@@ -218,11 +219,11 @@
       "startDate": "Feb. 2025 - May. 2025",
       "category": "Mini-projects",
       "role": "Researcher",
-      "description": "For this project I analyzed over 11,000 NBA player-season records from 2000–2024 to identify which performance metrics best predict NBA All-Star selection. We combined statistical hypothesis testing (one-tailed and paired t-tests, correlation analysis) with machine learning models to evaluate the relationship between offensive involvement, team impact, and All-Star status. Using features such as points per game, usage rate, player impact estimate, and net rating, we built regression and classification models, with K-Nearest Neighbors achieving near-perfect predictive accuracy. Visual analyses revealed a clear \"All-Star zone,\" where high-usage players on winning teams are disproportionately selected. The results highlight how a small set of advanced offensive metrics can strongly explain elite player recognition, while also acknowledging the role of non-statistical factors like media exposure and fan voting.",
+      "description": "I collaborated with a team to build a computer vision pipeline that takes PDF sheet music as input and outputs the pitches and note types detected across the score. We built the full pipeline from scratch: staff line extraction using binary inversion and horizontal projection, morphological operations to clean up noteheads, a watershed algorithm to split closely spaced notes, and a CNN trained on the DoReMi dataset of 5,218 images to classify notes as hollow or non-hollow.\n\nThe hardest part was note separation and classification. We ended up using a two-stage binary classifier, first detecting whether a note was filled (quarter/eighth/sixteenth) or hollow (half/whole), then distinguishing between half and whole notes separately. Pitch was estimated by mapping each notehead's vertical position relative to the staff lines against a standard note lookup table.",
       "images": [
-        "images/pitch_reg.png"
+        "pitch_reg.png"
         ],
-      "url": "https://drive.google.com/file/d/1v4vpcINE19tmXLDHQoq2nxMMFvEATZlN/view",
+      "url": "/CSCI 1470 Final Project Poster.pdf",
       "github": "https://github.com/JeffreyLiang321/brown-dl-s25-final-project",
       "technologies": [
         {
@@ -240,11 +241,11 @@
       "startDate": "Feb. 2025 - May. 2025",
       "role":"Researcher", 
       "category": "Mini-projects",
-      "description": "For this project, I developed a low-cost, computationally efficient assisted driving system for navigating narrow roads with obstacles. Using a Raspberry Pi, Intel Neural Compute Stick, infrared sensors, an ultrasound sensor, and an SSD (Single Shot Detector) detection camera, I built and programmed a Raspbot Car to classify and avoid people, bikes, and vehicles. The system used OpenVINO to process video streams and adjust controls based on real-time object detection results. Testing trials confirmed the car could safely maneuver around objects or stop when necessary, achieving an average of 7.5 FPS. SSD detection proved more efficient than RCNN, Faster RCNN, or YOLO 3.0 for this setup. This project showcases the potential of cost-effective, efficient solutions for assisted driving, and I hope to continue developing custom detection models to enhance its capabilities.",
+      "description": "For this project I analyzed over 11,000 NBA player-season records from 2000–2024 to identify which performance metrics best predict NBA All-Star selection. We combined statistical hypothesis testing (one-tailed and paired t-tests, correlation analysis) with machine learning models to evaluate the relationship between offensive involvement, team impact, and All-Star status. Using features such as points per game, usage rate, player impact estimate, and net rating, we built regression and classification models, with K-Nearest Neighbors achieving near-perfect predictive accuracy. Visual analyses revealed a clear \"All-Star zone,\" where high-usage players on winning teams are disproportionately selected. The results highlight how a small set of advanced offensive metrics can strongly explain elite player recognition, while also acknowledging the role of non-statistical factors like media exposure and fan voting.",
       "images": [
-        "images/nba_stats.png"
+        "nba_stats.png"
       ],
-      "url": "https://drive.google.com/file/d/13z6y1KPxdv6Jf4qjiFl67bz6VVfCWtKl/view",
+      "url": "/Data Science Final Deliverable.pdf",
       "github": "https://github.com/JeffreyLiang321/data_science_final_project",
       "technologies": [
         {
@@ -263,7 +264,7 @@
       "company": "JPMorgan Chase",
       "title": "Incoming Equity Capital Markets Summer Analyst",
       "image": "jpmorgan.png",
-      "years": "Jun. 2026 - Aug. 2026",
+      "years": "Start Jun. 2026",
       "mainTech": [
         "Investment Banking"
       ],
@@ -275,14 +276,14 @@
       "company": "Wlkthru",
       "title": "Fullstack Software Developer Intern",
       "image": "wlkthru.png",
-      "years": "Jan. 2026 - Present",
+      "years": "Jan. 2026 - Apr. 2026",
       "mainTech": [
         "Internship"
       ],
       "technologies": [
         "● Built server-side WebRTC infrastructure using Mediasoup SFU with integrated recording pipeline (PlainTransport → FFmpeg) deployed on VPS",
         "● Developed AI-powered summarization system with structured extraction integrated into external CRM systems",
-        "● Implementing low-latency (<2s) live Spanish ↔ English audio translation pipeline for in-call communication"
+        "● Implementing low-latency (<5s) live Spanish ↔ English audio translation pipeline for in-call communication"
       ]
     },
     {
@@ -295,8 +296,8 @@
       ],
       "technologies": [
         "● Created pitch decks on portfolio financials, product stacks, and revenue models for investor updates",
-        "● Built agentic AI tools for legal and rental clients; launched 2 pilots with 30% efficiency gains",
-        "● Briefed founding partner daily on pricing, GTM, and outreach across 3 portfolio firms"
+        "● Orchestrated automated workflows using n8n to chain extraction, summarization, and data structuring steps",
+        "● Built OCR and LLM-based pipelines for legal document processing to support investment diligence"
       ]
     },
     {
@@ -310,10 +311,7 @@
       "technologies": [
         "● Drove 20% sales growth and helped DayGuard reach their first 5-figure month, a significant milestone",
         "● Managed a team of 7 across 3 workstreams of digital expansion, campus ambassadorship and in-person retail",
-        "● Secured 10 retail partnerships in Rhode Island by conducting in-person outreach to 20+ eligible retail stores",
-        "● Presented work stream findings to DayGuard CEO and scoped 3 additional tasks weekly to fulfill project outline",
-        "● Maintained DayGuard connections with 17+ campus ambassadors and 10+ UGCs partnerships"
-      ]
+        "● Secured 10 retail partnerships in Rhode Island by conducting in-person outreach to 20+ eligible retail stores"      ]
     },
     {
       "company": "Beya: Small Business Assistance App",

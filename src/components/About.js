@@ -6,9 +6,6 @@ import vueIcon from "@iconify/icons-logos/vue";
 
 class About extends Component {
   render() {
-    if (this.props.sharedBasicInfo) {
-      var profilepic = "/images/myProfile.jpg";
-    }
     if (this.props.resumeBasicInfo) {
       var sectionName = this.props.resumeBasicInfo.section_name.about;
       var hello = this.props.resumeBasicInfo.description_header;
