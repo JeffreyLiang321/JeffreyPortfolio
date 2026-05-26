@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9fb50c88b51e2d257e6ae644b745c33a",
+    "revision": "8177e884cdadb9d76c15ec023b9e7a5b",
     "url": "/JeffreyPortfolio/index.html"
   },
   {
-    "revision": "1188ee2777a2247ab4b0",
+    "revision": "2198e2ac942a2628fdb2",
     "url": "/JeffreyPortfolio/static/css/2.71fe5322.chunk.css"
   },
   {
-    "revision": "f5eb86312769dab84696",
+    "revision": "8700102d9c547de3831d",
     "url": "/JeffreyPortfolio/static/css/main.70dfd551.chunk.css"
   },
   {
-    "revision": "1188ee2777a2247ab4b0",
-    "url": "/JeffreyPortfolio/static/js/2.c24a5dfe.chunk.js"
+    "revision": "2198e2ac942a2628fdb2",
+    "url": "/JeffreyPortfolio/static/js/2.65f43f07.chunk.js"
   },
   {
     "revision": "0701fdd16466620d77a5e40b9c28b5b1",
-    "url": "/JeffreyPortfolio/static/js/2.c24a5dfe.chunk.js.LICENSE.txt"
+    "url": "/JeffreyPortfolio/static/js/2.65f43f07.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f5eb86312769dab84696",
-    "url": "/JeffreyPortfolio/static/js/main.427c1b09.chunk.js"
+    "revision": "8700102d9c547de3831d",
+    "url": "/JeffreyPortfolio/static/js/main.6da4618b.chunk.js"
   },
   {
     "revision": "f6f94d2ea156bcc93538",
@@ -184,8 +184,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/JeffreyPortfolio/static/media/me_relax.f1616d64.jpg"
   },
   {
+    "revision": "87228dc003d5d68668b16cfd2e060de1",
+    "url": "/JeffreyPortfolio/static/media/nba_stats.87228dc0.png"
+  },
+  {
     "revision": "6f53ef142b1d8979bf992c37eec03b48",
     "url": "/JeffreyPortfolio/static/media/openvino.6f53ef14.png"
+  },
+  {
+    "revision": "d9461e15c9fb4ff5a6cffe9d22c66b76",
+    "url": "/JeffreyPortfolio/static/media/pitch_reg.d9461e15.png"
   },
   {
     "revision": "24bdacb8bd6410caab33341931320411",
