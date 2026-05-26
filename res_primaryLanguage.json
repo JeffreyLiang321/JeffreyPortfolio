@@ -157,16 +157,16 @@
       ]
     },
     {
-      "title": "PartsPilot",
-      "startDate": "Apr. 2025",
+      "title": "PartSelect",
+      "startDate": "May 2026",
       "category": "Mini-projects",
       "featured": true,
-      "description": "I built PartsPilot after talking with engineers at Instalily, a company building AI agents for industrial distribution. They described how sales reps at electronics distributors spend hours every day just reading customer emails, cross-referencing catalogs, and writing quote responses by hand. I wanted to see if I could automate the whole thing.\n\nPartsPilot reads an incoming parts request, searches a real DigiKey catalog of about 1,800 components, checks stock, finds substitutes when something is out of stock, and writes a professional quote back. No human in the loop.\n\nI deliberately avoided agent frameworks like LangChain or LlamaIndex and wrote the agentic loop from scratch in about 100 lines of raw Anthropic SDK. Retrieval uses a hybrid of BM25 keyword search and pgvector semantic search, fused with Reciprocal Rank Fusion, which consistently outperforms either method alone across exact part number lookups, spec-based queries, and vague searches.\n\nI also built a full eval harness with 25 test cases covering in-stock, out-of-stock, multi-part, ambiguous, and adversarial prompt injection scenarios. Each case is scored on exact match criteria and by an LLM judge using Claude Haiku. The frontend is a Next.js 14 interface with a trajectory viewer that shows every tool call the agent made, so the reasoning is never a black box.",
+      "description": "I built PartSelect Parts Assistant after recently chatting with engineers at Instalily, a company building AI agents for industrial distribution, and wanted to take a crack at the appliance parts space. It's a vertical AI agent scoped entirely to refrigerator and dishwasher parts on the PartSelect e-commerce platform. The agent never guesses compatibility, price, or stock without a live tool call, and hard refusal rules handle anything out of scope like order tracking or other appliances. The agent loop is hand-rolled with no LangChain, and tool descriptions are written as decision rules rather than API docs, which cuts down on ambiguous and redundant tool chains.\n\nUnder the hood, retrieval splits across two databases: SQLite for exact structured lookups (PS number, model number, compatibility checks) and ChromaDB for semantic retrieval like symptom diagnosis and repair guides, with hits enriched by full part records from SQLite. The UX was built for someone mid-repair: rich part cards with image, price, stock, and difficulty badge come back as a structured data channel alongside the prose reply, queries can be interrupted mid-retrieval, and video thumbnails from repair guides render inline. An eval harness covers 17 cases across 11 categories scored by exact match on tool routing and an LLM judge on response quality.",
       "images": [
-        "https://raw.githubusercontent.com/JeffreyLiang321/PartsPilot/main/assets/frontend_demo.png"
+        "images/PartSelect_demo.png",
+        "images/PartSelect_system_architecture.png"
       ],
-      "url": "https://parts-pilot.vercel.app",
-      "github": "https://github.com/JeffreyLiang321/PartsPilot",
+      "github": "https://github.com/JeffreyLiang321/PartSelect",
       "technologies": [
         {
           "class": "devicon-python-plain",

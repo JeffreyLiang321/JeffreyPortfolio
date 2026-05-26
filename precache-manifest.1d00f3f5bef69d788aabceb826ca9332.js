@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9c8ff8dfde91c7df3cc66aef5e4e85d0",
+    "revision": "d3e68acc908235680d1d1439a41b4dda",
     "url": "/JeffreyPortfolio/index.html"
   },
   {
-    "revision": "609a35438be80fe950b2",
+    "revision": "1188ee2777a2247ab4b0",
     "url": "/JeffreyPortfolio/static/css/2.71fe5322.chunk.css"
   },
   {
-    "revision": "ba6f0a2115b476f87be5",
+    "revision": "1dec6bac5931e08c9e95",
     "url": "/JeffreyPortfolio/static/css/main.70dfd551.chunk.css"
   },
   {
-    "revision": "609a35438be80fe950b2",
-    "url": "/JeffreyPortfolio/static/js/2.efb1c28a.chunk.js"
+    "revision": "1188ee2777a2247ab4b0",
+    "url": "/JeffreyPortfolio/static/js/2.c24a5dfe.chunk.js"
   },
   {
     "revision": "0701fdd16466620d77a5e40b9c28b5b1",
-    "url": "/JeffreyPortfolio/static/js/2.efb1c28a.chunk.js.LICENSE.txt"
+    "url": "/JeffreyPortfolio/static/js/2.c24a5dfe.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ba6f0a2115b476f87be5",
-    "url": "/JeffreyPortfolio/static/js/main.d92549ad.chunk.js"
+    "revision": "1dec6bac5931e08c9e95",
+    "url": "/JeffreyPortfolio/static/js/main.08781d54.chunk.js"
   },
   {
     "revision": "f6f94d2ea156bcc93538",
@@ -80,8 +80,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/JeffreyPortfolio/static/media/Framework1.ac26e82d.png"
   },
   {
-    "revision": "08a51069fa328bfed44895146a3e43e0",
-    "url": "/JeffreyPortfolio/static/media/Jeffrey_Liang_Resume.08a51069.pdf"
+    "revision": "510583c17527d285d65186abb0c0bccb",
+    "url": "/JeffreyPortfolio/static/media/Jeffrey_Liang_Resume.510583c1.pdf"
   },
   {
     "revision": "99fb848e9681ed0de1ecb46f95fd4735",
@@ -98,6 +98,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3eb8bb37db9b789cf508f58911789197",
     "url": "/JeffreyPortfolio/static/media/O825195_Liang.3eb8bb37.jpeg"
+  },
+  {
+    "revision": "3ad93ca872a75bb34183ea50f39588e7",
+    "url": "/JeffreyPortfolio/static/media/PartSelect_demo.3ad93ca8.png"
+  },
+  {
+    "revision": "63744f961ebb87e7cfd66543cd1c8fa8",
+    "url": "/JeffreyPortfolio/static/media/PartSelect_system_architecture.63744f96.png"
   },
   {
     "revision": "75fa1c36d53458d915ba021d7e7fb83d",
