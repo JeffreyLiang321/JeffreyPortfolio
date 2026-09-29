@@ -206,7 +206,7 @@
         "Internship"
       ],
       "technologies": [
-        "● Shipped LLM sales action cards to 36 reps at a $10B distributor, grounding every claim in ERP and Salsify data",
+        "● Recently shipped LLM sales action cards to 36 reps at a $10B distributor, grounding every claim in ERP and Salsify data",
         "● Moved client ERP sync to their AWS with zero downtime via 3 schema migrations and a Temporal/ECS cutover",
         "● Designing a rep-feedback learning loop (reason-coded suppressions, Thompson-sampled ranking) for ∼50 pilot reps"
       ]
