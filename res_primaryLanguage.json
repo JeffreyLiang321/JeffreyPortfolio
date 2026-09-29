@@ -9,103 +9,67 @@
       "experience": "Experience"
     }
   },
-      "projects": [
+  "projects": [
+    {
+      "title": "DayGuard",
+      "startDate": "Sep. 2024 - Jun. 2025",
+      "category": "Startup/Entrepreneurship",
+      "description": "As a Project Lead Intern for DayGuard, a CPG company specializing in alcohol aid and liver protection jelly sticks, I oversaw 3 critical business streams: retail expansion, campus ambassador programs, and digital growth. My role involved directly reaching out to 20+ retail stores and supporting partnership negotiations while developing comprehensive ambassador recruitment and training initiatives. I led our social media marketing efforts to enhance brand visibility and drive sales across all channels, achieving a 20% increase in overall sales while maintaining connections with 17 college campus ambassadors and 10+ UGC/micro-influencer partnerships. Most notably, I helped DayGuard reach their first 5-figure month, a significant milestone that demonstrated the effectiveness of our multi-channel growth strategy. A key aspect of my position was maintaining effective team communication and workflow management, which included setting weekly priorities, coordinating schedules, and adjusting project timelines as needed. I also spearheaded our strategic expansion to other prestigious Northeast colleges like Dartmouth and MIT, which included creating scalable onboarding processes for new markets. This position required a blend of strategic planning, team leadership, and hands-on execution across multiple business functions.",
+      "images": [
+        "dayguard.png",
+        "dayguard1.png",
+        "dayguard2.png",
+        "dayguard3.png"
+      ],
+      "url": "https://dayguard.store/",
+      "technologies": []
+    },
+    {
+      "title": "Beya",
+      "startDate": "Sep. 2024 - Apr. 2025",
+      "category": "Startup/Entrepreneurship",
+      "description": "I was a founding member and technical project lead of Beya, a B2B app designed to empower small and medium-sized businesses with streamlined in-person selling. Beya offers features like inventory management, proximity-based vendor discovery, low-fee tap-to-pay transactions, and sales analytics. During my tenure, we supported over 20 local vendors, processed 1,000+ transactions, and hosted eight successful events at Brown University. Built with React Native and powered by Expo, Firebase, AWS, and Stripe API, Beya combines robust infrastructure with user-friendly functionality. I played a crucial role in getting the app validated and successfully published on the Apple App Store as 'Beya', including securing the Tap-to-Pay Distribution Certificate and navigating the App Store review process. For more on Beya's development and impact, visit our website below.",
+      "images": [
+        "beya.png",
+        "beya1.png",
+        "beya2.png"
+      ],
+      "url": "https://usebeya.com/",
+      "technologies": [
         {
-          "title": "Third",
-          "startDate": "July. 2025 - Present",
-          "category": "Startup/Entrepreneurship",
-          "description": "Third is a marketplace for temporary third spaces that transforms underutilized places like cafés after hours, rooftops, and empty studios into bookable spots on demand. No coworking passes or minimum spends required - just affordable space to work, create, or connect starting at a few dollars per hour. For users, we provide wide space selections with reliability and comfort at accessible price points. For hosts, Third generates additional revenue past usual hours by repurposing existing spaces. The platform emphasizes transparency in financial metrics, booking status, and amenities while incorporating social features like group bookings and activity feeds. We've launched our MVP website and are preparing the mobile app launch within 2-3 weeks. Our first host space is live with several more in onboarding, and we're actively building demand through Columbia and NYU student communities.",
-          "images": [
-            "third.png",
-            "third_1.png",
-            "third_2.png"
-          ],
-          "url": "https://use-third.com",
-          "technologies": [
-            {
-              "class": "devicon-react-original",
-              "name": "React"
-            },
-            {
-              "class": "devicon-typescript-plain",
-              "name": "TypeScript"
-            },
-            {
-              "class": "devicon-firebase-plain",
-              "name": "Firebase"
-            },
-            {
-              "class": "devicon-tailwindcss-original",
-              "name": "Tailwind CSS"
-            },
-            {
-              "class": "fa-brands fa-stripe", 
-              "name": "Stripe"
-            }
-          ]
+          "class": "expo.png",
+          "name": "React Expo"
         },
         {
-          "title": "DayGuard",
-          "startDate": "Sep. 2024 - Jun. 2025",
-          "category": "Startup/Entrepreneurship",
-          "description": "As a Project Lead Intern for DayGuard, a CPG company specializing in alcohol aid and liver protection jelly sticks, I oversaw 3 critical business streams: retail expansion, campus ambassador programs, and digital growth. My role involved directly reaching out to 20+ retail stores and supporting partnership negotiations while developing comprehensive ambassador recruitment and training initiatives. I led our social media marketing efforts to enhance brand visibility and drive sales across all channels, achieving a 20% increase in overall sales while maintaining connections with 17 college campus ambassadors and 10+ UGC/micro-influencer partnerships. Most notably, I helped DayGuard reach their first 5-figure month, a significant milestone that demonstrated the effectiveness of our multi-channel growth strategy. A key aspect of my position was maintaining effective team communication and workflow management, which included setting weekly priorities, coordinating schedules, and adjusting project timelines as needed. I also spearheaded our strategic expansion to other prestigious Northeast colleges like Dartmouth and MIT, which included creating scalable onboarding processes for new markets. This position required a blend of strategic planning, team leadership, and hands-on execution across multiple business functions.",
-          "images": [
-            "dayguard.png",
-            "dayguard1.png",
-            "dayguard2.png",
-            "dayguard3.png"
-          ],
-          "url": "https://dayguard.store/",
-          "technologies": [
-          ]
+          "class": "devicon-tailwindcss-original",
+          "name": "Tailwind CSS"
         },
         {
-          "title": "Beya",
-          "startDate": "Sep. 2024 - Apr. 2025",
-          "category": "Startup/Entrepreneurship",
-          "description": "I was a founding member and technical project lead of Beya, a B2B app designed to empower small and medium-sized businesses with streamlined in-person selling. Beya offers features like inventory management, proximity-based vendor discovery, low-fee tap-to-pay transactions, and sales analytics. During my tenure, we supported over 20 local vendors, processed 1,000+ transactions, and hosted eight successful events at Brown University. Built with React Native and powered by Expo, Firebase, AWS, and Stripe API, Beya combines robust infrastructure with user-friendly functionality. I played a crucial role in getting the app validated and successfully published on the Apple App Store as 'Beya', including securing the Tap-to-Pay Distribution Certificate and navigating the App Store review process. For more on Beya's development and impact, visit our website below.",
-          "images": [
-            "beya.png",
-            "beya1.png",
-            "beya2.png"
-          ],
-          "url": "https://usebeya.com/",
-          "technologies": [
-            {
-              "class": "expo.png",
-              "name": "React Expo"
-            },
-            {
-              "class": "devicon-tailwindcss-original",
-              "name": "Tailwind CSS"
-            },
-            {
-              "class": "devicon-firebase-plain",
-              "name": "Firebase"
-            },
-            {
-              "class": "devicon-amazonwebservices-plain",
-              "name": "AWS"
-            },
-            {
-              "class": "fa-brands fa-stripe", 
-              "name": "Stripe"
-            }
-          ]
+          "class": "devicon-firebase-plain",
+          "name": "Firebase"
         },
         {
-          "title": "Innovation Dojo",
-          "startDate": "Feb. 2024 - May. 2024",
-          "category": "Startup/Entrepreneurship",
-          "description": "During my freshman spring, I participated in Brown's Innovation Dojo startup accelerator program, where my team and I developed Docferral, a startup concept designed to streamline electronic patient referrals between primary care and private practice doctors. To validate the idea, we conducted extensive interviews with physicians, securing support from leading doctors at HO'OLA, a prominent Hawaiian network of independent physicians. With guidance from mentors and case studies, we crafted a strong business value proposition, performed competitor analysis in the telehealth space, and created a minimum viable product (MVP). Additionally, we developed a revenue model and expansion strategy, culminating in a final pitch where I presented our vision to stakeholders.",
-          "images": [
-            "Dojo_enhanced.png",
-            "Docferral.png"
-          ],
-          "url": "https://www.youtube.com/watch?si=7vtjb4MtF1iFqOvF&v=ywj8ohK4qTY&feature=youtu.be",
-          "technologies": [
-          ]
+          "class": "devicon-amazonwebservices-plain",
+          "name": "AWS"
         },
+        {
+          "class": "fa-brands fa-stripe",
+          "name": "Stripe"
+        }
+      ]
+    },
+    {
+      "title": "Innovation Dojo",
+      "startDate": "Feb. 2024 - May. 2024",
+      "category": "Startup/Entrepreneurship",
+      "description": "During my freshman spring, I participated in Brown's Innovation Dojo startup accelerator program, where my team and I developed Docferral, a startup concept designed to streamline electronic patient referrals between primary care and private practice doctors. To validate the idea, we conducted extensive interviews with physicians, securing support from leading doctors at HO'OLA, a prominent Hawaiian network of independent physicians. With guidance from mentors and case studies, we crafted a strong business value proposition, performed competitor analysis in the telehealth space, and created a minimum viable product (MVP). Additionally, we developed a revenue model and expansion strategy, culminating in a final pitch where I presented our vision to stakeholders.",
+      "images": [
+        "Dojo_enhanced.png",
+        "Docferral.png"
+      ],
+      "url": "https://www.youtube.com/watch?si=7vtjb4MtF1iFqOvF&v=ywj8ohK4qTY&feature=youtu.be",
+      "technologies": []
+    },
     {
       "title": "Drone Energy Optimization",
       "startDate": "Aug. 2021 - June. 2023",
@@ -167,7 +131,7 @@
         "PartSelect_demo.png",
         "PartSelect_system_architecture.png"
       ],
-      "github": "https://github.com/JeffreyLiang321/PartSelect",
+      "github": "https://github.com/JeffreyLiang321/PartsSelect",
       "technologies": [
         {
           "class": "devicon-python-plain",
@@ -188,33 +152,6 @@
       ]
     },
     {
-      "title": "Clothing Wishlist and Preference Tracker",
-      "startDate": "December. 2025 - Present",
-      "category": "Mini-projects",
-      "role": "Individual Contributor",
-      "description": "Closet Compare is a web app and Chrome extension that lets users save clothing items from any website and organize them into shareable wishlists. The inspiration came from personal experiences and complaints I hear from everyone near me about how hard it is to keep track of clothing items they like. It automatically extracts product details like title, price, and images, making it easy to track styles across brands in one place. Built with a Supabase backend, the platform supports authentication, collaborative lists, and social features like sharing and reactions.",
-      "images": [
-        "closet_compare.png"
-        ],
-      "url": "https://clothing-compare.vercel.app/",
-      "extension": "https://chrome.google.com/webstore/detail/closet-compare/ljjpfhgbhfjhbdgkhdgfbhccfddpko",
-      "github": "https://github.com/JeffreyLiang321/clothing_compare",
-      "technologies": [
-        {
-          "class": "devicon-python-plain",
-          "name": "Python"
-        },
-        {
-          "class": "devicon-vercel-original",
-          "name": "Vercel"
-        },
-        {
-          "class": "devicon-supabase-plain",
-          "name": "Supabase"
-        }
-      ]
-    },
-    {
       "title": "Pitch Recognition and Note Detection from Sheet Music",
       "startDate": "Feb. 2025 - May. 2025",
       "category": "Mini-projects",
@@ -222,8 +159,8 @@
       "description": "I collaborated with a team to build a computer vision pipeline that takes PDF sheet music as input and outputs the pitches and note types detected across the score. We built the full pipeline from scratch: staff line extraction using binary inversion and horizontal projection, morphological operations to clean up noteheads, a watershed algorithm to split closely spaced notes, and a CNN trained on the DoReMi dataset of 5,218 images to classify notes as hollow or non-hollow.\n\nThe hardest part was note separation and classification. We ended up using a two-stage binary classifier, first detecting whether a note was filled (quarter/eighth/sixteenth) or hollow (half/whole), then distinguishing between half and whole notes separately. Pitch was estimated by mapping each notehead's vertical position relative to the staff lines against a standard note lookup table.",
       "images": [
         "pitch_reg.png"
-        ],
-      "url": "/CSCI 1470 Final Project Poster.pdf",
+      ],
+      "url": "https://drive.google.com/file/d/1cLe4lDbnH8XNaP8l-5tCOI_PqZ0CDwhR/view?usp=sharing",
       "github": "https://github.com/JeffreyLiang321/brown-dl-s25-final-project",
       "technologies": [
         {
@@ -239,13 +176,13 @@
     {
       "title": " The All-Star Equation: Decoding Basketball's Elite",
       "startDate": "Feb. 2025 - May. 2025",
-      "role":"Researcher", 
+      "role": "Researcher",
       "category": "Mini-projects",
       "description": "For this project I analyzed over 11,000 NBA player-season records from 2000–2024 to identify which performance metrics best predict NBA All-Star selection. We combined statistical hypothesis testing (one-tailed and paired t-tests, correlation analysis) with machine learning models to evaluate the relationship between offensive involvement, team impact, and All-Star status. Using features such as points per game, usage rate, player impact estimate, and net rating, we built regression and classification models, with K-Nearest Neighbors achieving near-perfect predictive accuracy. Visual analyses revealed a clear \"All-Star zone,\" where high-usage players on winning teams are disproportionately selected. The results highlight how a small set of advanced offensive metrics can strongly explain elite player recognition, while also acknowledging the role of non-statistical factors like media exposure and fan voting.",
       "images": [
         "nba_stats.png"
       ],
-      "url": "/Data Science Final Deliverable.pdf",
+      "url": "https://drive.google.com/file/d/15hZnS70c5Ihh7EWJ7bDn6kc0LethK5MH/view?usp=sharing",
       "github": "https://github.com/JeffreyLiang321/data_science_final_project",
       "technologies": [
         {
@@ -261,15 +198,30 @@
   ],
   "experience": [
     {
+      "company": "InstaLILY AI",
+      "title": "Software Engineering Intern",
+      "image": "instalily.png",
+      "years": "Sep. 2026 – Present",
+      "mainTech": [
+        "Internship"
+      ],
+      "technologies": [
+        "● Shipped LLM sales action cards to 36 reps at a $10B distributor, grounding every claim in ERP and Salsify data",
+        "● Moved client ERP sync to their AWS with zero downtime via 3 schema migrations and a Temporal/ECS cutover",
+        "● Designing a rep-feedback learning loop (reason-coded suppressions, Thompson-sampled ranking) for ∼50 pilot reps"
+      ]
+    },
+    {
       "company": "JPMorgan Chase",
-      "title": "Incoming Equity Capital Markets Summer Analyst",
+      "title": "Equity Capital Markets Summer Analyst",
       "image": "jpmorgan.png",
-      "years": "Start Jun. 2026",
+      "years": "Jun. 2026 – Aug. 2026",
       "mainTech": [
         "Investment Banking"
       ],
       "technologies": [
-        "● Incoming San Francisco IBD Summer Analyst, selected for 9-week training and deal execution program"
+        "● Built valuation and comps analyses informing pricing on tech IPO and follow-on mandates",
+        "● Leveraged LLM research tools (Rogo, internal JPM LLM) to aggregate market data and automate deal tracking"
       ]
     },
     {
@@ -311,7 +263,8 @@
       "technologies": [
         "● Drove 20% sales growth and helped DayGuard reach their first 5-figure month, a significant milestone",
         "● Managed a team of 7 across 3 workstreams of digital expansion, campus ambassadorship and in-person retail",
-        "● Secured 10 retail partnerships in Rhode Island by conducting in-person outreach to 20+ eligible retail stores"      ]
+        "● Secured 10 retail partnerships in Rhode Island by conducting in-person outreach to 20+ eligible retail stores"
+      ]
     },
     {
       "company": "Beya: Small Business Assistance App",
