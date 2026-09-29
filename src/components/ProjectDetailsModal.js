@@ -84,64 +84,66 @@ class ProjectDetailsModal extends Component {
         </span>
         <div className="col-md-12">
           <div className="col-md-10 mx-auto" style={{ paddingBottom: "50px" }}>
-            <div className="slider-tab">
-              <span
-                className="iconify slider-iconfiy"
-                data-icon="emojione:red-circle"
-                data-inline="false"
-                style={{ marginLeft: "5px" }}
-              ></span>{" "}
-              &nbsp;{" "}
-              <span
-                className="iconify slider-iconfiy"
-                data-icon="twemoji:yellow-circle"
-                data-inline="false"
-              ></span>{" "}
-              &nbsp;{" "}
-              <span
-                className="iconify slider-iconfiy"
-                data-icon="twemoji:green-circle"
-                data-inline="false"
-              ></span>
-            </div>
-            {this.props.data.images && this.props.data.images.length > 0 ? (
-              this.props.data.images.length === 1 ? (
-                // Single image - render without slider navigation
-                <div className="slider-image" style={{
-                  width: "100%", 
-                  height: "auto", 
-                  maxHeight: "80vh", 
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center"
-                }}>
-                  <img 
-                    src={this.props.data.images[0]} 
-                    alt={title}
+            <div className="slider-frame">
+              <div className="slider-tab">
+                <span
+                  className="iconify slider-iconfiy"
+                  data-icon="emojione:red-circle"
+                  data-inline="false"
+                  style={{ marginLeft: "5px" }}
+                ></span>{" "}
+                &nbsp;{" "}
+                <span
+                  className="iconify slider-iconfiy"
+                  data-icon="twemoji:yellow-circle"
+                  data-inline="false"
+                ></span>{" "}
+                &nbsp;{" "}
+                <span
+                  className="iconify slider-iconfiy"
+                  data-icon="twemoji:green-circle"
+                  data-inline="false"
+                ></span>
+              </div>
+              {this.props.data.images && this.props.data.images.length > 0 ? (
+                this.props.data.images.length === 1 ? (
+                  // Single image - render without slider navigation
+                  <div className="slider-image" style={{
+                    width: "100%",
+                    height: "auto",
+                    maxHeight: "80vh",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center"
+                  }}>
+                    <img
+                      src={this.props.data.images[0]}
+                      alt={title}
+                      style={{
+                        maxWidth: "100%",
+                        maxHeight: "80vh",
+                        objectFit: "contain"
+                      }}
+                    />
+                  </div>
+                ) : (
+                  // Multiple images - use slider
+                  <AwesomeSlider
+                    cssModule={[AwesomeSliderStyles, AwesomeSliderStyles2]}
+                    animation="scaleOutAnimation"
+                    className="slider-image"
                     style={{
-                      maxWidth: "100%",
+                      width: "100%",
+                      height: "auto",
                       maxHeight: "80vh",
                       objectFit: "contain"
                     }}
-                  />
-                </div>
-              ) : (
-                // Multiple images - use slider
-                <AwesomeSlider
-                  cssModule={[AwesomeSliderStyles, AwesomeSliderStyles2]}
-                  animation="scaleOutAnimation"
-                  className="slider-image"
-                  style={{
-                    width: "100%", 
-                    height: "auto", 
-                    maxHeight: "80vh", 
-                    objectFit: "contain"
-                  }}
-                >
-                  {img}
-                </AwesomeSlider>
-              )
-            ) : null}
+                  >
+                    {img}
+                  </AwesomeSlider>
+                )
+              ) : null}
+            </div>
           </div>
           <div className="col-md-10 mx-auto">
             <h3 style={{ padding: "5px 5px 0 5px", display: "flex", alignItems: "center", gap: "10px" }}>

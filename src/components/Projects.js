@@ -178,7 +178,7 @@ class Projects extends Component {
                 <div className="featured-section">
                   <div className="featured-label">
                     <span className="featured-label-dot" />
-                    Just Shipped
+                    Recently Shipped
                   </div>
                   <div className="featured-cards-row">
                     {featuredProjects.map((project) => (
