@@ -156,11 +156,12 @@
       "startDate": "Feb. 2025 - May. 2025",
       "category": "Mini-projects",
       "role": "Researcher",
-      "description": "I collaborated with a team to build a computer vision pipeline that takes PDF sheet music as input and outputs the pitches and note types detected across the score. We built the full pipeline from scratch: staff line extraction using binary inversion and horizontal projection, morphological operations to clean up noteheads, a watershed algorithm to split closely spaced notes, and a CNN trained on the DoReMi dataset of 5,218 images to classify notes as hollow or non-hollow.\n\nThe hardest part was note separation and classification. We ended up using a two-stage binary classifier, first detecting whether a note was filled (quarter/eighth/sixteenth) or hollow (half/whole), then distinguishing between half and whole notes separately. Pitch was estimated by mapping each notehead's vertical position relative to the staff lines against a standard note lookup table.",
+      "description": "I collaborated with a team to build a computer vision pipeline that takes PDF sheet music as input and outputs the pitches and note types across the score: staff line extraction using binary inversion and horizontal projection, morphological operations to isolate noteheads, and a two-stage binary CNN trained on the DoReMi dataset of 5,218 images, first filled versus hollow, then half versus whole.\n\nAfter the course I kept going on my own and turned it into a working sheet-music-to-audio app. I started by scoring the pipeline against DoReMi's ground truth on six songs held out by song, which showed the morphological detection found only about 70% of noteheads on piano music and no whole notes at all. I replaced it with a small U-Net that predicts a heatmap of notehead centres, taking detection F1 from 0.82 to 0.999. Pitch is still read from each notehead's position on the staff, but two more small CNNs now read the clef and key signature instead of assuming treble, and notes are grouped into columns so chords line up in time. The result plays back in the browser with each note highlighted as it sounds, exports as MIDI or MusicXML, and gets letter and octave right for 94% of held-out notes. It is live on Hugging Face Spaces.",
       "images": [
         "pitch_reg.png"
       ],
       "url": "https://drive.google.com/file/d/1cLe4lDbnH8XNaP8l-5tCOI_PqZ0CDwhR/view?usp=sharing",
+      "demo": "https://jeffjeff20120112-sheet-to-audio.hf.space/",
       "github": "https://github.com/JeffreyLiang321/brown-dl-s25-final-project",
       "technologies": [
         {
