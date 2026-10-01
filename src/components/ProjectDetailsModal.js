@@ -17,6 +17,7 @@ class ProjectDetailsModal extends Component {
       var url = this.props.data.url;
       var githubUrl = this.props.data.github;
       var extensionUrl = this.props.data.extension;
+      var demoUrl = this.props.data.demo;
       if (this.props.data.technologies) {
         var tech = technologies.map((icons, i) => {
           return (
@@ -172,6 +173,21 @@ class ProjectDetailsModal extends Component {
                   >
                     <i
                       className="fab fa-chrome"
+                      style={{ fontSize: "2rem" }}
+                    ></i>
+                  </a>
+                ) : null}
+                {demoUrl ? (
+                  <a
+                    href={demoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link-href"
+                    style={{ color: "#FF9D00", textDecoration: "none" }}
+                    title="Try the live app"
+                  >
+                    <i
+                      className="fas fa-play-circle"
                       style={{ fontSize: "2rem" }}
                     ></i>
                   </a>
