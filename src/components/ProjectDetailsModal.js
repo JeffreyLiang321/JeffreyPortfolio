@@ -5,246 +5,102 @@ import AwesomeSliderStyles from "../scss/light-slider.scss";
 import AwesomeSliderStyles2 from "../scss/dark-slider.scss";
 import "react-awesome-slider/dist/custom-animations/scale-out-animation.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStripe, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import TechTags from "./TechTags";
+
+const URL_PATTERN = /(https?:\/\/[^\s]+)/g;
+
+// Split the description into paragraphs and turn bare URLs into links.
+const renderDescription = (description) =>
+  description
+    .split(/\n\s*\n/)
+    .filter((para) => para.trim())
+    .map((para, i) => (
+      <p key={i}>
+        {para.split(URL_PATTERN).map((part, j) =>
+          /^https?:\/\//.test(part) ? (
+            <a key={j} href={part} target="_blank" rel="noopener noreferrer">
+              {part}
+            </a>
+          ) : (
+            <React.Fragment key={j}>{part}</React.Fragment>
+          )
+        )}
+      </p>
+    ));
 
 class ProjectDetailsModal extends Component {
   render() {
-    if (this.props.data) {
-      const technologies = this.props.data.technologies;
-      const images = this.props.data.images;
-      var title = this.props.data.title;
-      var description = this.props.data.description;
-      var url = this.props.data.url;
-      var githubUrl = this.props.data.github;
-      var extensionUrl = this.props.data.extension;
-      var demoUrl = this.props.data.demo;
-      if (this.props.data.technologies) {
-        var tech = technologies.map((icons, i) => {
-          return (
-            <li className="list-inline-item mx-3" key={i}>
-              <span>
-                <div className="text-center">
-                {
-  icons.name === "Stripe" ? (
-    <FontAwesomeIcon icon={faStripe} size="3x" />
-  ) : icons.name === "React Expo" ? (
-    <img
-      src={require("../images/expo.png")} // Adjust the path to your image
-      
-      alt="React Expo"
-      style={{ width: "3.0rem", height: "3.0rem" }}
-    />
-    ) : icons.name === "Openvino" ? (
-      <img
-        src={require("../images/openvino.png")} // Adjust the path to your image
-        alt="OpenVINO"
-        style={{ width: "3.5rem", height: "3.0rem" }}
-      />
-    ) : (
-    <i className={icons.class} style={{ fontSize: "300%" }}></i>
-  )
-}
-<p className="text-center" style={{ fontSize: "30%" }}>
-  {icons.name}
-</p>
-                </div>
-              </span>
-            </li>
-          );
-        });            
-        if (this.props.data.images) {
-          // Skip the first image (cover image) if there are multiple images
-          // But show the single image if there's only one
-          var modalImages = this.props.data.images.length === 1 
-            ? this.props.data.images 
-            : this.props.data.images.slice(1);
-          var img = modalImages.map((elem, i) => (
-            <div 
-              key={i} 
-              data-src={elem} 
-              style={{ 
-                display: "flex", 
-                justifyContent: "center", 
-                alignItems: "center"
-              }} 
-            />
-          ));
-        }
-      }
-    }
+    const data = this.props.data || {};
+    const { title, description, technologies, images } = data;
+
+    // The first image is the card cover; show the rest here unless it's the only one.
+    const modalImages = images ? (images.length === 1 ? images : images.slice(1)) : [];
+
+    const links = [
+      data.github && { href: data.github, label: "GitHub", icon: <FontAwesomeIcon icon={faGithub} /> },
+      data.demo && { href: data.demo, label: "Live demo", icon: <i className="fas fa-play" /> },
+      data.extension && { href: data.extension, label: "Chrome extension", icon: <i className="fab fa-chrome" /> },
+      data.url && { href: data.url, label: "View project", icon: <i className="fas fa-external-link-alt" /> },
+    ].filter(Boolean);
+
     return (
       <Modal
-        {...this.props}
+        show={this.props.show}
+        onHide={this.props.onHide}
         size="lg"
-        aria-labelledby="contained-modal-title-vcenter"
+        aria-labelledby="project-modal-title"
         centered
-        className="modal-inside"
+        className="project-modal"
       >
-        <span onClick={this.props.onHide} className="modal-close">
-          <i className="fas fa-times fa-3x close-icon"></i>
-        </span>
-        <div className="col-md-12">
-          <div className="col-md-10 mx-auto" style={{ paddingBottom: "50px" }}>
-            <div className="slider-frame">
-              <div className="slider-tab">
-                <span
-                  className="iconify slider-iconfiy"
-                  data-icon="emojione:red-circle"
-                  data-inline="false"
-                  style={{ marginLeft: "5px" }}
-                ></span>{" "}
-                &nbsp;{" "}
-                <span
-                  className="iconify slider-iconfiy"
-                  data-icon="twemoji:yellow-circle"
-                  data-inline="false"
-                ></span>{" "}
-                &nbsp;{" "}
-                <span
-                  className="iconify slider-iconfiy"
-                  data-icon="twemoji:green-circle"
-                  data-inline="false"
-                ></span>
-              </div>
-              {this.props.data.images && this.props.data.images.length > 0 ? (
-                this.props.data.images.length === 1 ? (
-                  // Single image - render without slider navigation
-                  <div className="slider-image" style={{
-                    width: "100%",
-                    height: "auto",
-                    maxHeight: "80vh",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center"
-                  }}>
-                    <img
-                      src={this.props.data.images[0]}
-                      alt={title}
-                      style={{
-                        maxWidth: "100%",
-                        maxHeight: "80vh",
-                        objectFit: "contain"
-                      }}
-                    />
-                  </div>
-                ) : (
-                  // Multiple images - use slider
-                  <AwesomeSlider
-                    cssModule={[AwesomeSliderStyles, AwesomeSliderStyles2]}
-                    animation="scaleOutAnimation"
-                    className="slider-image"
-                    style={{
-                      width: "100%",
-                      height: "auto",
-                      maxHeight: "80vh",
-                      objectFit: "contain"
-                    }}
-                  >
-                    {img}
-                  </AwesomeSlider>
-                )
-              ) : null}
-            </div>
+        <button type="button" className="project-modal-close" onClick={this.props.onHide} aria-label="Close">
+          <i className="fas fa-times" aria-hidden="true"></i>
+        </button>
+
+        {modalImages.length > 0 && (
+          <div className="project-modal-media">
+            {modalImages.length === 1 ? (
+              <img src={modalImages[0]} alt={`${title} screenshot`} />
+            ) : (
+              <AwesomeSlider
+                cssModule={[AwesomeSliderStyles, AwesomeSliderStyles2]}
+                animation="scaleOutAnimation"
+              >
+                {modalImages.map((src) => (
+                  <div key={src} data-src={src} />
+                ))}
+              </AwesomeSlider>
+            )}
           </div>
-          <div className="col-md-10 mx-auto">
-            <h3 style={{ padding: "5px 5px 0 5px", display: "flex", alignItems: "center", gap: "10px" }}>
-              <span>{title}</span>
-              <span style={{ display: "flex", gap: "8px" }}>
-                {githubUrl ? (
-                  <a
-                    href={githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="link-href"
-                    style={{ color: "inherit", textDecoration: "none" }}
-                    title="View on GitHub"
-                  >
-                    <FontAwesomeIcon icon={faGithub} style={{ fontSize: "2rem" }} />
-                  </a>
-                ) : null}
-                {extensionUrl ? (
-                  <a
-                    href={extensionUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="link-href"
-                    style={{ color: "#4285F4", textDecoration: "none" }}
-                    title="View Chrome Extension"
-                  >
-                    <i
-                      className="fab fa-chrome"
-                      style={{ fontSize: "2rem" }}
-                    ></i>
-                  </a>
-                ) : null}
-                {demoUrl ? (
-                  <a
-                    href={demoUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="link-href"
-                    style={{ color: "#FF9D00", textDecoration: "none" }}
-                    title="Try the live app"
-                  >
-                    <i
-                      className="fas fa-play-circle"
-                      style={{ fontSize: "2rem" }}
-                    ></i>
-                  </a>
-                ) : null}
-                {url ? (
-                  <a
-                    href={url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="link-href"
-                    style={{ color: "#007bff", textDecoration: "none" }}
-                    title="View project"
-                  >
-                    <i
-                      className="fas fa-external-link-alt"
-                      style={{ fontSize: "2rem" }}
-                    ></i>
-                  </a>
-                ) : null}
-              </span>
-            </h3>
-            <p className="modal-description">
-              {description ? (() => {
-                const lines = description.split('\n');
-                return lines.map((line, idx) => {
-                  // Check if line contains a URL
-                  const urlRegex = /(https?:\/\/[^\s]+)/g;
-                  const parts = line.split(urlRegex);
-                  
-                  return (
-                    <span key={idx}>
-                      {parts.map((part, partIdx) => {
-                        if (part.match(/^https?:\/\//)) {
-                          return (
-                            <a
-                              key={partIdx}
-                              href={part}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              style={{ color: '#007bff', textDecoration: 'underline' }}
-                            >
-                              {part}
-                            </a>
-                          );
-                        }
-                        return <span key={partIdx}>{part}</span>;
-                      })}
-                      {idx < lines.length - 1 && <br />}
-                    </span>
-                  );
-                });
-              })() : null}
-            </p>
-            <div className="col-md-12 text-center">
-              <ul className="list-inline mx-auto">{tech}</ul>
+        )}
+
+        <div className="project-modal-body">
+          <h2 id="project-modal-title" className="project-modal-title">
+            {title && title.trim()}
+          </h2>
+
+          {links.length > 0 && (
+            <div className="project-modal-links">
+              {links.map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="button-secondary button-small"
+                >
+                  <span aria-hidden="true">{link.icon}</span>
+                  {link.label}
+                </a>
+              ))}
             </div>
+          )}
+
+          <div className="project-modal-description">
+            {description ? renderDescription(description) : null}
           </div>
+
+          <TechTags technologies={technologies} />
         </div>
       </Modal>
     );

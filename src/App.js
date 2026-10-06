@@ -15,7 +15,6 @@ class App extends Component {
   constructor(props) {
     super();
     this.state = {
-      foo: "bar",
       resumeData: {},
       sharedData: {},
     };
@@ -23,8 +22,8 @@ class App extends Component {
 
   componentDidMount() {
     this.loadSharedData();
-    this.loadResumeFromPath(`res_primaryLanguage.json`); 
-    document.documentElement.lang = window.$primaryLanguage; 
+    this.loadResumeFromPath(`res_primaryLanguage.json`);
+    document.documentElement.lang = window.$primaryLanguage;
   }
 
   loadResumeFromPath(path) {
@@ -36,7 +35,7 @@ class App extends Component {
         this.setState({ resumeData: data });
       }.bind(this),
       error: function (xhr, status, err) {
-        alert(err);
+        console.error(`Failed to load ${path}:`, err);
       },
     });
   }
@@ -48,10 +47,9 @@ class App extends Component {
       cache: false,
       success: function (data) {
         this.setState({ sharedData: data });
-        document.title = `${this.state.sharedData.basic_info.name}`;
       }.bind(this),
       error: function (xhr, status, err) {
-        alert(err);
+        console.error("Failed to load portfolio_shared_data.json:", err);
       },
     });
   }
@@ -59,24 +57,24 @@ class App extends Component {
   render() {
     return (
       <div>
-        <NavigationBar /> {/* Add the navigation bar */}
-        <Header sharedData={this.state.sharedData.basic_info} />
-        <About
-          resumeBasicInfo={this.state.resumeData.basic_info}
-          sharedBasicInfo={this.state.sharedData.basic_info}
-        />
-        <Projects
-          resumeProjects={this.state.resumeData.projects}
-          resumeBasicInfo={this.state.resumeData.basic_info}
-        />
-        <Skills
-          sharedSkills={this.state.sharedData.skills}
-          resumeBasicInfo={this.state.resumeData.basic_info}
-        />
-        <Experience
-          resumeExperience={this.state.resumeData.experience}
-          resumeBasicInfo={this.state.resumeData.basic_info}
-        />
+        <a href="#main" className="skip-link">Skip to content</a>
+        <NavigationBar />
+        <main id="main">
+          <Header sharedData={this.state.sharedData.basic_info} />
+          <About resumeBasicInfo={this.state.resumeData.basic_info} />
+          <Projects
+            resumeProjects={this.state.resumeData.projects}
+            resumeBasicInfo={this.state.resumeData.basic_info}
+          />
+          <Experience
+            resumeExperience={this.state.resumeData.experience}
+            resumeBasicInfo={this.state.resumeData.basic_info}
+          />
+          <Skills
+            sharedSkills={this.state.sharedData.skills}
+            resumeBasicInfo={this.state.resumeData.basic_info}
+          />
+        </main>
         <Footer sharedBasicInfo={this.state.sharedData.basic_info} />
       </div>
     );

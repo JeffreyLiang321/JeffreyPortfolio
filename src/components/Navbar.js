@@ -1,84 +1,91 @@
 import React, { useState, useEffect } from "react";
 
+const NAV_ITEMS = [
+    { id: "about", label: "About" },
+    { id: "portfolio", label: "Work" },
+    { id: "resume", label: "Experience" },
+    { id: "skills", label: "Skills" },
+    { id: "contact", label: "Contact" },
+];
+
 const NavigationBar = () => {
     const [active, setActive] = useState("");
+    const [menuOpen, setMenuOpen] = useState(false);
 
-    // Highlight active section based on scroll
+    // Highlight the section currently crossing the band just below the navbar.
+    // Sections render after the JSON loads, so re-scan when the DOM changes.
     useEffect(() => {
-        const handleScroll = () => {
-            const sections = document.querySelectorAll("section");
-            let currentActive = "";
+        const observed = new Set();
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) setActive(entry.target.id);
+                });
+            },
+            { rootMargin: "-80px 0px -60% 0px" }
+        );
 
-            sections.forEach((section) => {
-                const rect = section.getBoundingClientRect();
-                if (rect.top <= 100 && rect.bottom >= 100) {
-                    currentActive = section.id;
+        const observeSections = () => {
+            NAV_ITEMS.forEach(({ id }) => {
+                const el = document.getElementById(id);
+                if (el && !observed.has(el)) {
+                    observed.add(el);
+                    observer.observe(el);
                 }
             });
-
-            setActive(currentActive);
         };
 
-        window.addEventListener("scroll", handleScroll);
+        observeSections();
+        const mutationObserver = new MutationObserver(observeSections);
+        mutationObserver.observe(document.getElementById("root"), { childList: true, subtree: true });
+
         return () => {
-            window.removeEventListener("scroll", handleScroll);
+            observer.disconnect();
+            mutationObserver.disconnect();
         };
     }, []);
 
-    // Smooth scroll to section
-    const handleClick = (sectionId) => {
-        setActive(sectionId);
-        const section = document.getElementById(sectionId);
-        const offset = 80; // Adjust to match your sticky navbar height
-        if (section) {
-            window.scrollTo({
-                top: section.offsetTop - offset,
-                behavior: "smooth",
-            });
-        }
-    };
+    useEffect(() => {
+        if (!menuOpen) return;
+        const onKeyDown = (e) => {
+            if (e.key === "Escape") setMenuOpen(false);
+        };
+        window.addEventListener("keydown", onKeyDown);
+        return () => window.removeEventListener("keydown", onKeyDown);
+    }, [menuOpen]);
 
     return (
-        <nav className="modern-navbar-2024">
-            <div className="navbar-wrapper">
-                {/* Brand Name */}
-                <div className="navbar-brand-section">
-                    <span className="brand-name">Jeffrey Liang</span>
-                </div>
-                
-                {/* Navigation Links */}
-                <div className="navbar-navigation">
-                    <button
-                        onClick={() => handleClick("about")}
-                        className={`nav-item ${active === "about" ? "active" : ""}`}
-                    >
-                        About
-                    </button>
-                    <button
-                        onClick={() => handleClick("portfolio")}
-                        className={`nav-item ${active === "portfolio" ? "active" : ""}`}
-                    >
-                        Works
-                    </button>
-                    <button
-                        onClick={() => handleClick("skills")}
-                        className={`nav-item ${active === "skills" ? "active" : ""}`}
-                    >
-                        Skills
-                    </button>
-                    <button
-                        onClick={() => handleClick("resume")}
-                        className={`nav-item ${active === "resume" ? "active" : ""}`}
-                    >
-                        Experience
-                    </button>
-                    <button
-                        onClick={() => handleClick("footer")}
-                        className={`nav-item ${active === "footer" ? "active" : ""}`}
-                    >
-                        Contact
-                    </button>
-                </div>
+        <nav className="site-nav" aria-label="Primary">
+            <div className="site-nav-inner">
+                <a href="#home" className="site-nav-brand" onClick={() => setMenuOpen(false)}>
+                    Jeffrey Liang
+                </a>
+
+                <button
+                    type="button"
+                    className="site-nav-toggle"
+                    aria-expanded={menuOpen}
+                    aria-controls="site-nav-links"
+                    aria-label={menuOpen ? "Close menu" : "Open menu"}
+                    onClick={() => setMenuOpen(!menuOpen)}
+                >
+                    <i className={menuOpen ? "fas fa-times" : "fas fa-bars"} aria-hidden="true"></i>
+                </button>
+
+                <ul id="site-nav-links" className={`site-nav-links ${menuOpen ? "is-open" : ""}`}>
+                    {NAV_ITEMS.map(({ id, label }) => (
+                        <li key={id}>
+                            <a
+                                href={`#${id}`}
+                                className={`site-nav-link ${active === id ? "is-active" : ""}`}
+                                aria-current={active === id ? "true" : undefined}
+                                onClick={() => setMenuOpen(false)}
+                            >
+                                {label}
+                            </a>
+                        </li>
+                    ))}
+                </ul>
             </div>
         </nav>
     );

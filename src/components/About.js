@@ -1,86 +1,34 @@
 import React, { Component } from "react";
-import { Icon } from "@iconify/react";
-import angularIcon from "@iconify/icons-logos/angular-icon";
-import reactIcon from "@iconify/icons-logos/react";
-import vueIcon from "@iconify/icons-logos/vue";
 
 class About extends Component {
   render() {
-    if (this.props.resumeBasicInfo) {
-      var sectionName = this.props.resumeBasicInfo.section_name.about;
-      var hello = this.props.resumeBasicInfo.description_header;
-      var about = this.props.resumeBasicInfo.description;
+    if (!this.props.resumeBasicInfo) {
+      return null;
     }
 
+    const sectionName = this.props.resumeBasicInfo.section_name.about;
+    const paragraphs = this.props.resumeBasicInfo.description.split("\n\n");
+    const facts = this.props.resumeBasicInfo.quick_facts || [];
+
     return (
-      <section id="about">
-        <div className="col-md-12">
-          <h1 style={{ color: "black" }}>
-            <span>{sectionName}</span>
-          </h1>
-          <div className="row center mx-auto mb-5">
-            <div className="col-md-4 mb-5 center">
-              <div className="polaroid">
-                <span style={{ cursor: "auto" }}>
-                  <img
-                    style={{
-                      width: "100%", // Adjust percentage as needed
-                      height: "auto", // Maintain aspect ratio
-                      borderRadius: "10px", // Optional styling
-                    }}
-                    src={require("../images/me_relax.jpg")}
-                    alt="Avatar placeholder"
-                  />
-                  {/* <Icon
-                    icon={angularIcon}
-                    style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
-                  />
-                  <Icon
-                    icon={reactIcon}
-                    style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
-                  />
-                  <Icon
-                    icon={vueIcon}
-                    style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
-                  /> */}
-                </span>
-              </div>
+      <section id="about" className="section">
+        <div className="section-inner">
+          <h2 className="section-heading">{sectionName}</h2>
+          <div className="about-grid">
+            <div className="about-body">
+              {paragraphs.map((text, i) => (
+                <p key={i}>{text}</p>
+              ))}
             </div>
 
-            <div className="col-md-8 center">
-              <div className="col-md-10">
-                <div className="card">
-                <div
-    className="card-header"
-    style={{
-      backgroundColor: "black", // Changes the bar color to black
-      height: "30px", // Adjust the height if needed
-    }}
-  >
-                    <span
-                      className="iconify"
-                      data-icon="emojione:red-circle"
-                      data-inline="false"
-                    ></span>{" "}
-                    &nbsp;{" "}
-                  </div>
-                  <div
-                    className="card-body font-trebuchet text-justify ml-3 mr-3"
-                    style={{
-                      height: "auto",
-                      fontSize: "132%",
-                      lineHeight: "200%",
-                    }}
-                  >
-                    <br />
-                    <span className="wave">{hello} </span>
-                    <br />
-                    <br />
-                    {about}
-                  </div>
+            <dl className="about-facts">
+              {facts.map((fact) => (
+                <div className="about-fact" key={fact.label}>
+                  <dt>{fact.label}</dt>
+                  <dd>{fact.value}</dd>
                 </div>
-              </div>
-            </div>
+              ))}
+            </dl>
           </div>
         </div>
       </section>
@@ -89,4 +37,3 @@ class About extends Component {
 }
 
 export default About;
-

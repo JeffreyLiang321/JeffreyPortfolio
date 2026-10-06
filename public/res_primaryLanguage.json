@@ -1,9 +1,14 @@
 {
   "basic_info": {
-    "description_header": "Hi everyone!",
-    "description": "My name is Jeffrey Liang. I was born in San Jose and grew up in Shanghai attending Shanghai American School. I'm a current junior studying Computer Science and Economics at Brown University. I'm very interested in pursuring a career at the intersection of software and finance, and very involved in many computer science projects spanning machine learning and agent frameworks. Thanks for viewing my portfolio website!",
+    "description": "I was born in San Jose and grew up in Shanghai, where I attended Shanghai American School. I'm now a junior studying Computer Science and Economics at Brown University.\n\nI want to build a career at the intersection of software and finance. Most of my time outside class goes into computer science projects in machine learning and agent frameworks.",
+    "quick_facts": [
+      { "label": "Studying", "value": "CS & Economics, Brown University" },
+      { "label": "Currently", "value": "Software Engineering Intern, InstaLILY AI" },
+      { "label": "Previously", "value": "ECM Summer Analyst, J.P. Morgan" },
+      { "label": "From", "value": "San Jose, raised in Shanghai" }
+    ],
     "section_name": {
-      "about": "About me",
+      "about": "About Me",
       "projects": "Projects",
       "skills": "Skills",
       "experience": "Experience"
@@ -207,9 +212,9 @@
         "Internship"
       ],
       "technologies": [
-        "● Shipped LLM sales action cards to 36 reps at a $10B distributor, grounding every claim in ERP and Salsify data",
-        "● Moved client ERP sync to their AWS with zero downtime via 3 schema migrations and a Temporal/ECS cutover",
-        "● Designing a rep-feedback learning loop (reason-coded suppressions, Thompson-sampled ranking) for ∼50 pilot reps"
+        "Shipped LLM sales action cards to 36 reps at a $10B distributor, grounding every claim in ERP and Salsify data",
+        "Moved client ERP sync to their AWS with zero downtime via 3 schema migrations and a Temporal/ECS cutover",
+        "Designing a rep-feedback learning loop (reason-coded suppressions, Thompson-sampled ranking) for ∼50 pilot reps"
       ]
     },
     {
@@ -221,8 +226,8 @@
         "Investment Banking"
       ],
       "technologies": [
-        "● Built valuation and comps analyses informing pricing on tech IPO and follow-on mandates",
-        "● Leveraged LLM research tools (Rogo, internal JPM LLM) to aggregate market data and automate deal tracking"
+        "Built valuation and comps analyses informing pricing on tech IPO and follow-on mandates",
+        "Leveraged LLM research tools (Rogo, internal JPM LLM) to aggregate market data and automate deal tracking"
       ]
     },
     {
@@ -234,9 +239,9 @@
         "Internship"
       ],
       "technologies": [
-        "● Built server-side WebRTC infrastructure using Mediasoup SFU with integrated recording pipeline (PlainTransport → FFmpeg) deployed on VPS",
-        "● Developed AI-powered summarization system with structured extraction integrated into external CRM systems",
-        "● Implementing low-latency (<5s) live Spanish ↔ English audio translation pipeline for in-call communication"
+        "Built server-side WebRTC infrastructure using Mediasoup SFU with integrated recording pipeline (PlainTransport → FFmpeg) deployed on VPS",
+        "Developed AI-powered summarization system with structured extraction integrated into external CRM systems",
+        "Implementing low-latency (<5s) live Spanish ↔ English audio translation pipeline for in-call communication"
       ]
     },
     {
@@ -248,9 +253,9 @@
         "Venture Capital"
       ],
       "technologies": [
-        "● Created pitch decks on portfolio financials, product stacks, and revenue models for investor updates",
-        "● Orchestrated automated workflows using n8n to chain extraction, summarization, and data structuring steps",
-        "● Built OCR and LLM-based pipelines for legal document processing to support investment diligence"
+        "Created pitch decks on portfolio financials, product stacks, and revenue models for investor updates",
+        "Orchestrated automated workflows using n8n to chain extraction, summarization, and data structuring steps",
+        "Built OCR and LLM-based pipelines for legal document processing to support investment diligence"
       ]
     },
     {
@@ -262,9 +267,9 @@
         "Student Society/Club"
       ],
       "technologies": [
-        "● Drove 20% sales growth and helped DayGuard reach their first 5-figure month, a significant milestone",
-        "● Managed a team of 7 across 3 workstreams of digital expansion, campus ambassadorship and in-person retail",
-        "● Secured 10 retail partnerships in Rhode Island by conducting in-person outreach to 20+ eligible retail stores"
+        "Drove 20% sales growth and helped DayGuard reach their first 5-figure month, a significant milestone",
+        "Managed a team of 7 across 3 workstreams of digital expansion, campus ambassadorship and in-person retail",
+        "Secured 10 retail partnerships in Rhode Island by conducting in-person outreach to 20+ eligible retail stores"
       ]
     },
     {
@@ -276,10 +281,10 @@
         "Startup"
       ],
       "technologies": [
-        "● Led end-to-end development of a B2B mobile app for small businesses, generating $22K+ ARR",
-        "● Designed core platform features; proximity discovery, payments, and inventory management for 20+ vendors",
-        "● Built serverless payment backend with AWS Lambda to process Stripe webhooks and update transactions",
-        "● Integrated Apple Tap-to-Pay for in-app contactless payments and supported App Store launch for production release"
+        "Led end-to-end development of a B2B mobile app for small businesses, generating $22K+ ARR",
+        "Designed core platform features; proximity discovery, payments, and inventory management for 20+ vendors",
+        "Built serverless payment backend with AWS Lambda to process Stripe webhooks and update transactions",
+        "Integrated Apple Tap-to-Pay for in-app contactless payments and supported App Store launch for production release"
       ]
     },
     {
@@ -291,10 +296,10 @@
         "Internship"
       ],
       "technologies": [
-        "● Worked within Xiaomi's smart device R&D, testing and reporting on current leading generative AI models",
-        "● Formed 4 technical reports on the fundamental strengths within models, methods for inference improvement",
-        "● Assisted in pitching technical findings with compatibility to Xiaomi's hardware products to department executives",
-        "● Established an approved company project \"On Device AI Accelerator\" targeting AI specific hardware techniques"
+        "Worked within Xiaomi's smart device R&D, testing and reporting on current leading generative AI models",
+        "Formed 4 technical reports on the fundamental strengths within models, methods for inference improvement",
+        "Assisted in pitching technical findings with compatibility to Xiaomi's hardware products to department executives",
+        "Established an approved company project \"On Device AI Accelerator\" targeting AI specific hardware techniques"
       ]
     },
     {
@@ -306,9 +311,9 @@
         "Student Society/Club"
       ],
       "technologies": [
-        "● Selected to participate in Brown's only student-run startup accelerator to create and present a startup idea",
-        "● Interviewed 10 primary care and specialist doctors validating \"Docferral,\" an e-referral platform for private practices",
-        "● Analyzed 4 health components across 5 telemedicine companies, conducted value proposition and TAM analysis"
+        "Selected to participate in Brown's only student-run startup accelerator to create and present a startup idea",
+        "Interviewed 10 primary care and specialist doctors validating \"Docferral,\" an e-referral platform for private practices",
+        "Analyzed 4 health components across 5 telemedicine companies, conducted value proposition and TAM analysis"
       ]
     }
   ]

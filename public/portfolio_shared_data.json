@@ -1,7 +1,8 @@
 {
   "basic_info": {
     "name": "Jeffrey Liang",
-    "titles": [ "Finance Enthuiast", "Software Engineer" ],
+    "titles": [ "Software Engineer", "Finance Enthusiast" ],
+    "tagline": "CS & Economics at Brown. Building AI agents at InstaLILY, previously ECM at J.P. Morgan.",
     "social": [
       {
         "name": "email",
@@ -25,61 +26,73 @@
     "icons": [
       {
         "name": "Python",
+        "group": "Languages",
         "class": "devicon-python-plain",
         "level": "95"
       },
       {
-        "name": "Javascript",
+        "name": "JavaScript",
+        "group": "Languages",
         "class": "devicon-javascript-plain",
         "level": "95"
       },
       {
-        "name": "Typescript",
+        "name": "TypeScript",
+        "group": "Languages",
         "class": "devicon-typescript-plain",
         "level": "80"
       },
       {
         "name": "HTML",
+        "group": "Languages",
         "class": "devicon-html5-plain",
         "level": "90"
       },
       {
         "name": "CSS",
+        "group": "Languages",
         "class": "devicon-css3-plain",
         "level": "70"
       },
       {
         "name": "AWS",
+        "group": "Cloud & Data",
         "class": "devicon-amazonwebservices-plain",
         "level": "75"
       },
       {
         "name": "MySQL",
+        "group": "Cloud & Data",
         "class": "devicon-mysql-original",
         "level": "85"
       },
       {
         "name": "Swift",
+        "group": "Languages",
         "class": "devicon-swift-plain",
         "level": "65"
       },
       {
         "name": "C",
+        "group": "Languages",
         "class": "devicon-c-plain",
         "level": "60"
       },
       {
         "name": "Supabase",
+        "group": "Cloud & Data",
         "class": "devicon-supabase-plain",
         "level": "60"
       },
       {
         "name": "Vercel",
+        "group": "Cloud & Data",
         "class": "devicon-vercel-original",
         "level": "60"
       },
       {
-        "name": "Postgresql",
+        "name": "PostgreSQL",
+        "group": "Cloud & Data",
         "class": "devicon-postgresql-plain",
         "level": "60"
       }
