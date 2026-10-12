@@ -40,6 +40,7 @@ class ProjectDetailsModal extends Component {
     const links = [
       data.github && { href: data.github, label: "GitHub", icon: <FontAwesomeIcon icon={faGithub} /> },
       data.demo && { href: data.demo, label: "Live demo", icon: <i className="fas fa-play" /> },
+      data.video && { href: data.video, label: "Video walkthrough", icon: <i className="fas fa-video" /> },
       data.extension && { href: data.extension, label: "Chrome extension", icon: <i className="fab fa-chrome" /> },
       data.url && { href: data.url, label: "View project", icon: <i className="fas fa-external-link-alt" /> },
     ].filter(Boolean);
