@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e268178c6649185e642a5177978e6ce4",
+    "revision": "eb1f78a8c4f38caaf38d2367bb4d9b0c",
     "url": "/JeffreyPortfolio/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/JeffreyPortfolio/static/css/2.232ad3bb.chunk.css"
   },
   {
-    "revision": "4ca9d5b9c3f3a582592c",
+    "revision": "987e6ae6acf92f44bc14",
     "url": "/JeffreyPortfolio/static/css/main.799234fe.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/JeffreyPortfolio/static/js/2.eb66ac1e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4ca9d5b9c3f3a582592c",
-    "url": "/JeffreyPortfolio/static/js/main.58f2e880.chunk.js"
+    "revision": "987e6ae6acf92f44bc14",
+    "url": "/JeffreyPortfolio/static/js/main.36587abd.chunk.js"
   },
   {
     "revision": "f6f94d2ea156bcc93538",
@@ -40,8 +40,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/JeffreyPortfolio/static/media/Jeffrey_Liang_Brown_SoftwareEngineeringIntern.99fb848e.jpeg"
   },
   {
-    "revision": "b69f9c07c36c20111f8e9db776d28437",
-    "url": "/JeffreyPortfolio/static/media/Jeffrey_Liang_Resume.b69f9c07.pdf"
+    "revision": "dc1e2d3b95e1cae06079ef5a76de502a",
+    "url": "/JeffreyPortfolio/static/media/Jeffrey_Liang_Resume.dc1e2d3b.pdf"
   },
   {
     "revision": "5284fed4f797873a7c505e87c2c51252",
