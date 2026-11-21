@@ -130,12 +130,13 @@
       "startDate": "May. 2026",
       "category": "Mini-projects",
       "featured": true,
-      "description": "I built PartSelect after talking with engineers at Instalily, a company building AI agents for industrial distribution. They described how sales reps at electronics distributors spend hours every day just reading customer emails, cross-referencing catalogs, and writing quote responses by hand. I wanted to see if I could automate a similar process.\n\nIt became a vertical AI customer support agent for the PartSelect e-commerce platform, scoped to refrigerator and dishwasher parts as a 48-hour case study. I skipped LangChain and LlamaIndex and wrote the agent loop from scratch. Two MCP servers handle the tool layer: one does exact lookups against a SQLite database of ~7,000 scraped parts, and the other does semantic retrieval against ChromaDB for symptom diagnosis, repair guides, and blogs.\n\nThe interesting decisions were mostly in scope enforcement and UX. The system prompt has explicit routing rules for every query type and hard refusal rules for anything out of scope. Tool descriptions are written as decision rules rather than API docs, which cuts down on wrong tool selection. On the UX side, part results come back as structured cards with image, price, and stock, and repair guide responses extract and render video links inline.\n\nI also built an eval harness with 17 test cases across 7 categories using dual scoring: exact match for tool routing and hallucination catches, and an LLM judge for response quality.",
+      "description": "I built PartSelect after talking with engineers at Instalily, a company building AI agents for industrial distribution. They described how sales reps at electronics distributors spend hours every day just reading customer emails, cross-referencing catalogs, and writing quote responses by hand. I wanted to see if I could automate a similar process.\n\nIt became a vertical AI customer support agent for the PartSelect e-commerce platform, scoped to refrigerator and dishwasher parts as a 48-hour case study. I skipped LangChain and LlamaIndex and wrote the agent loop from scratch. Two MCP servers handle the tool layer: one does exact lookups against a SQLite database of ~7,000 scraped parts, and the other does semantic retrieval against ChromaDB for symptom diagnosis, repair guides, and blogs.\n\nThe interesting decisions were mostly in scope enforcement and UX. The system prompt has explicit routing rules for every query type and hard refusal rules for anything out of scope. Tool descriptions are written as decision rules rather than API docs, which cuts down on wrong tool selection. On the UX side, part results come back as structured cards with image, price, and stock, and repair guide responses extract and render video links inline.\n\nI also built an eval harness with 17 test cases across 11 categories using dual scoring: exact match for tool routing and hallucination catches, and an LLM judge for response quality.",
       "images": [
-        "PartSelect_demo.png",
-        "PartSelect_demo.png",
+        "PartSelect_interface1.png",
+        "PartSelect_interface2.png",
         "PartSelect_system_architecture.png"
       ],
+      "demo": "https://partselect-agent-demo.vercel.app",
       "github": "https://github.com/JeffreyLiang321/PartsSelect",
       "video": "https://www.loom.com/share/459b097f6790479291dd7f6cdc1932a8",
       "technologies": [
@@ -144,12 +145,16 @@
           "name": "Python"
         },
         {
-          "class": "devicon-postgresql-plain",
-          "name": "PostgreSQL"
+          "class": "devicon-fastapi-plain",
+          "name": "FastAPI"
         },
         {
-          "class": "devicon-nextjs-plain",
-          "name": "Next.js"
+          "class": "devicon-react-original",
+          "name": "React"
+        },
+        {
+          "class": "devicon-sqlite-plain",
+          "name": "SQLite"
         },
         {
           "class": "devicon-docker-plain",
